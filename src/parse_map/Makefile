@@ -33,7 +33,8 @@ FILEWORK = $(FILEWORKDIR)file_work.c
 PARSEIDENTIFIERDIR = $(SRCDIR)parse_identifier/
 PARSEIDENTIFIER =	$(PARSEIDENTIFIERDIR)parse_identifier.c \
 					$(PARSEIDENTIFIERDIR)is_texture_identifier.c \
-					$(PARSEIDENTIFIERDIR)is_technical_identifier.c
+					$(PARSEIDENTIFIERDIR)is_technical_identifier.c \
+					$(PARSEIDENTIFIERDIR)parse_technical_utils.c
 
 #############################################################
 

@@ -21,6 +21,8 @@ void	init_zero_map(t_map *map)
 	map->we = NULL;
 	map->ea = NULL;
 	map->s = NULL;
+	map->f = 0;
+	map->c = 0;
 	map->map = NULL;
 	return ;
 }

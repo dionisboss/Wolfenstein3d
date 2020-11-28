@@ -1,0 +1,76 @@
+cmake_minimum_required(VERSION 3.17)
+project(parse_map C)
+
+set(CMAKE_C_STANDARD 11)
+
+include_directories(includes)
+include_directories(libs/libft)
+
+add_executable(parse_map
+		includes/for_tests.h
+		includes/get_next_line.h
+		includes/libft.h
+		includes/parse_map.h
+		includes/parse_identifier.h
+		libs/libft/ft_arrstrs_len_bonus.c
+		libs/libft/ft_atoi.c
+		libs/libft/ft_bzero.c
+		libs/libft/ft_calloc.c
+		libs/libft/ft_isalnum.c
+		libs/libft/ft_isalpha.c
+		libs/libft/ft_isascii.c
+		libs/libft/ft_isdigit.c
+		libs/libft/ft_is_digitsn_bonus.c
+		libs/libft/ft_isprint.c
+		libs/libft/ft_isspace_bonus.c
+		libs/libft/ft_itoa.c
+		libs/libft/ft_lstadd_back.c
+		libs/libft/ft_lstadd_front.c
+		libs/libft/ft_lstclear.c
+		libs/libft/ft_lstdelone.c
+		libs/libft/ft_lstiter.c
+		libs/libft/ft_lstlast.c
+		libs/libft/ft_lstmap.c
+		libs/libft/ft_lstnew.c
+		libs/libft/ft_lstsize.c
+		libs/libft/ft_memccpy.c
+		libs/libft/ft_memchr.c
+		libs/libft/ft_memcmp.c
+		libs/libft/ft_memcpy.c
+		libs/libft/ft_memmove.c
+		libs/libft/ft_memset.c
+		libs/libft/ft_putchar_fd.c
+		libs/libft/ft_putendl_fd.c
+		libs/libft/ft_putnbr_fd.c
+		libs/libft/ft_nbcmp_bonus.c
+		libs/libft/ft_putstr_fd.c
+		libs/libft/ft_split.c
+		libs/libft/ft_strchr.c
+		libs/libft/ft_strcmp_bonus.c
+		libs/libft/ft_strdup.c
+		libs/libft/ft_strjoin.c
+		libs/libft/ft_strlcat.c
+		libs/libft/ft_strlcpy.c
+		libs/libft/ft_strlen.c
+		libs/libft/ft_strmapi.c
+		libs/libft/ft_strncmp.c
+		libs/libft/ft_strnstr.c
+		libs/libft/ft_strrchr.c
+		libs/libft/ft_strtrim.c
+		libs/libft/ft_substr.c
+		libs/libft/ft_tolower.c
+		libs/libft/ft_toupper.c
+		libs/libft/libft.h
+		src/file_work/file_work.c
+		src/for_tests/print_map.c
+		src/gnl/get_next_line.c
+		src/gnl/get_next_line_utils.c
+		src/init_or_clean/free_map.c
+		src/init_or_clean/free_split.c
+		src/init_or_clean/init_zero_map.c
+		src/parse_identifier/is_technical_identifier.c
+		src/parse_identifier/is_texture_identifier.c
+		src/parse_identifier/parse_identifier.c
+		src/parse_identifier/parse_technical_utils.c
+		src/main.c
+		src/parse_map.c)

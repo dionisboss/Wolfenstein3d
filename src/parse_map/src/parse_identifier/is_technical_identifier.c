@@ -13,23 +13,23 @@
 #include "parse_map.h"
 #include "libft.h"
 
-int			is_resolution(char *s)
+int			is_resolution(const char *s)
 {
-	if (ft_strlen(s) != 1)
+	if (s == NULL)
 		return (NO);
-	return (!ft_memcmp(s, "R", 1));
+	return (!ft_strcmp(s, "R"));
 }
 
-int			is_floorcolor(char *s)
+int			is_floor_color(const char *s)
 {
-	if (ft_strlen(s) != 1)
+	if (s == NULL)
 		return (NO);
-	return (!ft_memcmp(s, "F", 1));
+	return (!ft_strcmp(s, "F"));
 }
 
-int			is_ceilingcolor(char *s)
+int			is_ceiling_color(const char *s)
 {
-	if (ft_strlen(s) != 1)
+	if (s == NULL)
 		return (NO);
-	return (!ft_memcmp(s, "C", 1));
+	return (!ft_strcmp(s, "C"));
 }

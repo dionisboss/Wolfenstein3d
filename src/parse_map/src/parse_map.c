@@ -14,6 +14,7 @@
 #include "get_next_line.h"
 #include "libft.h"
 #include "for_tests.h"
+#include "parse_identifier.h"
 
 int			parse_line(t_str line, t_map *map)
 {

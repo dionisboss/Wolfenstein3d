@@ -13,35 +13,35 @@
 #include "parse_map.h"
 #include "libft.h"
 
-int			is_north(char *s)
+int			is_north(const char *s)
 {
-	if (ft_strlen(s) != 2)
+	if (s == NULL)
 		return (NO);
-	return (!ft_memcmp(s, "NO", 2));
+	return (!ft_strcmp(s, "NO"));
 }
 
-int			is_south(char *s)
+int			is_south(const char *s)
 {
-	if (ft_strlen(s) != 2)
+	if (s == NULL)
 		return (NO);
-	return (!ft_memcmp(s, "SO", 2));
+	return (!ft_strcmp(s, "SO"));
 }
-int			is_west(char *s)
+int			is_west(const char *s)
 {
-	if (ft_strlen(s) != 2)
+	if (s == NULL)
 		return (NO);
-	return (!ft_memcmp(s, "WE", 2));
+	return (!ft_strcmp(s, "WE"));
 }
-int			is_east(char *s)
+int			is_east(const char *s)
 {
-	if (ft_strlen(s) != 2)
+	if (s == NULL)
 		return (NO);
-	return (!ft_memcmp(s, "EA", 2));
+	return (!ft_strcmp(s, "EA"));
 }
-int			is_sprite(char *s)
+int			is_sprite(const char *s)
 {
-	if (ft_strlen(s) != 1)
+	if (s == NULL)
 		return (NO);
-	return (!ft_memcmp(s, "S", 1));
+	return (!ft_strcmp(s, "S"));
 }
 

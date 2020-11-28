@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../includes/parse_map.h
+stdlib.h
+-
+stdint.h
+-
+
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/main.c
+unistd.h
+-
+parse_map.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map.h
+
