@@ -46,7 +46,6 @@ static char		*buff_create(char *buff)
 	return (buff);
 }
 
-
 /*
 **	Make a copy of the buffer
 **	without characters up to 'c'.

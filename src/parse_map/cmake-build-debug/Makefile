@@ -1547,6 +1547,33 @@ src/gnl/get_next_line_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.s
 .PHONY : src/gnl/get_next_line_utils.c.s
 
+src/init_or_clean/free_arrstrs.o: src/init_or_clean/free_arrstrs.c.o
+
+.PHONY : src/init_or_clean/free_arrstrs.o
+
+# target to build an object file
+src/init_or_clean/free_arrstrs.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o
+.PHONY : src/init_or_clean/free_arrstrs.c.o
+
+src/init_or_clean/free_arrstrs.i: src/init_or_clean/free_arrstrs.c.i
+
+.PHONY : src/init_or_clean/free_arrstrs.i
+
+# target to preprocess a source file
+src/init_or_clean/free_arrstrs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.i
+.PHONY : src/init_or_clean/free_arrstrs.c.i
+
+src/init_or_clean/free_arrstrs.s: src/init_or_clean/free_arrstrs.c.s
+
+.PHONY : src/init_or_clean/free_arrstrs.s
+
+# target to generate assembly for a file
+src/init_or_clean/free_arrstrs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.s
+.PHONY : src/init_or_clean/free_arrstrs.c.s
+
 src/init_or_clean/free_map.o: src/init_or_clean/free_map.c.o
 
 .PHONY : src/init_or_clean/free_map.o
@@ -1573,33 +1600,6 @@ src/init_or_clean/free_map.s: src/init_or_clean/free_map.c.s
 src/init_or_clean/free_map.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.s
 .PHONY : src/init_or_clean/free_map.c.s
-
-src/init_or_clean/free_split.o: src/init_or_clean/free_split.c.o
-
-.PHONY : src/init_or_clean/free_split.o
-
-# target to build an object file
-src/init_or_clean/free_split.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.o
-.PHONY : src/init_or_clean/free_split.c.o
-
-src/init_or_clean/free_split.i: src/init_or_clean/free_split.c.i
-
-.PHONY : src/init_or_clean/free_split.i
-
-# target to preprocess a source file
-src/init_or_clean/free_split.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.i
-.PHONY : src/init_or_clean/free_split.c.i
-
-src/init_or_clean/free_split.s: src/init_or_clean/free_split.c.s
-
-.PHONY : src/init_or_clean/free_split.s
-
-# target to generate assembly for a file
-src/init_or_clean/free_split.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.s
-.PHONY : src/init_or_clean/free_split.c.s
 
 src/init_or_clean/init_zero_map.o: src/init_or_clean/init_zero_map.c.o
 
@@ -1955,12 +1955,12 @@ help:
 	@echo "... src/gnl/get_next_line_utils.o"
 	@echo "... src/gnl/get_next_line_utils.i"
 	@echo "... src/gnl/get_next_line_utils.s"
+	@echo "... src/init_or_clean/free_arrstrs.o"
+	@echo "... src/init_or_clean/free_arrstrs.i"
+	@echo "... src/init_or_clean/free_arrstrs.s"
 	@echo "... src/init_or_clean/free_map.o"
 	@echo "... src/init_or_clean/free_map.i"
 	@echo "... src/init_or_clean/free_map.s"
-	@echo "... src/init_or_clean/free_split.o"
-	@echo "... src/init_or_clean/free_split.i"
-	@echo "... src/init_or_clean/free_split.s"
 	@echo "... src/init_or_clean/init_zero_map.o"
 	@echo "... src/init_or_clean/init_zero_map.i"
 	@echo "... src/init_or_clean/init_zero_map.s"

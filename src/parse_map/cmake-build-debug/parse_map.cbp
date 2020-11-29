@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/includes/file_work.h">
+			<Option target="parse_map"/>
+		</Unit>
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/includes/for_tests.h">
 			<Option target="parse_map"/>
 		</Unit>
@@ -256,10 +259,10 @@
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/gnl/get_next_line_utils.c">
 			<Option target="parse_map"/>
 		</Unit>
-		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_map.c">
+		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_arrstrs.c">
 			<Option target="parse_map"/>
 		</Unit>
-		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_split.c">
+		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_map.c">
 			<Option target="parse_map"/>
 		</Unit>
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/init_zero_map.c">

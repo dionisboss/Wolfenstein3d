@@ -1,7 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   file_work.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/29 19:08:13 by gdrive            #+#    #+#             */
+/*   Updated: 2020/11/29 19:08:18 by gdrive           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <fcntl.h>
 #include <stdio.h>
-#include <string.h>
-#include <errno.h>
 #include <unistd.h>
 #include "parse_map.h"
 
@@ -9,7 +19,7 @@ int		ft_read_open(char *file)
 {
 	int	fd;
 
-	fd  = open(file, O_RDONLY);
+	fd = open(file, O_RDONLY);
 	if (fd < 0)
 	{
 		perror(file);
@@ -18,7 +28,7 @@ int		ft_read_open(char *file)
 	return (fd);
 }
 
-int 	ft_close(int fd, char *file)
+int		ft_close(int fd, char *file)
 {
 	if (close(fd) < 0)
 	{

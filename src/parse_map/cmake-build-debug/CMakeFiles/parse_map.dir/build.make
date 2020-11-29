@@ -766,18 +766,18 @@ CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_map.c -o CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.s
 
-CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.o: CMakeFiles/parse_map.dir/flags.make
-CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.o: ../src/init_or_clean/free_split.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_split.c
+CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o: CMakeFiles/parse_map.dir/flags.make
+CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o: ../src/init_or_clean/free_arrstrs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_arrstrs.c
 
-CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_split.c > CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.i
+CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_arrstrs.c > CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.i
 
-CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_split.c -o CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.s
+CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_arrstrs.c -o CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.s
 
 CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o: ../src/init_or_clean/init_zero_map.c
@@ -925,7 +925,7 @@ parse_map_OBJECTS = \
 "CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o" \
 "CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o" \
 "CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o" \
-"CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.o" \
+"CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o" \
 "CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o" \
 "CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o" \
 "CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o" \
@@ -990,7 +990,7 @@ parse_map: CMakeFiles/parse_map.dir/src/for_tests/print_map.c.o
 parse_map: CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o
 parse_map: CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o
 parse_map: CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o
-parse_map: CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.o
+parse_map: CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o
 parse_map: CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o
 parse_map: CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o
 parse_map: CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o

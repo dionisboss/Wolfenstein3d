@@ -10,29 +10,29 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include "parse_map.h"
+#include "parse_identifier.h"
+#include "file_work.h"
 #include "get_next_line.h"
 #include "libft.h"
 #include "for_tests.h"
-#include "parse_identifier.h"
 
 int			parse_line(t_str line, t_map *map)
 {
 	t_arrstrs 	params;
 	int 		status;
 
+	// If is not map:
+	// Norminette for libft
 	if ((params.arr = ft_split((const char*)line.s, ' ')) == NULL)
 		return (ERROR);
+
 	params.len = ft_arrstrs_len(params.arr);
-	status = OK;
-	if ((status = parse_identifier(params, map)) == OK && status != ERROR)
-		return (free_split(&params));
-	if (status == ERROR)
-	{
-		free_split(&params);
-		return (status);
-	}
-	return (free_split(&params));
+	status = parse_identifier(params, map);
+
+	free_arrstrs(params.arr);
+	return (status);
 }
 
 int			parse_map(char *file, t_map *map)
@@ -57,6 +57,7 @@ int			parse_map(char *file, t_map *map)
 	if (ft_close(fd, file) == ERROR || status == ERROR)
 	{
 		free_map(map);
+		write(1, "Error: not valid map.\n", 22);
 		return (ERROR);
 	}
 

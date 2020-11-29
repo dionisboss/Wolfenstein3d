@@ -12,6 +12,8 @@ CMakeFiles/parse_map.dir/libs/libft/ft_bzero.c.o
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/libft.h
 CMakeFiles/parse_map.dir/libs/libft/ft_calloc.c.o
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_calloc.c
+CMakeFiles/parse_map.dir/libs/libft/ft_is_digitsn_bonus.c.o
+ /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_is_digitsn_bonus.c
 CMakeFiles/parse_map.dir/libs/libft/ft_isalnum.c.o
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_isalnum.c
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/libft.h
@@ -72,6 +74,9 @@ CMakeFiles/parse_map.dir/libs/libft/ft_memmove.c.o
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/libft.h
 CMakeFiles/parse_map.dir/libs/libft/ft_memset.c.o
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_memset.c
+ /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/libft.h
+CMakeFiles/parse_map.dir/libs/libft/ft_nbcmp_bonus.c.o
+ /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_nbcmp_bonus.c
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/libft.h
 CMakeFiles/parse_map.dir/libs/libft/ft_putchar_fd.c.o
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_putchar_fd.c
@@ -142,12 +147,12 @@ CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o
 CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o
  ../includes/get_next_line.h
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/gnl/get_next_line_utils.c
+CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o
+ ../includes/parse_map.h
+ /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_arrstrs.c
 CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o
  ../includes/parse_map.h
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_map.c
-CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.o
- ../includes/parse_map.h
- /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_split.c
 CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o
  ../includes/parse_map.h
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/init_zero_map.c
@@ -164,11 +169,18 @@ CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/is_texture_identifier.c
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o
  ../includes/libft.h
+ ../includes/parse_identifier.h
  ../includes/parse_map.h
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_identifier.c
+CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o
+ ../includes/libft.h
+ ../includes/parse_map.h
+ /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_technical_utils.c
 CMakeFiles/parse_map.dir/src/parse_map.c.o
+ ../includes/file_work.h
  ../includes/for_tests.h
  ../includes/get_next_line.h
  ../includes/libft.h
+ ../includes/parse_identifier.h
  ../includes/parse_map.h
  /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map.c

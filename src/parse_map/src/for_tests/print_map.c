@@ -11,8 +11,8 @@ void 	print_map(t_map *map)
 	printf("we: %s\n", map->we);
 	printf("ea: %s\n", map->ea);
 	printf("s: %s\n", map->s);
-	printf("f: %llu\n", map->f);
-	printf("c: %llu\n", map->c);
+	printf("f: %lld\n", map->f);
+	printf("c: %lld\n", map->c);
 
 
 

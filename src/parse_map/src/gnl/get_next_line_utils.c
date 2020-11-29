@@ -37,7 +37,6 @@ static size_t		gnl_strlen(char *s)
 **	to character 'c'.
 */
 
-
 static size_t		gnl_strclen(char *s, char c)
 {
 	size_t	len;

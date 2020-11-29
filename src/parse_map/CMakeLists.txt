@@ -9,6 +9,7 @@ include_directories(libs/libft)
 add_executable(parse_map
 		includes/for_tests.h
 		includes/get_next_line.h
+		includes/file_work.h
 		includes/libft.h
 		includes/parse_map.h
 		includes/parse_identifier.h
@@ -66,7 +67,7 @@ add_executable(parse_map
 		src/gnl/get_next_line.c
 		src/gnl/get_next_line_utils.c
 		src/init_or_clean/free_map.c
-		src/init_or_clean/free_split.c
+		src/init_or_clean/free_arrstrs.c
 		src/init_or_clean/init_zero_map.c
 		src/parse_identifier/is_technical_identifier.c
 		src/parse_identifier/is_texture_identifier.c

@@ -12,6 +12,8 @@ CMakeFiles/parse_map.dir/libs/libft/ft_bzero.c.o: ../libs/libft/libft.h
 
 CMakeFiles/parse_map.dir/libs/libft/ft_calloc.c.o: ../libs/libft/ft_calloc.c
 
+CMakeFiles/parse_map.dir/libs/libft/ft_is_digitsn_bonus.c.o: ../libs/libft/ft_is_digitsn_bonus.c
+
 CMakeFiles/parse_map.dir/libs/libft/ft_isalnum.c.o: ../libs/libft/ft_isalnum.c
 CMakeFiles/parse_map.dir/libs/libft/ft_isalnum.c.o: ../libs/libft/libft.h
 
@@ -72,6 +74,9 @@ CMakeFiles/parse_map.dir/libs/libft/ft_memmove.c.o: ../libs/libft/libft.h
 
 CMakeFiles/parse_map.dir/libs/libft/ft_memset.c.o: ../libs/libft/ft_memset.c
 CMakeFiles/parse_map.dir/libs/libft/ft_memset.c.o: ../libs/libft/libft.h
+
+CMakeFiles/parse_map.dir/libs/libft/ft_nbcmp_bonus.c.o: ../libs/libft/ft_nbcmp_bonus.c
+CMakeFiles/parse_map.dir/libs/libft/ft_nbcmp_bonus.c.o: ../libs/libft/libft.h
 
 CMakeFiles/parse_map.dir/libs/libft/ft_putchar_fd.c.o: ../libs/libft/ft_putchar_fd.c
 
@@ -142,11 +147,11 @@ CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o: ../src/gnl/get_next_line.c
 CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o: ../includes/get_next_line.h
 CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o: ../src/gnl/get_next_line_utils.c
 
+CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o: ../includes/parse_map.h
+CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o: ../src/init_or_clean/free_arrstrs.c
+
 CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o: ../includes/parse_map.h
 CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o: ../src/init_or_clean/free_map.c
-
-CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.o: ../includes/parse_map.h
-CMakeFiles/parse_map.dir/src/init_or_clean/free_split.c.o: ../src/init_or_clean/free_split.c
 
 CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o: ../includes/parse_map.h
 CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o: ../src/init_or_clean/init_zero_map.c
@@ -163,12 +168,19 @@ CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o: ../incl
 CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o: ../src/parse_identifier/is_texture_identifier.c
 
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o: ../includes/libft.h
+CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o: ../includes/parse_identifier.h
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o: ../includes/parse_map.h
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o: ../src/parse_identifier/parse_identifier.c
 
+CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o: ../includes/libft.h
+CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o: ../includes/parse_map.h
+CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o: ../src/parse_identifier/parse_technical_utils.c
+
+CMakeFiles/parse_map.dir/src/parse_map.c.o: ../includes/file_work.h
 CMakeFiles/parse_map.dir/src/parse_map.c.o: ../includes/for_tests.h
 CMakeFiles/parse_map.dir/src/parse_map.c.o: ../includes/get_next_line.h
 CMakeFiles/parse_map.dir/src/parse_map.c.o: ../includes/libft.h
+CMakeFiles/parse_map.dir/src/parse_map.c.o: ../includes/parse_identifier.h
 CMakeFiles/parse_map.dir/src/parse_map.c.o: ../includes/parse_map.h
 CMakeFiles/parse_map.dir/src/parse_map.c.o: ../src/parse_map.c
 

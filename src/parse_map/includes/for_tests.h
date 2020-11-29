@@ -1,6 +1,18 @@
-#ifndef FOR_TESTS_H
-#define FOR_TESTS_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   for_tests.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/29 19:44:51 by gdrive            #+#    #+#             */
+/*   Updated: 2020/11/29 19:44:57 by gdrive           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void 	print_map(t_map *map);
+#ifndef FOR_TESTS_H
+# define FOR_TESTS_H
+
+void	print_map(t_map *map);
 
 #endif

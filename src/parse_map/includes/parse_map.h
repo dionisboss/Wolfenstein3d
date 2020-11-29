@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #ifndef PARSE_MAP_H
-#define PARSE_MAP_H
+# define PARSE_MAP_H
 
 # include <stdlib.h>
 # include <stdint.h>
@@ -31,25 +31,21 @@ typedef	struct			s_map
 	char				*we;
 	char				*ea;
 	char				*s;
-	uint64_t			f;
-	uint64_t			c;
+	int64_t				f;
+	int64_t				c;
 	char				**map;
 }						t_map;
 
 typedef struct			s_arrstrs
 {
-	char 				**arr;
-	size_t 				len;
+	char				**arr;
+	size_t				len;
 }						t_arrstrs;
 
 int						parse_map(char *file, t_map *map);
 
 void					init_zero_map(t_map *map);
-int 					free_split(t_arrstrs *arrstrs);
+int						free_arrstrs(char **arrstrs);
 int						free_map(t_map *map);
-
-int						ft_read_open(char *file);
-int 					ft_close(int fd, char *file);
-
 
 #endif

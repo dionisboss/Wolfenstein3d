@@ -11,7 +11,8 @@
 /* ************************************************************************** */
 
 #ifndef PARSE_IDENTIFIER_H
-#define PARSE_IDENTIFIER_H
+# define PARSE_IDENTIFIER_H
+# include <stdint.h>
 
 int				is_north(const char *s);
 int				is_south(const char *s);
@@ -21,8 +22,9 @@ int				is_sprite(const char *s);
 int				is_resolution(const char *s);
 int				is_floor_color(const char *s);
 int				is_ceiling_color(const char *s);
-int 			parse_identifier(t_arrstrs params, t_map *map);
-int		 		parse_resolution(t_arrstrs params, t_map *map);
-int 			parse_floor_color(t_arrstrs params, t_map *map);
+int				parse_identifier(t_arrstrs params, t_map *map);
+int				parse_resolution(t_arrstrs params, t_map *map);
+uint64_t		parse_floor_color(t_arrstrs params, t_map *map);
+uint64_t		parse_ceiling_color(t_arrstrs params, t_map *map);
 
 #endif

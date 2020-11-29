@@ -18,7 +18,7 @@ FORTEST = $(FORTESTDIR)print_map.c
 #init_or_clean
 INITORCLEANDIR = $(SRCDIR)init_or_clean/
 INITORCLEAN =	$(INITORCLEANDIR)init_zero_map.c \
-				$(INITORCLEANDIR)free_split.c \
+				$(INITORCLEANDIR)free_arrstrs.c \
 				$(INITORCLEANDIR)free_map.c
 
 #get_next_line
