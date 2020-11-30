@@ -17,7 +17,7 @@ void 	print_map(t_map *map)
 	printf("\n.................... MAP .....................\n\n");
 
 	size_t	i = 0;
-	while(map->map[i] != NULL)
+	while(map->map != NULL && map->map[i] != NULL)
 	{
 		printf("|%s|\n", map->map[i]);
 		i++;

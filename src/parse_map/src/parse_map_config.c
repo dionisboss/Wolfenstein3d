@@ -67,7 +67,8 @@ int			parse_map_config(char *file, t_map *map)
 	}
 
 	free(line.s);
-	print_map(map);
-	free_map(map);
+	map->print(map); // ПЕРЕПИСАТЬ НА СВОЙ PRINTF
+	//print_map(map);
+	map->clear(map);
 	return (TRUE);
 }

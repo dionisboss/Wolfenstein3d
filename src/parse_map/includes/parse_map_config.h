@@ -31,6 +31,8 @@ typedef	struct			s_map
 	int64_t				f;
 	int64_t				c;
 	char				**map;
+	int					(*clear)(struct s_map *map);
+	void				(*print)(struct s_map *map);
 }						t_map;
 
 typedef struct			s_arrstrs
