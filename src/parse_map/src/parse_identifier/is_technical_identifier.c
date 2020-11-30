@@ -10,26 +10,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parse_map.h"
+#include "parse_map_config.h"
 #include "libft.h"
 
 int			is_resolution(const char *s)
 {
 	if (s == NULL)
-		return (NO);
+		return (FALSE);
 	return (!ft_strcmp(s, "R"));
 }
 
 int			is_floor_color(const char *s)
 {
 	if (s == NULL)
-		return (NO);
+		return (FALSE);
 	return (!ft_strcmp(s, "F"));
 }
 
 int			is_ceiling_color(const char *s)
 {
 	if (s == NULL)
-		return (NO);
+		return (FALSE);
 	return (!ft_strcmp(s, "C"));
 }

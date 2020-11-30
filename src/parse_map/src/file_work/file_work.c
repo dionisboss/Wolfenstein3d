@@ -13,7 +13,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <unistd.h>
-#include "parse_map.h"
+#include "parse_map_config.h"
 
 int		ft_read_open(char *file)
 {
@@ -35,5 +35,5 @@ int		ft_close(int fd, char *file)
 		perror(file);
 		return (ERROR);
 	}
-	return (OK);
+	return (TRUE);
 }

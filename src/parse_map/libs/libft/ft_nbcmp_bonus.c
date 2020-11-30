@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int 	ft_nbcmp(const char *nb1, const char *nb2)
+int		ft_nbcmp(const char *nb1, const char *nb2)
 {
 	size_t	nb1_len;
 	size_t	nb2_len;

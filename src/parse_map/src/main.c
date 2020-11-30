@@ -3,7 +3,7 @@
 //
 
 #include <unistd.h>
-#include "parse_map.h"
+#include "parse_map_config.h"
 
 int	main(int argc, char **argv)
 {
@@ -15,7 +15,7 @@ int	main(int argc, char **argv)
 
 	t_map	map;
 
-	parse_map(argv[1], &map);
+	parse_map_config(argv[1], &map);
 
 	return (0);
 }

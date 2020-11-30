@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int 	ft_is_digitsn(const char *s, char c)
+int		ft_is_digitsn(const char *s, char c)
 {
 	while (*s != '\0' && *s != c)
 	{

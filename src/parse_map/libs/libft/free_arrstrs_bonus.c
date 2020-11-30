@@ -10,22 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parse_map.h"
+#include "libft.h"
 
-int		free_arrstrs(char **arrstrs)
+int		free_arrstrs(char ***arrstrs)
 {
 	size_t	i;
 
-	if (arrstrs == NULL)
-		return (OK);
+	if (arrstrs == NULL || *arrstrs == NULL)
+		return (0);
 	i = 0;
-	while (arrstrs[i] != NULL)
+	while ((*arrstrs)[i] != NULL)
 	{
-		free(arrstrs[i]);
-		arrstrs[i] = NULL;
+		free((*arrstrs)[i]);
+		(*arrstrs)[i] = NULL;
 		i++;
 	}
-	free(arrstrs);
-	arrstrs = NULL;
-	return (OK);
+	free(*arrstrs);
+	*arrstrs = NULL;
+	return (0);
 }

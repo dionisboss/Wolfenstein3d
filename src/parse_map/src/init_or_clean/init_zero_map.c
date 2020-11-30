@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parse_map.h"
+#include "parse_map_config.h"
 
 void	init_zero_map(t_map *map)
 {

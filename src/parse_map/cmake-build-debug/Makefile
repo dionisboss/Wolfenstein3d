@@ -143,6 +143,60 @@ parse_map/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/build
 .PHONY : parse_map/fast
 
+libs/libft/free_arrstrs_bonus.o: libs/libft/free_arrstrs_bonus.c.o
+
+.PHONY : libs/libft/free_arrstrs_bonus.o
+
+# target to build an object file
+libs/libft/free_arrstrs_bonus.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.o
+.PHONY : libs/libft/free_arrstrs_bonus.c.o
+
+libs/libft/free_arrstrs_bonus.i: libs/libft/free_arrstrs_bonus.c.i
+
+.PHONY : libs/libft/free_arrstrs_bonus.i
+
+# target to preprocess a source file
+libs/libft/free_arrstrs_bonus.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.i
+.PHONY : libs/libft/free_arrstrs_bonus.c.i
+
+libs/libft/free_arrstrs_bonus.s: libs/libft/free_arrstrs_bonus.c.s
+
+.PHONY : libs/libft/free_arrstrs_bonus.s
+
+# target to generate assembly for a file
+libs/libft/free_arrstrs_bonus.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.s
+.PHONY : libs/libft/free_arrstrs_bonus.c.s
+
+libs/libft/ft_arrstrs_addback_bonus.o: libs/libft/ft_arrstrs_addback_bonus.c.o
+
+.PHONY : libs/libft/ft_arrstrs_addback_bonus.o
+
+# target to build an object file
+libs/libft/ft_arrstrs_addback_bonus.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.o
+.PHONY : libs/libft/ft_arrstrs_addback_bonus.c.o
+
+libs/libft/ft_arrstrs_addback_bonus.i: libs/libft/ft_arrstrs_addback_bonus.c.i
+
+.PHONY : libs/libft/ft_arrstrs_addback_bonus.i
+
+# target to preprocess a source file
+libs/libft/ft_arrstrs_addback_bonus.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.i
+.PHONY : libs/libft/ft_arrstrs_addback_bonus.c.i
+
+libs/libft/ft_arrstrs_addback_bonus.s: libs/libft/ft_arrstrs_addback_bonus.c.s
+
+.PHONY : libs/libft/ft_arrstrs_addback_bonus.s
+
+# target to generate assembly for a file
+libs/libft/ft_arrstrs_addback_bonus.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.s
+.PHONY : libs/libft/ft_arrstrs_addback_bonus.c.s
+
 libs/libft/ft_arrstrs_len_bonus.o: libs/libft/ft_arrstrs_len_bonus.c.o
 
 .PHONY : libs/libft/ft_arrstrs_len_bonus.o
@@ -1439,6 +1493,33 @@ libs/libft/ft_toupper.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/libs/libft/ft_toupper.c.s
 .PHONY : libs/libft/ft_toupper.c.s
 
+src/check_config_error/is_full_config.o: src/check_config_error/is_full_config.c.o
+
+.PHONY : src/check_config_error/is_full_config.o
+
+# target to build an object file
+src/check_config_error/is_full_config.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o
+.PHONY : src/check_config_error/is_full_config.c.o
+
+src/check_config_error/is_full_config.i: src/check_config_error/is_full_config.c.i
+
+.PHONY : src/check_config_error/is_full_config.i
+
+# target to preprocess a source file
+src/check_config_error/is_full_config.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.i
+.PHONY : src/check_config_error/is_full_config.c.i
+
+src/check_config_error/is_full_config.s: src/check_config_error/is_full_config.c.s
+
+.PHONY : src/check_config_error/is_full_config.s
+
+# target to generate assembly for a file
+src/check_config_error/is_full_config.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.s
+.PHONY : src/check_config_error/is_full_config.c.s
+
 src/file_work/file_work.o: src/file_work/file_work.c.o
 
 .PHONY : src/file_work/file_work.o
@@ -1546,33 +1627,6 @@ src/gnl/get_next_line_utils.s: src/gnl/get_next_line_utils.c.s
 src/gnl/get_next_line_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.s
 .PHONY : src/gnl/get_next_line_utils.c.s
-
-src/init_or_clean/free_arrstrs.o: src/init_or_clean/free_arrstrs.c.o
-
-.PHONY : src/init_or_clean/free_arrstrs.o
-
-# target to build an object file
-src/init_or_clean/free_arrstrs.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o
-.PHONY : src/init_or_clean/free_arrstrs.c.o
-
-src/init_or_clean/free_arrstrs.i: src/init_or_clean/free_arrstrs.c.i
-
-.PHONY : src/init_or_clean/free_arrstrs.i
-
-# target to preprocess a source file
-src/init_or_clean/free_arrstrs.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.i
-.PHONY : src/init_or_clean/free_arrstrs.c.i
-
-src/init_or_clean/free_arrstrs.s: src/init_or_clean/free_arrstrs.c.s
-
-.PHONY : src/init_or_clean/free_arrstrs.s
-
-# target to generate assembly for a file
-src/init_or_clean/free_arrstrs.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.s
-.PHONY : src/init_or_clean/free_arrstrs.c.s
 
 src/init_or_clean/free_map.o: src/init_or_clean/free_map.c.o
 
@@ -1763,32 +1817,59 @@ src/parse_identifier/parse_technical_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.s
 .PHONY : src/parse_identifier/parse_technical_utils.c.s
 
-src/parse_map.o: src/parse_map.c.o
+src/parse_map/parse_map.o: src/parse_map/parse_map.c.o
 
-.PHONY : src/parse_map.o
+.PHONY : src/parse_map/parse_map.o
 
 # target to build an object file
-src/parse_map.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map.c.o
-.PHONY : src/parse_map.c.o
+src/parse_map/parse_map.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o
+.PHONY : src/parse_map/parse_map.c.o
 
-src/parse_map.i: src/parse_map.c.i
+src/parse_map/parse_map.i: src/parse_map/parse_map.c.i
 
-.PHONY : src/parse_map.i
+.PHONY : src/parse_map/parse_map.i
 
 # target to preprocess a source file
-src/parse_map.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map.c.i
-.PHONY : src/parse_map.c.i
+src/parse_map/parse_map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.i
+.PHONY : src/parse_map/parse_map.c.i
 
-src/parse_map.s: src/parse_map.c.s
+src/parse_map/parse_map.s: src/parse_map/parse_map.c.s
 
-.PHONY : src/parse_map.s
+.PHONY : src/parse_map/parse_map.s
 
 # target to generate assembly for a file
-src/parse_map.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map.c.s
-.PHONY : src/parse_map.c.s
+src/parse_map/parse_map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.s
+.PHONY : src/parse_map/parse_map.c.s
+
+src/parse_map_config.o: src/parse_map_config.c.o
+
+.PHONY : src/parse_map_config.o
+
+# target to build an object file
+src/parse_map_config.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map_config.c.o
+.PHONY : src/parse_map_config.c.o
+
+src/parse_map_config.i: src/parse_map_config.c.i
+
+.PHONY : src/parse_map_config.i
+
+# target to preprocess a source file
+src/parse_map_config.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map_config.c.i
+.PHONY : src/parse_map_config.c.i
+
+src/parse_map_config.s: src/parse_map_config.c.s
+
+.PHONY : src/parse_map_config.s
+
+# target to generate assembly for a file
+src/parse_map_config.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map_config.c.s
+.PHONY : src/parse_map_config.c.s
 
 # Help Target
 help:
@@ -1799,6 +1880,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... parse_map"
+	@echo "... libs/libft/free_arrstrs_bonus.o"
+	@echo "... libs/libft/free_arrstrs_bonus.i"
+	@echo "... libs/libft/free_arrstrs_bonus.s"
+	@echo "... libs/libft/ft_arrstrs_addback_bonus.o"
+	@echo "... libs/libft/ft_arrstrs_addback_bonus.i"
+	@echo "... libs/libft/ft_arrstrs_addback_bonus.s"
 	@echo "... libs/libft/ft_arrstrs_len_bonus.o"
 	@echo "... libs/libft/ft_arrstrs_len_bonus.i"
 	@echo "... libs/libft/ft_arrstrs_len_bonus.s"
@@ -1943,6 +2030,9 @@ help:
 	@echo "... libs/libft/ft_toupper.o"
 	@echo "... libs/libft/ft_toupper.i"
 	@echo "... libs/libft/ft_toupper.s"
+	@echo "... src/check_config_error/is_full_config.o"
+	@echo "... src/check_config_error/is_full_config.i"
+	@echo "... src/check_config_error/is_full_config.s"
 	@echo "... src/file_work/file_work.o"
 	@echo "... src/file_work/file_work.i"
 	@echo "... src/file_work/file_work.s"
@@ -1955,9 +2045,6 @@ help:
 	@echo "... src/gnl/get_next_line_utils.o"
 	@echo "... src/gnl/get_next_line_utils.i"
 	@echo "... src/gnl/get_next_line_utils.s"
-	@echo "... src/init_or_clean/free_arrstrs.o"
-	@echo "... src/init_or_clean/free_arrstrs.i"
-	@echo "... src/init_or_clean/free_arrstrs.s"
 	@echo "... src/init_or_clean/free_map.o"
 	@echo "... src/init_or_clean/free_map.i"
 	@echo "... src/init_or_clean/free_map.s"
@@ -1979,9 +2066,12 @@ help:
 	@echo "... src/parse_identifier/parse_technical_utils.o"
 	@echo "... src/parse_identifier/parse_technical_utils.i"
 	@echo "... src/parse_identifier/parse_technical_utils.s"
-	@echo "... src/parse_map.o"
-	@echo "... src/parse_map.i"
-	@echo "... src/parse_map.s"
+	@echo "... src/parse_map/parse_map.o"
+	@echo "... src/parse_map/parse_map.i"
+	@echo "... src/parse_map/parse_map.s"
+	@echo "... src/parse_map_config.o"
+	@echo "... src/parse_map_config.i"
+	@echo "... src/parse_map_config.s"
 .PHONY : help
 
 

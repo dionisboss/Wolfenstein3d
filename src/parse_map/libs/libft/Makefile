@@ -36,6 +36,8 @@ SRC = ft_memset.c \
 	  ft_putnbr_fd.c \
 	  ft_isspace_bonus.c \
 	  ft_arrstrs_len_bonus.c \
+	  ft_arrstrs_addback_bonus.c \
+	  free_arrstrs_bonus.c \
 	  ft_strcmp_bonus.c \
 	  ft_is_digitsn_bonus.c \
 	  ft_nbcmp_bonus.c

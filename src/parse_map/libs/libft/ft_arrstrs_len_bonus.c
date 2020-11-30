@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-size_t 		ft_arrstrs_len(char **arr)
+size_t	ft_arrstrs_len(char **arr)
 {
 	size_t	len;
 

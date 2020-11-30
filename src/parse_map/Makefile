@@ -1,15 +1,17 @@
-NAME = parseMap
+NAME = parseMapConfig
 
 ######################     SRC     ##########################
 
 SRCDIR = src/
 SRC =	$(SRCDIR)main.c \
-		$(SRCDIR)parse_map.c \
+		$(SRCDIR)parse_map_config.c \
 		$(FORTEST) \
 		$(INITORCLEAN) \
+		$(FILEWORK) \
 		$(GNL) \
 		$(PARSEIDENTIFIER) \
-		$(FILEWORK)
+		$(PARSEMAP) \
+		$(CHECKCONFIGERROR)
 
 #for_test
 FORTESTDIR = $(SRCDIR)for_tests/
@@ -18,16 +20,16 @@ FORTEST = $(FORTESTDIR)print_map.c
 #init_or_clean
 INITORCLEANDIR = $(SRCDIR)init_or_clean/
 INITORCLEAN =	$(INITORCLEANDIR)init_zero_map.c \
-				$(INITORCLEANDIR)free_arrstrs.c \
 				$(INITORCLEANDIR)free_map.c
-
-#get_next_line
-GNLDIR = $(SRCDIR)gnl/
-GNL = $(GNLDIR)get_next_line.c $(GNLDIR)get_next_line_utils.c
 
 #file_work
 FILEWORKDIR = $(SRCDIR)file_work/
 FILEWORK = $(FILEWORKDIR)file_work.c
+
+#get_next_line
+GNLDIR = $(SRCDIR)gnl/
+GNL =	$(GNLDIR)get_next_line.c \
+		$(GNLDIR)get_next_line_utils.c
 
 #parse_identifier
 PARSEIDENTIFIERDIR = $(SRCDIR)parse_identifier/
@@ -35,6 +37,14 @@ PARSEIDENTIFIER =	$(PARSEIDENTIFIERDIR)parse_identifier.c \
 					$(PARSEIDENTIFIERDIR)is_texture_identifier.c \
 					$(PARSEIDENTIFIERDIR)is_technical_identifier.c \
 					$(PARSEIDENTIFIERDIR)parse_technical_utils.c
+
+#parse_map
+PARSEMAPDIR = $(SRCDIR)parse_map/
+PARSEMAP =	$(PARSEMAPDIR)parse_map.c
+
+#check_config_error
+CHECKCONFIGERRORDIR = $(SRCDIR)check_config_error/
+CHECKCONFIGERROR =	$(CHECKCONFIGERRORDIR)is_full_config.c
 
 #############################################################
 

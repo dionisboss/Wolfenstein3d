@@ -11,9 +11,13 @@ add_executable(parse_map
 		includes/get_next_line.h
 		includes/file_work.h
 		includes/libft.h
-		includes/parse_map.h
+        includes/parse_map_config.h
 		includes/parse_identifier.h
+		includes/parse_map.h
+		includes/check_config_error.h
 		libs/libft/ft_arrstrs_len_bonus.c
+		libs/libft/free_arrstrs_bonus.c
+		libs/libft/ft_arrstrs_addback_bonus.c
 		libs/libft/ft_atoi.c
 		libs/libft/ft_bzero.c
 		libs/libft/ft_calloc.c
@@ -67,11 +71,12 @@ add_executable(parse_map
 		src/gnl/get_next_line.c
 		src/gnl/get_next_line_utils.c
 		src/init_or_clean/free_map.c
-		src/init_or_clean/free_arrstrs.c
 		src/init_or_clean/init_zero_map.c
 		src/parse_identifier/is_technical_identifier.c
 		src/parse_identifier/is_texture_identifier.c
 		src/parse_identifier/parse_identifier.c
 		src/parse_identifier/parse_technical_utils.c
+		src/parse_map/parse_map.c
+		src/check_config_error/is_full_config.c
 		src/main.c
-		src/parse_map.c)
+        src/parse_map_config.c)

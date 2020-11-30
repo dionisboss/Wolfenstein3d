@@ -11,31 +11,36 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "parse_map.h"
-#include "parse_identifier.h"
+#include <stdio.h>
+#include "parse_map_config.h"
 #include "file_work.h"
 #include "get_next_line.h"
+#include "parse_identifier.h"
+#include "parse_map.h"
+#include "check_config_error.h"
 #include "libft.h"
 #include "for_tests.h"
 
-int			parse_line(t_str line, t_map *map)
+int			parse_line(t_str *line, t_map *map)
 {
 	t_arrstrs 	params;
 	int 		status;
 
-	// If is not map:
-	// Norminette for libft
-	if ((params.arr = ft_split((const char*)line.s, ' ')) == NULL)
+	if ((params.arr = ft_split((const char*)line->s, ' ')) == NULL)
 		return (ERROR);
 
 	params.len = ft_arrstrs_len(params.arr);
 	status = parse_identifier(params, map);
 
-	free_arrstrs(params.arr);
+	if (status == FALSE && is_full_config(map) == TRUE)
+		status = parse_map(line, map);
+	if (status == FALSE && params.len > 0)
+		status = ERROR;
+	free_arrstrs(&params.arr);
 	return (status);
 }
 
-int			parse_map(char *file, t_map *map)
+int			parse_map_config(char *file, t_map *map)
 {
 	t_str	line;
 	int		fd;
@@ -44,11 +49,11 @@ int			parse_map(char *file, t_map *map)
 	if ((fd = ft_read_open(file)) == ERROR)
 		return (ERROR);
 
-	status = OK;
+	status = TRUE;
 	init_zero_map(map);
 	while (status != ERROR && ((status = get_next_line(fd, &line.s)) > 0))
 	{
-		if (parse_line(line, map) == ERROR)
+		if (parse_line(&line, map) == ERROR)
 			status = ERROR;
 		free(line.s);
 		line.s = NULL;
@@ -64,5 +69,5 @@ int			parse_map(char *file, t_map *map)
 	free(line.s);
 	print_map(map);
 	free_map(map);
-	return (OK);
+	return (TRUE);
 }

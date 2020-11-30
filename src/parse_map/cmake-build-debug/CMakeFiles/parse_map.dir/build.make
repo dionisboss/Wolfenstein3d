@@ -90,9 +90,35 @@ CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_len_bonus.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_len_bonus.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_arrstrs_len_bonus.c -o CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_len_bonus.c.s
 
+CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.o: CMakeFiles/parse_map.dir/flags.make
+CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.o: ../libs/libft/free_arrstrs_bonus.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/free_arrstrs_bonus.c
+
+CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/free_arrstrs_bonus.c > CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.i
+
+CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/free_arrstrs_bonus.c -o CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.s
+
+CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.o: CMakeFiles/parse_map.dir/flags.make
+CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.o: ../libs/libft/ft_arrstrs_addback_bonus.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_arrstrs_addback_bonus.c
+
+CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_arrstrs_addback_bonus.c > CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.i
+
+CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_arrstrs_addback_bonus.c -o CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.s
+
 CMakeFiles/parse_map.dir/libs/libft/ft_atoi.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_atoi.c.o: ../libs/libft/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_atoi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_atoi.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_atoi.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_atoi.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_atoi.c.i: cmake_force
@@ -105,7 +131,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_atoi.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_bzero.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_bzero.c.o: ../libs/libft/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_bzero.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_bzero.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_bzero.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_bzero.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_bzero.c.i: cmake_force
@@ -118,7 +144,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_bzero.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_calloc.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_calloc.c.o: ../libs/libft/ft_calloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_calloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_calloc.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_calloc.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_calloc.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_calloc.c.i: cmake_force
@@ -131,7 +157,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_calloc.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_isalnum.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_isalnum.c.o: ../libs/libft/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_isalnum.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_isalnum.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_isalnum.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_isalnum.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_isalnum.c.i: cmake_force
@@ -144,7 +170,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_isalnum.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_isalpha.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_isalpha.c.o: ../libs/libft/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_isalpha.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_isalpha.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_isalpha.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_isalpha.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_isalpha.c.i: cmake_force
@@ -157,7 +183,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_isalpha.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_isascii.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_isascii.c.o: ../libs/libft/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_isascii.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_isascii.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_isascii.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_isascii.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_isascii.c.i: cmake_force
@@ -170,7 +196,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_isascii.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_isdigit.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_isdigit.c.o: ../libs/libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_isdigit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_isdigit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_isdigit.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_isdigit.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_isdigit.c.i: cmake_force
@@ -183,7 +209,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_isdigit.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_is_digitsn_bonus.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_is_digitsn_bonus.c.o: ../libs/libft/ft_is_digitsn_bonus.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_is_digitsn_bonus.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_is_digitsn_bonus.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_is_digitsn_bonus.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_is_digitsn_bonus.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_is_digitsn_bonus.c.i: cmake_force
@@ -196,7 +222,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_is_digitsn_bonus.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_isprint.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_isprint.c.o: ../libs/libft/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_isprint.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_isprint.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_isprint.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_isprint.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_isprint.c.i: cmake_force
@@ -209,7 +235,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_isprint.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_isspace_bonus.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_isspace_bonus.c.o: ../libs/libft/ft_isspace_bonus.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_isspace_bonus.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_isspace_bonus.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_isspace_bonus.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_isspace_bonus.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_isspace_bonus.c.i: cmake_force
@@ -222,7 +248,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_isspace_bonus.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_itoa.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_itoa.c.o: ../libs/libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_itoa.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_itoa.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_itoa.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_itoa.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_itoa.c.i: cmake_force
@@ -235,7 +261,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_itoa.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_back.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_back.c.o: ../libs/libft/ft_lstadd_back.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_back.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_back.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_back.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_lstadd_back.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_back.c.i: cmake_force
@@ -248,7 +274,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_back.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_front.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_front.c.o: ../libs/libft/ft_lstadd_front.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_front.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_front.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_front.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_lstadd_front.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_front.c.i: cmake_force
@@ -261,7 +287,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_lstadd_front.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstclear.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_lstclear.c.o: ../libs/libft/ft_lstclear.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstclear.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstclear.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_lstclear.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_lstclear.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstclear.c.i: cmake_force
@@ -274,7 +300,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_lstclear.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstdelone.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_lstdelone.c.o: ../libs/libft/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstdelone.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstdelone.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_lstdelone.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_lstdelone.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstdelone.c.i: cmake_force
@@ -287,7 +313,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_lstdelone.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstiter.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_lstiter.c.o: ../libs/libft/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstiter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstiter.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_lstiter.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_lstiter.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstiter.c.i: cmake_force
@@ -300,7 +326,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_lstiter.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstlast.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_lstlast.c.o: ../libs/libft/ft_lstlast.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstlast.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstlast.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_lstlast.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_lstlast.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstlast.c.i: cmake_force
@@ -313,7 +339,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_lstlast.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstmap.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_lstmap.c.o: ../libs/libft/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstmap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstmap.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_lstmap.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_lstmap.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstmap.c.i: cmake_force
@@ -326,7 +352,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_lstmap.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstnew.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_lstnew.c.o: ../libs/libft/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstnew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstnew.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_lstnew.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_lstnew.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstnew.c.i: cmake_force
@@ -339,7 +365,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_lstnew.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstsize.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_lstsize.c.o: ../libs/libft/ft_lstsize.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstsize.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_lstsize.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_lstsize.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_lstsize.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_lstsize.c.i: cmake_force
@@ -352,7 +378,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_lstsize.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_memccpy.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_memccpy.c.o: ../libs/libft/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_memccpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_memccpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_memccpy.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_memccpy.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_memccpy.c.i: cmake_force
@@ -365,7 +391,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_memccpy.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_memchr.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_memchr.c.o: ../libs/libft/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_memchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_memchr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_memchr.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_memchr.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_memchr.c.i: cmake_force
@@ -378,7 +404,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_memchr.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_memcmp.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_memcmp.c.o: ../libs/libft/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_memcmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_memcmp.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_memcmp.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_memcmp.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_memcmp.c.i: cmake_force
@@ -391,7 +417,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_memcmp.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_memcpy.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_memcpy.c.o: ../libs/libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_memcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_memcpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_memcpy.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_memcpy.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_memcpy.c.i: cmake_force
@@ -404,7 +430,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_memcpy.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_memmove.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_memmove.c.o: ../libs/libft/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_memmove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_memmove.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_memmove.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_memmove.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_memmove.c.i: cmake_force
@@ -417,7 +443,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_memmove.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_memset.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_memset.c.o: ../libs/libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_memset.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_memset.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_memset.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_memset.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_memset.c.i: cmake_force
@@ -430,7 +456,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_memset.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_putchar_fd.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_putchar_fd.c.o: ../libs/libft/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_putchar_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_putchar_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_putchar_fd.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_putchar_fd.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_putchar_fd.c.i: cmake_force
@@ -443,7 +469,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_putchar_fd.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_putendl_fd.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_putendl_fd.c.o: ../libs/libft/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_putendl_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_putendl_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_putendl_fd.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_putendl_fd.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_putendl_fd.c.i: cmake_force
@@ -456,7 +482,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_putendl_fd.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_putnbr_fd.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_putnbr_fd.c.o: ../libs/libft/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_putnbr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_putnbr_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_putnbr_fd.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_putnbr_fd.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_putnbr_fd.c.i: cmake_force
@@ -469,7 +495,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_putnbr_fd.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_nbcmp_bonus.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_nbcmp_bonus.c.o: ../libs/libft/ft_nbcmp_bonus.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_nbcmp_bonus.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_nbcmp_bonus.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_nbcmp_bonus.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_nbcmp_bonus.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_nbcmp_bonus.c.i: cmake_force
@@ -482,7 +508,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_nbcmp_bonus.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_putstr_fd.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_putstr_fd.c.o: ../libs/libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_putstr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_putstr_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_putstr_fd.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_putstr_fd.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_putstr_fd.c.i: cmake_force
@@ -495,7 +521,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_putstr_fd.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_split.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_split.c.o: ../libs/libft/ft_split.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_split.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_split.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_split.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_split.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_split.c.i: cmake_force
@@ -508,7 +534,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_split.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strchr.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_strchr.c.o: ../libs/libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strchr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_strchr.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_strchr.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strchr.c.i: cmake_force
@@ -521,7 +547,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_strchr.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strcmp_bonus.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_strcmp_bonus.c.o: ../libs/libft/ft_strcmp_bonus.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strcmp_bonus.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strcmp_bonus.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_strcmp_bonus.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_strcmp_bonus.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strcmp_bonus.c.i: cmake_force
@@ -534,7 +560,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_strcmp_bonus.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strdup.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_strdup.c.o: ../libs/libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strdup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strdup.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_strdup.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_strdup.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strdup.c.i: cmake_force
@@ -547,7 +573,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_strdup.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strjoin.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_strjoin.c.o: ../libs/libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strjoin.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strjoin.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_strjoin.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_strjoin.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strjoin.c.i: cmake_force
@@ -560,7 +586,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_strjoin.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strlcat.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_strlcat.c.o: ../libs/libft/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strlcat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strlcat.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_strlcat.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_strlcat.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strlcat.c.i: cmake_force
@@ -573,7 +599,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_strlcat.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strlcpy.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_strlcpy.c.o: ../libs/libft/ft_strlcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strlcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strlcpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_strlcpy.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_strlcpy.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strlcpy.c.i: cmake_force
@@ -586,7 +612,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_strlcpy.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strlen.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_strlen.c.o: ../libs/libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strlen.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_strlen.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_strlen.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strlen.c.i: cmake_force
@@ -599,7 +625,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_strlen.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strmapi.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_strmapi.c.o: ../libs/libft/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strmapi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strmapi.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_strmapi.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_strmapi.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strmapi.c.i: cmake_force
@@ -612,7 +638,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_strmapi.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strncmp.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_strncmp.c.o: ../libs/libft/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strncmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strncmp.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_strncmp.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_strncmp.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strncmp.c.i: cmake_force
@@ -625,7 +651,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_strncmp.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strnstr.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_strnstr.c.o: ../libs/libft/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strnstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strnstr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_strnstr.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_strnstr.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strnstr.c.i: cmake_force
@@ -638,7 +664,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_strnstr.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strrchr.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_strrchr.c.o: ../libs/libft/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strrchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strrchr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_strrchr.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_strrchr.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strrchr.c.i: cmake_force
@@ -651,7 +677,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_strrchr.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strtrim.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_strtrim.c.o: ../libs/libft/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strtrim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_strtrim.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_strtrim.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_strtrim.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_strtrim.c.i: cmake_force
@@ -664,7 +690,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_strtrim.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_substr.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_substr.c.o: ../libs/libft/ft_substr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_substr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_substr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_substr.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_substr.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_substr.c.i: cmake_force
@@ -677,7 +703,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_substr.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_tolower.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_tolower.c.o: ../libs/libft/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_tolower.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_tolower.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_tolower.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_tolower.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_tolower.c.i: cmake_force
@@ -690,7 +716,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_tolower.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/libs/libft/ft_toupper.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/libs/libft/ft_toupper.c.o: ../libs/libft/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_toupper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/parse_map.dir/libs/libft/ft_toupper.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/libs/libft/ft_toupper.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_toupper.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_toupper.c.i: cmake_force
@@ -703,7 +729,7 @@ CMakeFiles/parse_map.dir/libs/libft/ft_toupper.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/src/file_work/file_work.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/file_work/file_work.c.o: ../src/file_work/file_work.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/parse_map.dir/src/file_work/file_work.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/parse_map.dir/src/file_work/file_work.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/file_work/file_work.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/file_work/file_work.c
 
 CMakeFiles/parse_map.dir/src/file_work/file_work.c.i: cmake_force
@@ -716,7 +742,7 @@ CMakeFiles/parse_map.dir/src/file_work/file_work.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/src/for_tests/print_map.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/for_tests/print_map.c.o: ../src/for_tests/print_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/parse_map.dir/src/for_tests/print_map.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/parse_map.dir/src/for_tests/print_map.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/for_tests/print_map.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/for_tests/print_map.c
 
 CMakeFiles/parse_map.dir/src/for_tests/print_map.c.i: cmake_force
@@ -729,7 +755,7 @@ CMakeFiles/parse_map.dir/src/for_tests/print_map.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o: ../src/gnl/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/gnl/get_next_line.c
 
 CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.i: cmake_force
@@ -742,7 +768,7 @@ CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o: ../src/gnl/get_next_line_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/gnl/get_next_line_utils.c
 
 CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.i: cmake_force
@@ -755,7 +781,7 @@ CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o: ../src/init_or_clean/free_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_map.c
 
 CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.i: cmake_force
@@ -766,22 +792,9 @@ CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_map.c -o CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.s
 
-CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o: CMakeFiles/parse_map.dir/flags.make
-CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o: ../src/init_or_clean/free_arrstrs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_arrstrs.c
-
-CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_arrstrs.c > CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.i
-
-CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_arrstrs.c -o CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.s
-
 CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o: ../src/init_or_clean/init_zero_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/init_zero_map.c
 
 CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.i: cmake_force
@@ -794,7 +807,7 @@ CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o: ../src/parse_identifier/is_technical_identifier.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/is_technical_identifier.c
 
 CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.i: cmake_force
@@ -807,7 +820,7 @@ CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.s: cmake
 
 CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o: ../src/parse_identifier/is_texture_identifier.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/is_texture_identifier.c
 
 CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.i: cmake_force
@@ -820,7 +833,7 @@ CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.s: cmake_f
 
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o: ../src/parse_identifier/parse_identifier.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_identifier.c
 
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.i: cmake_force
@@ -833,7 +846,7 @@ CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o: ../src/parse_identifier/parse_technical_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_technical_utils.c
 
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.i: cmake_force
@@ -844,9 +857,35 @@ CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_technical_utils.c -o CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.s
 
+CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o: CMakeFiles/parse_map.dir/flags.make
+CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o: ../src/parse_map/parse_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map/parse_map.c
+
+CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map/parse_map.c > CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.i
+
+CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map/parse_map.c -o CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.s
+
+CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o: CMakeFiles/parse_map.dir/flags.make
+CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o: ../src/check_config_error/is_full_config.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_full_config.c
+
+CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_full_config.c > CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.i
+
+CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_full_config.c -o CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.s
+
 CMakeFiles/parse_map.dir/src/main.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/parse_map.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/parse_map.dir/src/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/main.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/main.c
 
 CMakeFiles/parse_map.dir/src/main.c.i: cmake_force
@@ -857,22 +896,24 @@ CMakeFiles/parse_map.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/src/main.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/main.c -o CMakeFiles/parse_map.dir/src/main.c.s
 
-CMakeFiles/parse_map.dir/src/parse_map.c.o: CMakeFiles/parse_map.dir/flags.make
-CMakeFiles/parse_map.dir/src/parse_map.c.o: ../src/parse_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/parse_map.dir/src/parse_map.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/parse_map.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map.c
+CMakeFiles/parse_map.dir/src/parse_map_config.c.o: CMakeFiles/parse_map.dir/flags.make
+CMakeFiles/parse_map.dir/src/parse_map_config.c.o: ../src/parse_map_config.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/parse_map.dir/src/parse_map_config.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/parse_map_config.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map_config.c
 
-CMakeFiles/parse_map.dir/src/parse_map.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parse_map.dir/src/parse_map.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map.c > CMakeFiles/parse_map.dir/src/parse_map.c.i
+CMakeFiles/parse_map.dir/src/parse_map_config.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parse_map.dir/src/parse_map_config.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map_config.c > CMakeFiles/parse_map.dir/src/parse_map_config.c.i
 
-CMakeFiles/parse_map.dir/src/parse_map.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/src/parse_map.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map.c -o CMakeFiles/parse_map.dir/src/parse_map.c.s
+CMakeFiles/parse_map.dir/src/parse_map_config.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/src/parse_map_config.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map_config.c -o CMakeFiles/parse_map.dir/src/parse_map_config.c.s
 
 # Object files for target parse_map
 parse_map_OBJECTS = \
 "CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_len_bonus.c.o" \
+"CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.o" \
+"CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.o" \
 "CMakeFiles/parse_map.dir/libs/libft/ft_atoi.c.o" \
 "CMakeFiles/parse_map.dir/libs/libft/ft_bzero.c.o" \
 "CMakeFiles/parse_map.dir/libs/libft/ft_calloc.c.o" \
@@ -925,19 +966,22 @@ parse_map_OBJECTS = \
 "CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o" \
 "CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o" \
 "CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o" \
-"CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o" \
 "CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o" \
 "CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o" \
 "CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o" \
 "CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o" \
 "CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o" \
+"CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o" \
+"CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o" \
 "CMakeFiles/parse_map.dir/src/main.c.o" \
-"CMakeFiles/parse_map.dir/src/parse_map.c.o"
+"CMakeFiles/parse_map.dir/src/parse_map_config.c.o"
 
 # External object files for target parse_map
 parse_map_EXTERNAL_OBJECTS =
 
 parse_map: CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_len_bonus.c.o
+parse_map: CMakeFiles/parse_map.dir/libs/libft/free_arrstrs_bonus.c.o
+parse_map: CMakeFiles/parse_map.dir/libs/libft/ft_arrstrs_addback_bonus.c.o
 parse_map: CMakeFiles/parse_map.dir/libs/libft/ft_atoi.c.o
 parse_map: CMakeFiles/parse_map.dir/libs/libft/ft_bzero.c.o
 parse_map: CMakeFiles/parse_map.dir/libs/libft/ft_calloc.c.o
@@ -990,17 +1034,18 @@ parse_map: CMakeFiles/parse_map.dir/src/for_tests/print_map.c.o
 parse_map: CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o
 parse_map: CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o
 parse_map: CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o
-parse_map: CMakeFiles/parse_map.dir/src/init_or_clean/free_arrstrs.c.o
 parse_map: CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o
 parse_map: CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o
 parse_map: CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o
 parse_map: CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o
 parse_map: CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o
+parse_map: CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o
+parse_map: CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o
 parse_map: CMakeFiles/parse_map.dir/src/main.c.o
-parse_map: CMakeFiles/parse_map.dir/src/parse_map.c.o
+parse_map: CMakeFiles/parse_map.dir/src/parse_map_config.c.o
 parse_map: CMakeFiles/parse_map.dir/build.make
 parse_map: CMakeFiles/parse_map.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Linking C executable parse_map"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Linking C executable parse_map"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/parse_map.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

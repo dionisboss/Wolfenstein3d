@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
+../includes/check_config_error.h
+parse_map_config.h
+../includes/parse_map_config.h
+
 ../includes/file_work.h
 
 ../includes/for_tests.h
+parse_map_config.h
+../includes/parse_map_config.h
 
 ../includes/get_next_line.h
 stdlib.h
@@ -25,11 +31,29 @@ stdint.h
 ../includes/parse_identifier.h
 stdint.h
 -
+parse_map_config.h
+../includes/parse_map_config.h
 
 ../includes/parse_map.h
+parse_map_config.h
+../includes/parse_map_config.h
+get_next_line.h
+../includes/get_next_line.h
+
+../includes/parse_map_config.h
 stdlib.h
 -
 stdint.h
+-
+
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/free_arrstrs_bonus.c
+libft.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/libft.h
+
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_arrstrs_addback_bonus.c
+libft.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/libft.h
+stdio.h
 -
 
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_arrstrs_len_bonus.c
@@ -198,83 +222,113 @@ stdlib.h
 stdint.h
 -
 
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_full_config.c
+parse_map_config.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/parse_map_config.h
+
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/file_work/file_work.c
 fcntl.h
 -
 stdio.h
 -
-string.h
--
-errno.h
--
 unistd.h
 -
-parse_map.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/file_work/parse_map.h
+parse_map_config.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/file_work/parse_map_config.h
 
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/for_tests/print_map.c
 stdio.h
 -
-parse_map.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/for_tests/parse_map.h
+parse_map_config.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/for_tests/parse_map_config.h
 
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_arrstrs.c
-parse_map.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/parse_map.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/gnl/get_next_line.c
+stdio.h
+-
+sys/types.h
+-
+sys/uio.h
+-
+unistd.h
+-
+get_next_line.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/gnl/get_next_line.h
+
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/gnl/get_next_line_utils.c
+stdio.h
+-
+get_next_line.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/gnl/get_next_line.h
 
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_map.c
-parse_map.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/parse_map.h
+parse_map_config.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/parse_map_config.h
+libft.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/libft.h
 
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/init_zero_map.c
-parse_map.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/parse_map.h
+parse_map_config.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/parse_map_config.h
 
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/main.c
 unistd.h
 -
-parse_map.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map.h
+parse_map_config.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map_config.h
 
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/is_technical_identifier.c
-parse_map.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_map.h
+parse_map_config.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_map_config.h
 libft.h
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/libft.h
 
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/is_texture_identifier.c
-parse_map.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_map.h
+parse_map_config.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_map_config.h
 libft.h
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/libft.h
 
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_identifier.c
-stdio.h
--
-parse_map.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_map.h
-libft.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/libft.h
+parse_map_config.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_map_config.h
 parse_identifier.h
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_identifier.h
-
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_technical_utils.c
-parse_map.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_map.h
 libft.h
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/libft.h
 
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map.c
-parse_map.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_technical_utils.c
+parse_map_config.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_map_config.h
+libft.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/libft.h
+
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map/parse_map.c
+parse_map_config.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map/parse_map_config.h
+get_next_line.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map/get_next_line.h
+libft.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map/libft.h
+
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map_config.c
+unistd.h
+-
+stdio.h
+-
+parse_map_config.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map_config.h
+file_work.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/file_work.h
 get_next_line.h
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/get_next_line.h
+parse_identifier.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier.h
+parse_map.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map.h
+check_config_error.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error.h
 libft.h
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/libft.h
 for_tests.h
 /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/for_tests.h
-parse_identifier.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier.h
-file_work.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/file_work.h
 

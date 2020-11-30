@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parse_map.h"
+#include "parse_map_config.h"
 #include "libft.h"
 
 int					parse_resolution(t_arrstrs params, t_map *map)
@@ -25,7 +25,7 @@ int					parse_resolution(t_arrstrs params, t_map *map)
 		map->r[0] = ft_atoi(params.arr[1]);
 	if (map->r[1] == 0)
 		map->r[1] = ft_atoi(params.arr[2]);
-	return (OK);
+	return (TRUE);
 }
 
 static int			check_color_error(t_arrstrs *colors)
@@ -35,19 +35,19 @@ static int			check_color_error(t_arrstrs *colors)
 	char	*nb3;
 
 	if ((colors->len = ft_arrstrs_len(colors->arr)) != 3)
-		return (free_arrstrs(colors->arr) - 2);
+		return (free_arrstrs(&colors->arr) - 1);
 	nb1 = colors->arr[0];
 	nb2 = colors->arr[1];
 	nb3 = colors->arr[2];
 	if (!ft_is_digitsn(nb1, 0) || !ft_is_digitsn(nb2, 0))
-		return (free_arrstrs(colors->arr) - 2);
+		return (free_arrstrs(&colors->arr) - 1);
 	if (!ft_is_digitsn(nb3, 0))
-		return (free_arrstrs(colors->arr) - 2);
+		return (free_arrstrs(&colors->arr) - 1);
 	if (ft_nbcmp(nb1, "255") > 0 || ft_nbcmp(nb2, "255") > 0)
-		return (free_arrstrs(colors->arr) - 2);
+		return (free_arrstrs(&colors->arr) - 1);
 	if (ft_nbcmp(nb3, "255") > 0)
-		return (free_arrstrs(colors->arr) - 2);
-	return (OK);
+		return (free_arrstrs(&colors->arr) - 1);
+	return (TRUE);
 }
 
 static uint64_t		rgb_to_dec(char *nb1, char *nb2, char *nb3)
@@ -82,7 +82,8 @@ int					parse_floor_color(t_arrstrs params, t_map *map)
 	if (check_color_error(&colors) == ERROR)
 		return (ERROR);
 	map->f = rgb_to_dec(colors.arr[0], colors.arr[1], colors.arr[2]);
-	return (OK);
+	free_arrstrs(&colors.arr);
+	return (TRUE);
 }
 
 int					parse_ceiling_color(t_arrstrs params, t_map *map)
@@ -103,7 +104,8 @@ int					parse_ceiling_color(t_arrstrs params, t_map *map)
 	if ((colors.arr = ft_split(params.arr[1], ',')) == NULL)
 		return (ERROR);
 	if (check_color_error(&colors) == ERROR)
-		return (ERROR);
+		return (free_arrstrs(&colors.arr) - 1);
 	map->c = rgb_to_dec(colors.arr[0], colors.arr[1], colors.arr[2]);
-	return (OK);
+	free_arrstrs(&colors.arr);
+	return (TRUE);
 }

@@ -10,40 +10,40 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parse_map.h"
+#include "parse_map_config.h"
 #include "libft.h"
 
 int			is_north(const char *s)
 {
 	if (s == NULL)
-		return (NO);
+		return (FALSE);
 	return (!ft_strcmp(s, "NO"));
 }
 
 int			is_south(const char *s)
 {
 	if (s == NULL)
-		return (NO);
+		return (FALSE);
 	return (!ft_strcmp(s, "SO"));
 }
 
 int			is_west(const char *s)
 {
 	if (s == NULL)
-		return (NO);
+		return (FALSE);
 	return (!ft_strcmp(s, "WE"));
 }
 
 int			is_east(const char *s)
 {
 	if (s == NULL)
-		return (NO);
+		return (FALSE);
 	return (!ft_strcmp(s, "EA"));
 }
 
 int			is_sprite(const char *s)
 {
 	if (s == NULL)
-		return (NO);
+		return (FALSE);
 	return (!ft_strcmp(s, "S"));
 }
