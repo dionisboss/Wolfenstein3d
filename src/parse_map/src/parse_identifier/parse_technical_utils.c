@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parse_map_config.h"
+#include "new_map.h"
 #include "libft.h"
 
 int					parse_resolution(t_arrstrs params, t_map *map)

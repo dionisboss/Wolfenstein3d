@@ -12,7 +12,7 @@
 
 #ifndef PARSE_MAP_H
 # define PARSE_MAP_H
-# include "parse_map_config.h"
+# include "new_map.h"
 # include "get_next_line.h"
 
 int		parse_map(t_str *line, t_map *map);

@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "parse_map_config.h"
+#include "check_config_error.h"
 #include "for_tests.h"
 
 void	init_zero_map(t_map *map)
@@ -25,7 +26,9 @@ void	init_zero_map(t_map *map)
 	map->f = -1;
 	map->c = -1;
 	map->map = NULL;
+	map->parse_file = &parse_map_config;
 	map->clear = &free_map;
 	map->print = &print_map;
+	map->scan_error = &scan_map_error;
 	return ;
 }

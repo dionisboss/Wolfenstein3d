@@ -12,7 +12,7 @@
 
 #ifndef FOR_TESTS_H
 # define FOR_TESTS_H
-# include "parse_map_config.h"
+# include "new_map.h"
 
 void	print_map(t_map *map);
 

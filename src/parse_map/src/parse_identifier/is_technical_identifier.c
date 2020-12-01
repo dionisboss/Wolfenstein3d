@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parse_map_config.h"
+#include "new_map.h"
 #include "libft.h"
 
 int			is_resolution(const char *s)

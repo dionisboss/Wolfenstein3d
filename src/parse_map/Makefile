@@ -1,14 +1,15 @@
-NAME = parseMapConfig
+NAME = newMap
 
 ######################     SRC     ##########################
 
 SRCDIR = src/
 SRC =	$(SRCDIR)main.c \
-		$(SRCDIR)parse_map_config.c \
+		$(SRCDIR)new_map.c \
 		$(FORTEST) \
 		$(INITORCLEAN) \
 		$(FILEWORK) \
 		$(GNL) \
+		$(PARSEMAPCONFIG) \
 		$(PARSEIDENTIFIER) \
 		$(PARSEMAP) \
 		$(CHECKCONFIGERROR)
@@ -31,6 +32,10 @@ GNLDIR = $(SRCDIR)gnl/
 GNL =	$(GNLDIR)get_next_line.c \
 		$(GNLDIR)get_next_line_utils.c
 
+#parse_map_config
+PARSEMAPCONFIGDIR = $(SRCDIR)parse_map_config/
+PARSEMAPCONFIG =	$(PARSEMAPCONFIGDIR)parse_map_config.c
+
 #parse_identifier
 PARSEIDENTIFIERDIR = $(SRCDIR)parse_identifier/
 PARSEIDENTIFIER =	$(PARSEIDENTIFIERDIR)parse_identifier.c \
@@ -44,7 +49,10 @@ PARSEMAP =	$(PARSEMAPDIR)parse_map.c
 
 #check_config_error
 CHECKCONFIGERRORDIR = $(SRCDIR)check_config_error/
-CHECKCONFIGERROR =	$(CHECKCONFIGERRORDIR)is_full_config.c
+CHECKCONFIGERROR =	$(CHECKCONFIGERRORDIR)is_full_config.c \
+					$(CHECKCONFIGERRORDIR)scan_map_error.c \
+					$(CHECKCONFIGERRORDIR)is_closed_map.c \
+					$(CHECKCONFIGERRORDIR)is_closed_space_utils.c
 
 #############################################################
 

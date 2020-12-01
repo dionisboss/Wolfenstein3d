@@ -12,8 +12,15 @@
 
 #ifndef CHECK_CONFIG_ERROR_H
 # define CHECK_CONFIG_ERROR_H
-# include "parse_map_config.h"
+# include "new_map.h"
 
 int		is_full_config(t_map *map);
+
+int		scan_map_error(t_map *map);
+int		check_map_empty_line(char *s);
+
+int		is_closed_map(char **maze);
+
+int		is_north_end(char **maze, size_t x, size_t y);
 
 #endif

@@ -11,7 +11,8 @@ add_executable(parse_map
 		includes/get_next_line.h
 		includes/file_work.h
 		includes/libft.h
-        includes/parse_map_config.h
+		includes/new_map.h
+		includes/parse_map_config.h
 		includes/parse_identifier.h
 		includes/parse_map.h
 		includes/check_config_error.h
@@ -66,6 +67,7 @@ add_executable(parse_map
 		libs/libft/ft_tolower.c
 		libs/libft/ft_toupper.c
 		libs/libft/libft.h
+		src/parse_map_config/parse_map_config.c
 		src/file_work/file_work.c
 		src/for_tests/print_map.c
 		src/gnl/get_next_line.c
@@ -78,5 +80,8 @@ add_executable(parse_map
 		src/parse_identifier/parse_technical_utils.c
 		src/parse_map/parse_map.c
 		src/check_config_error/is_full_config.c
+		src/check_config_error/scan_map_error.c
+		src/check_config_error/is_closed_map.c
+		src/check_config_error/is_closed_space_utils.c
 		src/main.c
-        src/parse_map_config.c)
+		src/new_map.c)

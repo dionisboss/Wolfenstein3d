@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parse_map_config.h"
+#include "new_map.h"
 
 int		is_full_config(t_map *map)
 {

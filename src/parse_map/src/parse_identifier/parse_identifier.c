@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parse_map_config.h"
+#include "new_map.h"
 #include "parse_identifier.h"
 #include "libft.h"
 

@@ -13,7 +13,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <unistd.h>
-#include "parse_map_config.h"
+#include "new_map.h"
 
 int		ft_read_open(char *file)
 {

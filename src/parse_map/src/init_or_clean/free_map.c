@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parse_map_config.h"
+#include "new_map.h"
 #include "libft.h"
 
 static void		free_textures(t_map *map)
@@ -42,7 +42,7 @@ static void		free_textures(t_map *map)
 	}
 }
 
-static void		zero_technical(t_map *map)
+static void		default_technical(t_map *map)
 {
 	map->r[0] = 0;
 	map->r[1] = 0;
@@ -52,7 +52,7 @@ static void		zero_technical(t_map *map)
 
 int				free_map(t_map *map)
 {
-	zero_technical(map);
+	default_technical(map);
 	free_textures(map);
 	free_arrstrs(&(map->map));
 	return (TRUE);

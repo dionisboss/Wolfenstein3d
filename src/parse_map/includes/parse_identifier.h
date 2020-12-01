@@ -13,7 +13,7 @@
 #ifndef PARSE_IDENTIFIER_H
 # define PARSE_IDENTIFIER_H
 # include <stdint.h>
-# include "parse_map_config.h"
+# include "new_map.h"
 
 int				is_north(const char *s);
 int				is_south(const char *s);

@@ -141,13 +141,27 @@ CMakeFiles/parse_map.dir/libs/libft/ft_tolower.c.o: ../libs/libft/ft_tolower.c
 
 CMakeFiles/parse_map.dir/libs/libft/ft_toupper.c.o: ../libs/libft/ft_toupper.c
 
-CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o: ../includes/parse_map_config.h
+CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o: ../includes/check_config_error.h
+CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o: ../includes/libft.h
+CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o: ../includes/new_map.h
+CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o: ../src/check_config_error/is_closed_map.c
+
+CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o: ../includes/libft.h
+CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o: ../includes/new_map.h
+CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o: ../src/check_config_error/is_closed_space_utils.c
+
+CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o: ../src/check_config_error/is_full_config.c
 
-CMakeFiles/parse_map.dir/src/file_work/file_work.c.o: ../includes/parse_map_config.h
+CMakeFiles/parse_map.dir/src/check_config_error/scan_map_error.c.o: ../includes/check_config_error.h
+CMakeFiles/parse_map.dir/src/check_config_error/scan_map_error.c.o: ../includes/libft.h
+CMakeFiles/parse_map.dir/src/check_config_error/scan_map_error.c.o: ../includes/new_map.h
+CMakeFiles/parse_map.dir/src/check_config_error/scan_map_error.c.o: ../src/check_config_error/scan_map_error.c
+
+CMakeFiles/parse_map.dir/src/file_work/file_work.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/file_work/file_work.c.o: ../src/file_work/file_work.c
 
-CMakeFiles/parse_map.dir/src/for_tests/print_map.c.o: ../includes/parse_map_config.h
+CMakeFiles/parse_map.dir/src/for_tests/print_map.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/for_tests/print_map.c.o: ../src/for_tests/print_map.c
 
 CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o: ../includes/get_next_line.h
@@ -157,44 +171,49 @@ CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o: ../includes/get_next_l
 CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o: ../src/gnl/get_next_line_utils.c
 
 CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o: ../includes/libft.h
-CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o: ../includes/parse_map_config.h
+CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o: ../src/init_or_clean/free_map.c
 
+CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o: ../includes/check_config_error.h
+CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o: ../includes/for_tests.h
+CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o: ../includes/parse_map_config.h
 CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o: ../src/init_or_clean/init_zero_map.c
 
-CMakeFiles/parse_map.dir/src/main.c.o: ../includes/parse_map_config.h
+CMakeFiles/parse_map.dir/src/main.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/main.c.o: ../src/main.c
 
+CMakeFiles/parse_map.dir/src/new_map.c.o: ../includes/new_map.h
+CMakeFiles/parse_map.dir/src/new_map.c.o: ../src/new_map.c
+
 CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o: ../includes/libft.h
-CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o: ../includes/parse_map_config.h
+CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o: ../src/parse_identifier/is_technical_identifier.c
 
 CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o: ../includes/libft.h
-CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o: ../includes/parse_map_config.h
+CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o: ../src/parse_identifier/is_texture_identifier.c
 
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o: ../includes/libft.h
+CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o: ../includes/parse_identifier.h
-CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o: ../includes/parse_map_config.h
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o: ../src/parse_identifier/parse_identifier.c
 
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o: ../includes/libft.h
-CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o: ../includes/parse_map_config.h
+CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o: ../src/parse_identifier/parse_technical_utils.c
 
 CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o: ../includes/get_next_line.h
 CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o: ../includes/libft.h
-CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o: ../includes/parse_map_config.h
+CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o: ../src/parse_map/parse_map.c
 
-CMakeFiles/parse_map.dir/src/parse_map_config.c.o: ../includes/check_config_error.h
-CMakeFiles/parse_map.dir/src/parse_map_config.c.o: ../includes/file_work.h
-CMakeFiles/parse_map.dir/src/parse_map_config.c.o: ../includes/for_tests.h
-CMakeFiles/parse_map.dir/src/parse_map_config.c.o: ../includes/get_next_line.h
-CMakeFiles/parse_map.dir/src/parse_map_config.c.o: ../includes/libft.h
-CMakeFiles/parse_map.dir/src/parse_map_config.c.o: ../includes/parse_identifier.h
-CMakeFiles/parse_map.dir/src/parse_map_config.c.o: ../includes/parse_map.h
-CMakeFiles/parse_map.dir/src/parse_map_config.c.o: ../includes/parse_map_config.h
-CMakeFiles/parse_map.dir/src/parse_map_config.c.o: ../src/parse_map_config.c
+CMakeFiles/parse_map.dir/src/parse_map_config/parse_map_config.c.o: ../includes/check_config_error.h
+CMakeFiles/parse_map.dir/src/parse_map_config/parse_map_config.c.o: ../includes/file_work.h
+CMakeFiles/parse_map.dir/src/parse_map_config/parse_map_config.c.o: ../includes/get_next_line.h
+CMakeFiles/parse_map.dir/src/parse_map_config/parse_map_config.c.o: ../includes/libft.h
+CMakeFiles/parse_map.dir/src/parse_map_config/parse_map_config.c.o: ../includes/new_map.h
+CMakeFiles/parse_map.dir/src/parse_map_config/parse_map_config.c.o: ../includes/parse_identifier.h
+CMakeFiles/parse_map.dir/src/parse_map_config/parse_map_config.c.o: ../includes/parse_map.h
+CMakeFiles/parse_map.dir/src/parse_map_config/parse_map_config.c.o: ../src/parse_map_config/parse_map_config.c
 

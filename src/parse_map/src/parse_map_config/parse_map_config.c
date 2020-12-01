@@ -1,27 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_map.c                                        :+:      :+:    :+:   */
+/*   parse_map_config.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/27 18:02:36 by gdrive            #+#    #+#             */
-/*   Updated: 2020/11/27 18:02:37 by gdrive           ###   ########.fr       */
+/*   Created: 2020/12/01 14:10:40 by gdrive            #+#    #+#             */
+/*   Updated: 2020/12/01 14:10:41 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include <unistd.h>
 #include <stdio.h>
-#include "parse_map_config.h"
+#include "new_map.h"
 #include "file_work.h"
 #include "get_next_line.h"
 #include "parse_identifier.h"
 #include "parse_map.h"
 #include "check_config_error.h"
 #include "libft.h"
-#include "for_tests.h"
 
-int			parse_line(t_str *line, t_map *map)
+static void			cut_firsts_empty_lines(t_map *map)
+{
+	t_arrstrs	res;
+	char		**tmp;
+
+	tmp = map->map;
+	while(check_map_empty_line(*tmp) == TRUE)
+	{
+		free(*tmp);
+		tmp++;
+	}
+	res.len = ft_arrstrs_len(tmp);
+	res.arr = (char**)malloc(sizeof(char*) * (res.len + 1));
+	res.arr[res.len] = NULL;
+	while (res.len-- != 0)
+		res.arr[res.len] = tmp[res.len];
+	free(map->map);
+	map->map = res.arr;
+}
+
+static int			parse_line(t_str *line, t_map *map)
 {
 	t_arrstrs 	params;
 	int 		status;
@@ -34,41 +54,42 @@ int			parse_line(t_str *line, t_map *map)
 
 	if (status == FALSE && is_full_config(map) == TRUE)
 		status = parse_map(line, map);
+
 	if (status == FALSE && params.len > 0)
 		status = ERROR;
+
 	free_arrstrs(&params.arr);
 	return (status);
 }
 
-int			parse_map_config(char *file, t_map *map)
+int					parse_map_config(char *file, t_map *map)
 {
+	//СДЕЛАТЬ ТЕСТ НА .cub !!!
 	t_str	line;
 	int		fd;
 	int		status;
 
-	if ((fd = ft_read_open(file)) == ERROR)
-		return (ERROR);
-
-	status = TRUE;
-	init_zero_map(map);
+	status = (fd = ft_read_open(file));
 	while (status != ERROR && ((status = get_next_line(fd, &line.s)) > 0))
 	{
-		if (parse_line(&line, map) == ERROR)
-			status = ERROR;
+		if (status == ERROR)
+			break ;
+		status = parse_line(&line, map);
 		free(line.s);
 		line.s = NULL;
 	}
+	if (status != ERROR)
+	{
+		free(line.s);
+		cut_firsts_empty_lines(map);
+		status = map->scan_error(map);
 
+	}
 	if (ft_close(fd, file) == ERROR || status == ERROR)
 	{
-		free_map(map);
+		map->clear(map);
 		write(1, "Error: not valid map.\n", 22);
 		return (ERROR);
 	}
-
-	free(line.s);
-	map->print(map); // ПЕРЕПИСАТЬ НА СВОЙ PRINTF
-	//print_map(map);
-	map->clear(map);
 	return (TRUE);
 }

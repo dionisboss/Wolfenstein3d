@@ -54,7 +54,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_substr.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/libs/libft/ft_substr.c.o"
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_tolower.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/libs/libft/ft_tolower.c.o"
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/ft_toupper.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/libs/libft/ft_toupper.c.o"
+  "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_closed_map.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o"
+  "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_closed_space_utils.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o"
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_full_config.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o"
+  "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/scan_map_error.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/check_config_error/scan_map_error.c.o"
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/file_work/file_work.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/file_work/file_work.c.o"
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/for_tests/print_map.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/for_tests/print_map.c.o"
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/gnl/get_next_line.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o"
@@ -62,12 +65,13 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/free_map.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o"
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/init_or_clean/init_zero_map.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/init_or_clean/init_zero_map.c.o"
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/main.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/main.c.o"
+  "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/new_map.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/new_map.c.o"
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/is_technical_identifier.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/parse_identifier/is_technical_identifier.c.o"
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/is_texture_identifier.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/parse_identifier/is_texture_identifier.c.o"
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_identifier.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/parse_identifier/parse_identifier.c.o"
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/parse_technical_utils.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/parse_identifier/parse_technical_utils.c.o"
   "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map/parse_map.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o"
-  "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map_config.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/parse_map_config.c.o"
+  "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map_config/parse_map_config.c" "/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles/parse_map.dir/src/parse_map_config/parse_map_config.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

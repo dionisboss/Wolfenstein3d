@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "parse_map_config.h"
+#include "new_map.h"
 
 void 	print_map(t_map *map)
 {

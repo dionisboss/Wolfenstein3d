@@ -1493,6 +1493,60 @@ libs/libft/ft_toupper.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/libs/libft/ft_toupper.c.s
 .PHONY : libs/libft/ft_toupper.c.s
 
+src/check_config_error/is_closed_map.o: src/check_config_error/is_closed_map.c.o
+
+.PHONY : src/check_config_error/is_closed_map.o
+
+# target to build an object file
+src/check_config_error/is_closed_map.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o
+.PHONY : src/check_config_error/is_closed_map.c.o
+
+src/check_config_error/is_closed_map.i: src/check_config_error/is_closed_map.c.i
+
+.PHONY : src/check_config_error/is_closed_map.i
+
+# target to preprocess a source file
+src/check_config_error/is_closed_map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.i
+.PHONY : src/check_config_error/is_closed_map.c.i
+
+src/check_config_error/is_closed_map.s: src/check_config_error/is_closed_map.c.s
+
+.PHONY : src/check_config_error/is_closed_map.s
+
+# target to generate assembly for a file
+src/check_config_error/is_closed_map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.s
+.PHONY : src/check_config_error/is_closed_map.c.s
+
+src/check_config_error/is_closed_space_utils.o: src/check_config_error/is_closed_space_utils.c.o
+
+.PHONY : src/check_config_error/is_closed_space_utils.o
+
+# target to build an object file
+src/check_config_error/is_closed_space_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o
+.PHONY : src/check_config_error/is_closed_space_utils.c.o
+
+src/check_config_error/is_closed_space_utils.i: src/check_config_error/is_closed_space_utils.c.i
+
+.PHONY : src/check_config_error/is_closed_space_utils.i
+
+# target to preprocess a source file
+src/check_config_error/is_closed_space_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.i
+.PHONY : src/check_config_error/is_closed_space_utils.c.i
+
+src/check_config_error/is_closed_space_utils.s: src/check_config_error/is_closed_space_utils.c.s
+
+.PHONY : src/check_config_error/is_closed_space_utils.s
+
+# target to generate assembly for a file
+src/check_config_error/is_closed_space_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.s
+.PHONY : src/check_config_error/is_closed_space_utils.c.s
+
 src/check_config_error/is_full_config.o: src/check_config_error/is_full_config.c.o
 
 .PHONY : src/check_config_error/is_full_config.o
@@ -1519,6 +1573,33 @@ src/check_config_error/is_full_config.s: src/check_config_error/is_full_config.c
 src/check_config_error/is_full_config.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.s
 .PHONY : src/check_config_error/is_full_config.c.s
+
+src/check_config_error/scan_map_error.o: src/check_config_error/scan_map_error.c.o
+
+.PHONY : src/check_config_error/scan_map_error.o
+
+# target to build an object file
+src/check_config_error/scan_map_error.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/scan_map_error.c.o
+.PHONY : src/check_config_error/scan_map_error.c.o
+
+src/check_config_error/scan_map_error.i: src/check_config_error/scan_map_error.c.i
+
+.PHONY : src/check_config_error/scan_map_error.i
+
+# target to preprocess a source file
+src/check_config_error/scan_map_error.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/scan_map_error.c.i
+.PHONY : src/check_config_error/scan_map_error.c.i
+
+src/check_config_error/scan_map_error.s: src/check_config_error/scan_map_error.c.s
+
+.PHONY : src/check_config_error/scan_map_error.s
+
+# target to generate assembly for a file
+src/check_config_error/scan_map_error.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/scan_map_error.c.s
+.PHONY : src/check_config_error/scan_map_error.c.s
 
 src/file_work/file_work.o: src/file_work/file_work.c.o
 
@@ -1709,6 +1790,33 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/new_map.o: src/new_map.c.o
+
+.PHONY : src/new_map.o
+
+# target to build an object file
+src/new_map.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/new_map.c.o
+.PHONY : src/new_map.c.o
+
+src/new_map.i: src/new_map.c.i
+
+.PHONY : src/new_map.i
+
+# target to preprocess a source file
+src/new_map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/new_map.c.i
+.PHONY : src/new_map.c.i
+
+src/new_map.s: src/new_map.c.s
+
+.PHONY : src/new_map.s
+
+# target to generate assembly for a file
+src/new_map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/new_map.c.s
+.PHONY : src/new_map.c.s
+
 src/parse_identifier/is_technical_identifier.o: src/parse_identifier/is_technical_identifier.c.o
 
 .PHONY : src/parse_identifier/is_technical_identifier.o
@@ -1844,32 +1952,32 @@ src/parse_map/parse_map.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.s
 .PHONY : src/parse_map/parse_map.c.s
 
-src/parse_map_config.o: src/parse_map_config.c.o
+src/parse_map_config/parse_map_config.o: src/parse_map_config/parse_map_config.c.o
 
-.PHONY : src/parse_map_config.o
+.PHONY : src/parse_map_config/parse_map_config.o
 
 # target to build an object file
-src/parse_map_config.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map_config.c.o
-.PHONY : src/parse_map_config.c.o
+src/parse_map_config/parse_map_config.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map_config/parse_map_config.c.o
+.PHONY : src/parse_map_config/parse_map_config.c.o
 
-src/parse_map_config.i: src/parse_map_config.c.i
+src/parse_map_config/parse_map_config.i: src/parse_map_config/parse_map_config.c.i
 
-.PHONY : src/parse_map_config.i
+.PHONY : src/parse_map_config/parse_map_config.i
 
 # target to preprocess a source file
-src/parse_map_config.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map_config.c.i
-.PHONY : src/parse_map_config.c.i
+src/parse_map_config/parse_map_config.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map_config/parse_map_config.c.i
+.PHONY : src/parse_map_config/parse_map_config.c.i
 
-src/parse_map_config.s: src/parse_map_config.c.s
+src/parse_map_config/parse_map_config.s: src/parse_map_config/parse_map_config.c.s
 
-.PHONY : src/parse_map_config.s
+.PHONY : src/parse_map_config/parse_map_config.s
 
 # target to generate assembly for a file
-src/parse_map_config.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map_config.c.s
-.PHONY : src/parse_map_config.c.s
+src/parse_map_config/parse_map_config.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/parse_map_config/parse_map_config.c.s
+.PHONY : src/parse_map_config/parse_map_config.c.s
 
 # Help Target
 help:
@@ -2030,9 +2138,18 @@ help:
 	@echo "... libs/libft/ft_toupper.o"
 	@echo "... libs/libft/ft_toupper.i"
 	@echo "... libs/libft/ft_toupper.s"
+	@echo "... src/check_config_error/is_closed_map.o"
+	@echo "... src/check_config_error/is_closed_map.i"
+	@echo "... src/check_config_error/is_closed_map.s"
+	@echo "... src/check_config_error/is_closed_space_utils.o"
+	@echo "... src/check_config_error/is_closed_space_utils.i"
+	@echo "... src/check_config_error/is_closed_space_utils.s"
 	@echo "... src/check_config_error/is_full_config.o"
 	@echo "... src/check_config_error/is_full_config.i"
 	@echo "... src/check_config_error/is_full_config.s"
+	@echo "... src/check_config_error/scan_map_error.o"
+	@echo "... src/check_config_error/scan_map_error.i"
+	@echo "... src/check_config_error/scan_map_error.s"
 	@echo "... src/file_work/file_work.o"
 	@echo "... src/file_work/file_work.i"
 	@echo "... src/file_work/file_work.s"
@@ -2054,6 +2171,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/new_map.o"
+	@echo "... src/new_map.i"
+	@echo "... src/new_map.s"
 	@echo "... src/parse_identifier/is_technical_identifier.o"
 	@echo "... src/parse_identifier/is_technical_identifier.i"
 	@echo "... src/parse_identifier/is_technical_identifier.s"
@@ -2069,9 +2189,9 @@ help:
 	@echo "... src/parse_map/parse_map.o"
 	@echo "... src/parse_map/parse_map.i"
 	@echo "... src/parse_map/parse_map.s"
-	@echo "... src/parse_map_config.o"
-	@echo "... src/parse_map_config.i"
-	@echo "... src/parse_map_config.s"
+	@echo "... src/parse_map_config/parse_map_config.o"
+	@echo "... src/parse_map_config/parse_map_config.i"
+	@echo "... src/parse_map_config/parse_map_config.s"
 .PHONY : help
 
 

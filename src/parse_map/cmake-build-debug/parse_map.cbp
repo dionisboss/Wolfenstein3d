@@ -97,6 +97,9 @@
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/includes/libft.h">
 			<Option target="parse_map"/>
 		</Unit>
+		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/includes/new_map.h">
+			<Option target="parse_map"/>
+		</Unit>
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/includes/parse_identifier.h">
 			<Option target="parse_map"/>
 		</Unit>
@@ -259,7 +262,16 @@
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/libs/libft/libft.h">
 			<Option target="parse_map"/>
 		</Unit>
+		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_closed_map.c">
+			<Option target="parse_map"/>
+		</Unit>
+		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_closed_space_utils.c">
+			<Option target="parse_map"/>
+		</Unit>
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_full_config.c">
+			<Option target="parse_map"/>
+		</Unit>
+		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/scan_map_error.c">
 			<Option target="parse_map"/>
 		</Unit>
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/file_work/file_work.c">
@@ -283,6 +295,9 @@
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/main.c">
 			<Option target="parse_map"/>
 		</Unit>
+		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/new_map.c">
+			<Option target="parse_map"/>
+		</Unit>
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_identifier/is_technical_identifier.c">
 			<Option target="parse_map"/>
 		</Unit>
@@ -298,7 +313,7 @@
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map/parse_map.c">
 			<Option target="parse_map"/>
 		</Unit>
-		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map_config.c">
+		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/parse_map_config/parse_map_config.c">
 			<Option target="parse_map"/>
 		</Unit>
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/CMakeLists.txt">
