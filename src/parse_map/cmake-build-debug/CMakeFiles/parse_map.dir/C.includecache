@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../includes/check_config_error.h
-new_map.h
-../includes/new_map.h
-
 ../includes/libft.h
 stdlib.h
 -
@@ -22,15 +18,15 @@ stdlib.h
 stdint.h
 -
 
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_closed_map.c
-new_map.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/new_map.h
-check_config_error.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/check_config_error.h
-libft.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/libft.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/file_work/file_work.c
+fcntl.h
+-
 stdio.h
 -
 unistd.h
-/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/unistd.h
+-
+new_map.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/file_work/new_map.h
+libft.h
+/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/file_work/libft.h
 

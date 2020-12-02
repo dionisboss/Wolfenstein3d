@@ -64,7 +64,6 @@ static int			parse_line(t_str *line, t_map *map)
 
 int					parse_map_config(char *file, t_map *map)
 {
-	//СДЕЛАТЬ ТЕСТ НА .cub !!!
 	t_str	line;
 	int		fd;
 	int		status;

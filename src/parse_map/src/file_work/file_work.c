@@ -14,11 +14,34 @@
 #include <stdio.h>
 #include <unistd.h>
 #include "new_map.h"
+#include "libft.h"
 
-int		ft_read_open(char *file)
+static int		check_dot_cub(char *file)
+{
+	size_t	len;
+
+	if (file == NULL)
+		return (FALSE);
+	len = ft_strlen(file);
+	if (len == 0)
+		return (FALSE);
+	while (len-- != 0)
+	{
+		if (file[len] == '.')
+		{
+			if (ft_strcmp(file + len, ".cub") == 0)
+				return (TRUE);
+		}
+	}
+	return (FALSE);
+}
+
+int				ft_read_open(char *file)
 {
 	int	fd;
 
+	if (check_dot_cub(file) == FALSE)
+		return (ERROR);
 	fd = open(file, O_RDONLY);
 	if (fd < 0)
 	{
@@ -28,7 +51,7 @@ int		ft_read_open(char *file)
 	return (fd);
 }
 
-int		ft_close(int fd, char *file)
+int				ft_close(int fd, char *file)
 {
 	if (close(fd) < 0)
 	{
