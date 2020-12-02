@@ -21,6 +21,4 @@ int		check_map_empty_line(char *s);
 
 int		is_closed_map(char **maze);
 
-int		is_north_end(char **maze, size_t x, size_t y);
-
 #endif

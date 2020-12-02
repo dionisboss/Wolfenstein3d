@@ -146,8 +146,6 @@ CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o: ../includes/l
 CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o: ../src/check_config_error/is_closed_map.c
 
-CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o: ../includes/libft.h
-CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o: ../src/check_config_error/is_closed_space_utils.c
 
 CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o: ../includes/new_map.h
@@ -164,10 +162,10 @@ CMakeFiles/parse_map.dir/src/file_work/file_work.c.o: ../src/file_work/file_work
 CMakeFiles/parse_map.dir/src/for_tests/print_map.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/for_tests/print_map.c.o: ../src/for_tests/print_map.c
 
-CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o: ../includes/get_next_line.h
 CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o: ../src/gnl/get_next_line.c
+CMakeFiles/parse_map.dir/src/gnl/get_next_line.c.o: ../src/gnl/get_next_line.h
 
-CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o: ../includes/get_next_line.h
+CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o: ../src/gnl/get_next_line.h
 CMakeFiles/parse_map.dir/src/gnl/get_next_line_utils.c.o: ../src/gnl/get_next_line_utils.c
 
 CMakeFiles/parse_map.dir/src/init_or_clean/free_map.c.o: ../includes/libft.h
