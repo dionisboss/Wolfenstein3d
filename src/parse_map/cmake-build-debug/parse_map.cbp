@@ -265,9 +265,6 @@
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_closed_map.c">
 			<Option target="parse_map"/>
 		</Unit>
-		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_closed_space_utils.c">
-			<Option target="parse_map"/>
-		</Unit>
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_full_config.c">
 			<Option target="parse_map"/>
 		</Unit>
@@ -281,6 +278,9 @@
 			<Option target="parse_map"/>
 		</Unit>
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/gnl/get_next_line.c">
+			<Option target="parse_map"/>
+		</Unit>
+		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/gnl/get_next_line.h">
 			<Option target="parse_map"/>
 		</Unit>
 		<Unit filename="/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/gnl/get_next_line_utils.c">

@@ -32,9 +32,13 @@ static int	is_edge(char **maze, size_t i, size_t j)
 static int	check_walls(char **maze, size_t i, size_t j)
 {
 	size_t	len_bottom_line;
+	size_t	len_upper_line;
 
 	len_bottom_line = ft_strlen(maze[i + 1]);
+	len_upper_line = ft_strlen(maze[i - 1]);
 	if (len_bottom_line == 0 || len_bottom_line - 1 < j)
+		return (FALSE);
+	if (len_upper_line == 0 || len_upper_line - 1 < j)
 		return (FALSE);
 	if (maze[i][j + 1] == '\0' || maze[i][j + 1] == ' ')
 		return (FALSE);
@@ -47,7 +51,7 @@ static int	check_walls_or_space(char **maze, size_t i, size_t j)
 {
 	size_t	len_bottom_line;
 
-	if (is_edge(maze, i , j) == TRUE)
+	if (is_edge(maze, i, j) == TRUE)
 	{
 		if (is_not_wall_or_space(maze[i][j + 1]) == TRUE)
 			return (FALSE);
@@ -71,13 +75,11 @@ int			is_closed_map(char **maze)
 	size_t		j;
 	size_t		i;
 
-	if (maze == NULL)
-		return (ERROR);
-	i = 0;
-	while (maze[i] != NULL)
+	i = -1;
+	while (maze[++i] != NULL)
 	{
-		j = 0;
-		while (maze[i][j] != '\0')
+		j = -1;
+		while (maze[i][++j] != '\0')
 		{
 			if (is_not_wall_or_space(maze[i][j]) == TRUE)
 			{
@@ -88,12 +90,10 @@ int			is_closed_map(char **maze)
 			}
 			if (ft_isspace(maze[i][j]) == TRUE)
 			{
-				if (check_walls_or_space(maze, i, j) == FALSE)
+				if (check_walls_or_space(maze, i, j) != TRUE)
 					return (FALSE);
 			}
-			j++;
 		}
-		i++;
 	}
 	return (TRUE);
 }

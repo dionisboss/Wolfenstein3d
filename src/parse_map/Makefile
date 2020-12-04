@@ -1,4 +1,4 @@
-NAME = newMap
+NAME = new_map.a
 
 ######################     SRC     ##########################
 
@@ -52,7 +52,6 @@ CHECKCONFIGERRORDIR = $(SRCDIR)check_config_error/
 CHECKCONFIGERROR =	$(CHECKCONFIGERRORDIR)is_full_config.c \
 					$(CHECKCONFIGERRORDIR)scan_map_error.c \
 					$(CHECKCONFIGERRORDIR)is_closed_map.c \
-					$(CHECKCONFIGERRORDIR)is_closed_space_utils.c
 
 #############################################################
 
@@ -84,7 +83,9 @@ INCLD = includes/
 
 $(NAME):	$(OBJ)
 	make -C $(LIBFTDIR)
-	$(CC) $(LIBS) ${OBJ} -o ${NAME}
+	#$(CC) $(LIBS) ${OBJ} -o ${NAME}
+	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 all:		$(NAME)
 

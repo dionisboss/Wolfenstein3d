@@ -922,22 +922,9 @@ CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_closed_map.c -o CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.s
 
-CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o: CMakeFiles/parse_map.dir/flags.make
-CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o: ../src/check_config_error/is_closed_space_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_closed_space_utils.c
-
-CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_closed_space_utils.c > CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.i
-
-CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/check_config_error/is_closed_space_utils.c -o CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.s
-
 CMakeFiles/parse_map.dir/src/main.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/parse_map.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/parse_map.dir/src/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/main.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/main.c
 
 CMakeFiles/parse_map.dir/src/main.c.i: cmake_force
@@ -950,7 +937,7 @@ CMakeFiles/parse_map.dir/src/main.c.s: cmake_force
 
 CMakeFiles/parse_map.dir/src/new_map.c.o: CMakeFiles/parse_map.dir/flags.make
 CMakeFiles/parse_map.dir/src/new_map.c.o: ../src/new_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/parse_map.dir/src/new_map.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/parse_map.dir/src/new_map.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parse_map.dir/src/new_map.c.o   -c /Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/src/new_map.c
 
 CMakeFiles/parse_map.dir/src/new_map.c.i: cmake_force
@@ -1028,7 +1015,6 @@ parse_map_OBJECTS = \
 "CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o" \
 "CMakeFiles/parse_map.dir/src/check_config_error/scan_map_error.c.o" \
 "CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o" \
-"CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o" \
 "CMakeFiles/parse_map.dir/src/main.c.o" \
 "CMakeFiles/parse_map.dir/src/new_map.c.o"
 
@@ -1100,12 +1086,11 @@ parse_map: CMakeFiles/parse_map.dir/src/parse_map/parse_map.c.o
 parse_map: CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o
 parse_map: CMakeFiles/parse_map.dir/src/check_config_error/scan_map_error.c.o
 parse_map: CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o
-parse_map: CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o
 parse_map: CMakeFiles/parse_map.dir/src/main.c.o
 parse_map: CMakeFiles/parse_map.dir/src/new_map.c.o
 parse_map: CMakeFiles/parse_map.dir/build.make
 parse_map: CMakeFiles/parse_map.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Linking C executable parse_map"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gdrive/MySimpleWolfenstein3d-C/src/parse_map/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Linking C executable parse_map"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/parse_map.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

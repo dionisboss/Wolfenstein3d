@@ -146,8 +146,6 @@ CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o: ../includes/l
 CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o: ../src/check_config_error/is_closed_map.c
 
-CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o: ../src/check_config_error/is_closed_space_utils.c
-
 CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o: ../includes/new_map.h
 CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o: ../src/check_config_error/is_full_config.c
 

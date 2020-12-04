@@ -50,7 +50,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/parse_map.dir/libs/libft/ft_tolower.c.o"
   "CMakeFiles/parse_map.dir/libs/libft/ft_toupper.c.o"
   "CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.o"
-  "CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o"
   "CMakeFiles/parse_map.dir/src/check_config_error/is_full_config.c.o"
   "CMakeFiles/parse_map.dir/src/check_config_error/scan_map_error.c.o"
   "CMakeFiles/parse_map.dir/src/file_work/file_work.c.o"

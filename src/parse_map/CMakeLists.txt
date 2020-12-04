@@ -82,6 +82,5 @@ add_executable(parse_map
 		src/check_config_error/is_full_config.c
 		src/check_config_error/scan_map_error.c
 		src/check_config_error/is_closed_map.c
-		src/check_config_error/is_closed_space_utils.c
 		src/main.c
 		src/new_map.c)

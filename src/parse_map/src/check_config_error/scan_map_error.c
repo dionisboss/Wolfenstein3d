@@ -46,7 +46,6 @@ static int	scan_map_empty_lines(char **maze)
 	return (FALSE);
 }
 
-#include <stdio.h>
 static int	check_position_player(char **maze)
 {
 	size_t	player_count;

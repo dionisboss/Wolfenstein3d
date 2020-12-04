@@ -1520,33 +1520,6 @@ src/check_config_error/is_closed_map.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_closed_map.c.s
 .PHONY : src/check_config_error/is_closed_map.c.s
 
-src/check_config_error/is_closed_space_utils.o: src/check_config_error/is_closed_space_utils.c.o
-
-.PHONY : src/check_config_error/is_closed_space_utils.o
-
-# target to build an object file
-src/check_config_error/is_closed_space_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.o
-.PHONY : src/check_config_error/is_closed_space_utils.c.o
-
-src/check_config_error/is_closed_space_utils.i: src/check_config_error/is_closed_space_utils.c.i
-
-.PHONY : src/check_config_error/is_closed_space_utils.i
-
-# target to preprocess a source file
-src/check_config_error/is_closed_space_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.i
-.PHONY : src/check_config_error/is_closed_space_utils.c.i
-
-src/check_config_error/is_closed_space_utils.s: src/check_config_error/is_closed_space_utils.c.s
-
-.PHONY : src/check_config_error/is_closed_space_utils.s
-
-# target to generate assembly for a file
-src/check_config_error/is_closed_space_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parse_map.dir/build.make CMakeFiles/parse_map.dir/src/check_config_error/is_closed_space_utils.c.s
-.PHONY : src/check_config_error/is_closed_space_utils.c.s
-
 src/check_config_error/is_full_config.o: src/check_config_error/is_full_config.c.o
 
 .PHONY : src/check_config_error/is_full_config.o
@@ -2141,9 +2114,6 @@ help:
 	@echo "... src/check_config_error/is_closed_map.o"
 	@echo "... src/check_config_error/is_closed_map.i"
 	@echo "... src/check_config_error/is_closed_map.s"
-	@echo "... src/check_config_error/is_closed_space_utils.o"
-	@echo "... src/check_config_error/is_closed_space_utils.i"
-	@echo "... src/check_config_error/is_closed_space_utils.s"
 	@echo "... src/check_config_error/is_full_config.o"
 	@echo "... src/check_config_error/is_full_config.i"
 	@echo "... src/check_config_error/is_full_config.s"

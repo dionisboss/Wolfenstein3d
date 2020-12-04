@@ -23,8 +23,11 @@ static int		check_dot_cub(char *file)
 	if (file == NULL)
 		return (FALSE);
 	len = ft_strlen(file);
-	if (len == 0)
+	if (len < 4)
+	{
+		write(2, "ERROR: not valid map\n", 21);
 		return (FALSE);
+	}
 	while (len-- != 0)
 	{
 		if (file[len] == '.')
@@ -33,6 +36,7 @@ static int		check_dot_cub(char *file)
 				return (TRUE);
 		}
 	}
+	write(2, "ERROR: not valid map\n", 21);
 	return (FALSE);
 }
 

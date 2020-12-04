@@ -23,13 +23,9 @@ int		is_full_config(t_map *map)
 		status = FALSE;
 	else if (map->ea == NULL || map->we == NULL)
 		status = FALSE;
-	else if ( map->s == NULL)
+	else if (map->s == NULL)
 		status = FALSE;
-	else if (map->r[0] == 0 || map->r[1] == 0)
-		status = FALSE;
-	else if (map->r[0] == 0 || map->r[1] == 0)
-		status = FALSE;
-	else if (map->r[0] == 0 || map->r[1] == 0)
+	else if (map->c == -1 || map->f == -1)
 		status = FALSE;
 	return (status);
 }
