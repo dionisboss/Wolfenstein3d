@@ -3,8 +3,7 @@ NAME = new_map.a
 ######################     SRC     ##########################
 
 SRCDIR = src/
-SRC =	$(SRCDIR)main.c \
-		$(SRCDIR)new_map.c \
+SRC =	$(SRCDIR)new_map.c \
 		$(FORTEST) \
 		$(INITORCLEAN) \
 		$(FILEWORK) \

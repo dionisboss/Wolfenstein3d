@@ -1,26 +1,50 @@
 NAME = cub3d
 SRCDIR = src/
 
-SRC = ${SRCDIR}main.c
+SRC = $(SRCDIR)main.c
 
-OBJ = ${SRC:.c=.o}
+#####################     LIBS     ##########################
+
+LIBS =	$(LIBNEWMAP) \
+		$(LIBMLX)
+
+LIBNEWMAPDIR = $(SRCDIR)parse_map/
+LIBNEWMAP = $(LIBNEWMAPDIR)new_map.a
+
+LIBMLXDIR = $(SRCDIR)minilibx_opengl_20191021/
+LIBMLX = $(LIBMLXDIR)libmlx.a
+MLXFLAGS = -framework OpenGL -framework AppKit
+
+#############################################################
+
+######################     OBJ     ##########################
+
+OBJ = $(SRC:.c=.o)
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 INCLD = includes/
 
 .c.o:
-	${CC} ${CFLAGS} -I${INCLD} -c $< -o ${<:.c=.o}
+	$(CC) $(CFLAGS) -I$(INCLD) -c $< -o $(<:.c=.o)
 
-${NAME}:	${OBJ}
-	${CC} -o ${NAME} ${OBJ}
+#############################################################
 
-all:		${NAME}
+$(NAME):	$(OBJ)
+	make -C src/minilibx_opengl_20191021/
+	make -C src/parse_map/
+	$(CC) $(MLXFLAGS) $(LIBS) $(OBJ) -o $(NAME)
+
+all:		$(NAME)
 
 clean:
-	rm -rf ${OBJ}
+	make clean -C src/minilibx_opengl_20191021/
+	make clean -C src/parse_map/
+	rm -rf $(OBJ)
 
 fclean: clean
-	rm -rf ${NAME}
+	make clean -C src/minilibx_opengl_20191021/
+	make fclean -C src/parse_map/
+	rm -rf $(NAME)
 
 re:	fclean	all
