@@ -10,10 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** Function inits struct s_map with default values.
+** Function does not use malloc();
+*/
+
 #include "new_map.h"
 
-int			new_map(t_map *map)
+void	new_map(t_map *map)
 {
 	init_zero_map(map);
-	return (TRUE);
 }

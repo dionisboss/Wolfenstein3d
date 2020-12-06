@@ -10,6 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** Function setup default values for struct s_map (new_map.h).
+*/
+
 #include "parse_map_config.h"
 #include "check_config_error.h"
 #include "for_tests.h"
