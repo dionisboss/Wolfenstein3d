@@ -57,10 +57,9 @@ CHECKCONFIGERROR =	$(CHECKCONFIGERRORDIR)is_full_config.c \
 
 #####################     LIBS     ##########################
 
-LIBSDIR = libs/
 LIBS = $(LIBFT)
 
-LIBFTDIR = $(LIBSDIR)libft/
+LIBFTDIR = ../libft/
 LIBFT = $(LIBFTDIR)libft.a
 
 #############################################################

@@ -6,7 +6,8 @@ SRC = $(SRCDIR)main.c
 #####################     LIBS     ##########################
 
 LIBS =	$(LIBNEWMAP) \
-		$(LIBMLX)
+		$(LIBMLX) \
+		$(LIBFT)
 
 LIBNEWMAPDIR = $(SRCDIR)parse_map/
 LIBNEWMAP = $(LIBNEWMAPDIR)new_map.a
@@ -14,6 +15,9 @@ LIBNEWMAP = $(LIBNEWMAPDIR)new_map.a
 LIBMLXDIR = $(SRCDIR)minilibx_opengl_20191021/
 LIBMLX = $(LIBMLXDIR)libmlx.a
 MLXFLAGS = -framework OpenGL -framework AppKit
+
+LIBFTDIR =	$(SRCDIR)libft/
+LIBFT =		$(LIBFTDIR)libft.a
 
 #############################################################
 
@@ -26,7 +30,7 @@ CFLAGS = -Wall -Wextra -Werror
 INCLD = includes/
 
 .c.o:
-	$(CC) $(CFLAGS) -I$(INCLD) -c $< -o $(<:.c=.o)
+	$(CC) -I$(INCLD) -c $< -o $(<:.c=.o)
 
 #############################################################
 
