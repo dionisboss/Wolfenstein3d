@@ -14,7 +14,7 @@
 #include "parse_identifier.h"
 #include "libft.h"
 
-static int		parse_technical(t_arrstrs params, t_map *map)
+static int	parse_technical(t_arrstrs params, t_map *map)
 {
 	if (params.len == 3 && is_resolution(params.arr[0]))
 	{

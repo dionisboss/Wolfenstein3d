@@ -20,7 +20,7 @@
 #include "check_config_error.h"
 #include "libft.h"
 
-static int			cut_firsts_empty_lines(t_map *map)
+static int	cut_firsts_empty_lines(t_map *map)
 {
 	t_arrstrs	res;
 	char		**tmp;
@@ -42,10 +42,10 @@ static int			cut_firsts_empty_lines(t_map *map)
 	return (TRUE);
 }
 
-static int			parse_line(t_str *line, t_map *map)
+static int	parse_line(t_str *line, t_map *map)
 {
 	t_arrstrs	params;
-	int			status;
+	int		status;
 
 	if ((params.arr = ft_split((const char*)line->s, ' ')) == NULL)
 		return (ERROR);
@@ -59,7 +59,7 @@ static int			parse_line(t_str *line, t_map *map)
 	return (status);
 }
 
-int					parse_file(int fd, t_map *map)
+static int	parse_file(int fd, t_map *map)
 {
 	t_str	line;
 	int		status;
@@ -87,14 +87,27 @@ int					parse_file(int fd, t_map *map)
 	return (status);
 }
 
-static int			print_error(t_map *map)
+static int	print_error(t_map *map)
 {
 	map->clear(map);
-	write(1, "Error: not valid map.\n", 22);
+	write(2, "ERROR: not valid map.\n", 22);
 	return (ERROR);
 }
 
-int					parse_map_config(char *file, t_map *map)
+/*
+** Describtion:
+**
+**  - Function reads file and
+** setup configurations from it to t_map map (new_map.h).
+**
+** Returns values:
+**
+** - If map was not valid
+** or some errors with open, read(), malloc()..., function returns (int) -1.
+** Else returns (int) 1.
+*/
+
+int		parse_map_config(char *file, t_map *map)
 {
 	int		fd;
 	int		status;

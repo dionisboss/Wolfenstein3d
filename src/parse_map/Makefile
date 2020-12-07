@@ -12,7 +12,7 @@ SRC =	$(SRCDIR)new_map.c \
 	$(PARSEIDENTIFIER) \
 	$(PARSEMAP) \
 	$(CHECKCONFIGERROR) \
-	$(SRCDIR)main.c
+	#$(SRCDIR)main.c
 
 #for_test
 FORTESTDIR = $(SRCDIR)for_tests/
@@ -83,9 +83,9 @@ INCLD = includes/
 
 $(NAME):	$(OBJ)
 	make -C $(LIBFTDIR)
-	$(CC) $(LIBS) ${OBJ} -o ${NAME}
-	#ar rc $(NAME) $(OBJ)
-	#ranlib $(NAME)
+	#$(CC) $(LIBS) ${OBJ} -o ${NAME}
+	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 all:		$(NAME)
 
