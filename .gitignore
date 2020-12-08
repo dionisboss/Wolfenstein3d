@@ -2,3 +2,4 @@
 .idea
 CMakeLists.txt
 Cmake-build-debug
+*.c

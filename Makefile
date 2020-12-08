@@ -1,7 +1,8 @@
 NAME = cub3d
 SRCDIR = src/
 
-SRC = $(SRCDIR)main.c
+SRC =	$(SRCDIR)main.c \
+		$(GAMEENGINE)
 
 #####################     LIBS     ##########################
 
@@ -10,7 +11,7 @@ LIBS =	$(LIBNEWMAP) \
 		$(LIBFT)
 
 LIBNEWMAPDIR = $(SRCDIR)parse_map/
-LIBNEWMAP = $(LIBNEWMAPDIR)new_map.a
+LIBNEWMAP = $(LIBNEWMAPDIR)new_map.a \
 
 LIBMLXDIR = $(SRCDIR)minilibx_opengl_20191021/
 LIBMLX = $(LIBMLXDIR)libmlx.a
@@ -18,6 +19,15 @@ MLXFLAGS = -framework OpenGL -framework AppKit
 
 LIBFTDIR =	$(SRCDIR)libft/
 LIBFT =		$(LIBFTDIR)libft.a
+
+#############################################################
+
+###################     game_engine     #####################
+
+GAMEENGINEDIR = $(SRCDIR)game_engine/
+GAMEENGINE =	$(GAMEENGINEDIR)raycasting_render.c \
+				$(GAMEENGINEDIR)init_game_space.c \
+				$(GAMEENGINEDIR)init_player.c
 
 #############################################################
 
