@@ -27,7 +27,11 @@ LIBFT =		$(LIBFTDIR)libft.a
 GAMEENGINEDIR = $(SRCDIR)game_engine/
 GAMEENGINE =	$(GAMEENGINEDIR)raycasting_render.c \
 				$(GAMEENGINEDIR)init_game_space.c \
-				$(GAMEENGINEDIR)init_player.c
+				$(GAMEENGINEDIR)init_player.c \
+				$(GAMEENGINEDIR)keyboard_handler.c \
+				$(GAMEENGINEDIR)game_control.c \
+				$(GAMEENGINEDIR)player_moving.c \
+				$(GAMEENGINEDIR)drawing_img.c
 
 #############################################################
 
