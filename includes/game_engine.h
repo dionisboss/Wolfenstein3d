@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/09 19:38:42 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/10 16:21:11 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,10 +101,14 @@ typedef struct			s_img_data
 */
 
 # define ESC 53
-# define W 13
-# define S 1
-# define A 0
-# define D 2
+# define KEY_W 13
+# define KEY_S 1
+# define KEY_A 0
+# define KEY_D 2
+# define KEY_Q 12
+# define KEY_E 14
+# define KEY_LEFT 123
+# define KEY_RIGHT 124
 
 /*
 ** For s_game_data.
@@ -119,6 +123,8 @@ typedef struct			s_key_f
 	char				s;
 	char				a;
 	char				d;
+	char				q;
+	char				e;
 }						t_keys_f;
 
 
@@ -174,6 +180,7 @@ typedef struct			s_game_data
 
 int						init_game_space(t_game_data *game_data);
 int						init_player(t_player *player, t_plane *plane, char **maze);
+int						is_player(char c);
 
 /*
 ** Game control.
