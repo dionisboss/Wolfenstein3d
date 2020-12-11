@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:49:20 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/11 18:44:39 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/09 17:52:58 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,15 @@
 
 int		raycasting_render(t_game_data *game_data)
 {
-	t_ray				*ray;
+	t_ray_dir			*ray;
 	static size_t		i;
 
 	draw_sky(game_data);
 	draw_land(game_data);
-	player_move(game_data);
 
 	ray = &game_data->ray;
+
+	player_move(game_data);
 
 	i = 0;
 	while (i < game_data->map.r[0])

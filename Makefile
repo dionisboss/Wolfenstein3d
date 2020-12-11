@@ -2,7 +2,9 @@ NAME = cub3d
 SRCDIR = src/
 
 SRC =	$(SRCDIR)main.c \
-		$(GAMEENGINE)
+		$(GAME_ENGINE) \
+		$(PLAYER_EVENTS) \
+		$(RAYCASTING_RENDER)
 
 #####################     LIBS     ##########################
 
@@ -24,14 +26,32 @@ LIBFT =		$(LIBFTDIR)libft.a
 
 ###################     game_engine     #####################
 
-GAMEENGINEDIR = $(SRCDIR)game_engine/
-GAMEENGINE =	$(GAMEENGINEDIR)raycasting_render.c \
-				$(GAMEENGINEDIR)init_game_space.c \
-				$(GAMEENGINEDIR)init_player.c \
-				$(GAMEENGINEDIR)keyboard_handler.c \
-				$(GAMEENGINEDIR)game_control.c \
-				$(GAMEENGINEDIR)player_moving.c \
-				$(GAMEENGINEDIR)drawing_img.c
+GAME_ENGINE_DIR = $(SRCDIR)game_engine/
+GAME_ENGINE =	$(GAME_ENGINE_DIR)init_game_space.c \
+				$(GAME_ENGINE_DIR)keyboard_handler.c \
+				$(GAME_ENGINE_DIR)game_control.c \
+				$(GAME_ENGINE_DIR)drawing_img.c
+
+#------------------     player_events   #--------------------
+
+PLAYER_EVENTS_DIR =	$(GAME_ENGINE_DIR)player_events/
+PLAYER_EVENTS =		$(PLAYER_EVENTS_DIR)init_player.c \
+					$(PLAYER_EVENTS_DIR)player_moving.c \
+					$(PLAYER_EVENTS_DIR)move_forward_backward.c \
+					$(PLAYER_EVENTS_DIR)move_forward_backward_utils.c \
+					$(PLAYER_EVENTS_DIR)move_sideways.c \
+					$(PLAYER_EVENTS_DIR)move_sideways_utils.c \
+					$(PLAYER_EVENTS_DIR)turn_player.c
+
+#------------------------------------------------------------
+
+#------------------  raycasting_render  #--------------------
+
+RAYCASTING_RENDER_DIR =	$(GAME_ENGINE_DIR)raycasting_render/
+RAYCASTING_RENDER =		$(RAYCASTING_RENDER_DIR)raycasting_render.c \
+						$(RAYCASTING_RENDER_DIR)init_ray.c
+
+#------------------------------------------------------------
 
 #############################################################
 

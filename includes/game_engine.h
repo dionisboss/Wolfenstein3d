@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/10 16:21:11 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/11 19:25:17 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ typedef struct			s_step
 ** Ray-data.
 */
 
-typedef struct			s_ray_dir
+typedef struct			s_ray
 {
 	t_plane				plane;
 	double				camera_x;
@@ -69,7 +69,7 @@ typedef struct			s_ray_dir
 	int					line_h;
 	int					draw_start;
 	int					draw_end;
-}						t_ray_dir;
+}						t_ray;
 
 /*
 ** For s_game_data.
@@ -165,7 +165,7 @@ typedef struct			s_game_data
 	t_player			player;
 	t_keys_f			keys;
 	t_map				map;
-	t_ray_dir			ray;
+	t_ray				ray;
 }						t_game_data;
 
 /*
@@ -211,10 +211,46 @@ int						handle_pressed_key(int keycode, t_game_data *game_data);
 int						handle_unpressed_key(int keycode, t_game_data *game_data);
 
 /*
-** Player moving.
+** ----------------------------------------------------------------------------
+**                               Player moving.
+** ----------------------------------------------------------------------------
 */
 
 void					player_move(t_game_data *game_data);
+
+int						move_forward_backward(t_game_data *game_data);
+int						next_y_is_not_wall(char **maze, t_player *player);
+int						next_x_is_not_wall(char **maze, t_player *player);
+int						previous_y_is_not_wall(char **maze, t_player *player);
+int						previous_x_is_not_wall(char **maze, t_player *player);
+
+int						move_sideways(t_game_data *game_data);
+int						a_strafe_next_y_is_not_wall(t_game_data *game_data);
+int						a_strafe_next_x_is_not_wall(t_game_data *game_data);
+int						d_strafe_next_y_is_not_wall(t_game_data *game_data);
+int						d_strafe_next_x_is_not_wall(t_game_data *game_data);
+
+int						turn_player(t_game_data *game_data);
+
+/*
+** ----------------------------------------------------------------------------
+** ----------------------------------------------------------------------------
+** ----------------------------------------------------------------------------
+*/
+
+/*
+** ----------------------------------------------------------------------------
+**                             Raycasting-render.
+** ----------------------------------------------------------------------------
+*/
+
+int						init_ray(t_game_data *game_data, size_t i);
+
+/*
+** ----------------------------------------------------------------------------
+** ----------------------------------------------------------------------------
+** ----------------------------------------------------------------------------
+*/
 
 /*
 ** ============================================================================

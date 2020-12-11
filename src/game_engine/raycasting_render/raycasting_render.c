@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:49:20 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/11 18:44:39 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/11 19:43:26 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,45 +22,16 @@ int		raycasting_render(t_game_data *game_data)
 
 	draw_sky(game_data);
 	draw_land(game_data);
-	player_move(game_data);
 
 	ray = &game_data->ray;
+
+	player_move(game_data);
 
 	i = 0;
 	while (i < game_data->map.r[0])
 	{
-		ray->camera_x = 2 * (game_data->map.r[0] - i) / (double)(game_data->map.r[0]) - 1;
-		ray->dir.x = game_data->player.dir.x + ray->plane.x * ray->camera_x;
-		ray->dir.y = game_data->player.dir.y + ray->plane.y * ray->camera_x;
-
-		ray->map.x = (int)game_data->player.pos.x;
-		ray->map.y = (int)game_data->player.pos.y;
-
-		ray->side_d.delta_x = fabs(1 / ray->dir.x);
-		ray->side_d.delta_y = fabs(1 / ray->dir.y);
-
-		if (ray->dir.x < 0)
-		{
-			ray->step.x = -1;
-			ray->side_d.x = (game_data->player.pos.x - ray->map.x) * ray->side_d.delta_x;
-		}
-		else
-		{
-			ray->step.x = 1;
-			ray->side_d.x = (ray->map.x + 1.0 - game_data->player.pos.x) * ray->side_d.delta_x;
-		}
-		if (ray->dir.y < 0)
-		{
-			ray->step.y = -1;
-			ray->side_d.y = (game_data->player.pos.y - ray->map.y) * ray->side_d.delta_y;
-		}
-		else
-		{
-			ray->step.y = 1;
-			ray->side_d.y = (ray->map.y + 1.0 - game_data->player.pos.y) * ray->side_d.delta_y;
-		}
-
-		ray->hit = 0;
+		init_ray(game_data, i);
+		/*Надо продолжить calculate draw start-end*/
 		while (ray->hit == 0)
 		{
 			if (ray->side_d.x < ray->side_d.y)
