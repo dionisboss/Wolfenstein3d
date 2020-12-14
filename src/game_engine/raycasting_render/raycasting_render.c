@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:49:20 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/11 19:43:26 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/14 12:48:52 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,41 +31,7 @@ int		raycasting_render(t_game_data *game_data)
 	while (i < game_data->map.r[0])
 	{
 		init_ray(game_data, i);
-		/*Надо продолжить calculate draw start-end*/
-		while (ray->hit == 0)
-		{
-			if (ray->side_d.x < ray->side_d.y)
-			{
-				ray->side_d.x += ray->side_d.delta_x;
-				ray->map.x += ray->step.x;
-				ray->side = 0;
-			}
-			else
-			{
-				ray->side_d.y += ray->side_d.delta_y;
-				ray->map.y += ray->step.y;
-				ray->side = 1;
-			}
-			if (game_data->map.map[ray->map.y][ray->map.x] == '1')
-				ray->hit = 1;
-		}
-
-		if (ray->side == 0)
-			ray->perp_wall_dist = (ray->map.x - game_data->player.pos.x + (1 - ray->step.x) / 2) / ray->dir.x;
-		else
-			ray->perp_wall_dist = (ray->map.y - game_data->player.pos.y + (1 - ray->step.y) / 2) / ray->dir.y;
-
-		ray->line_h = (int)(game_data->map.r[1] / ray->perp_wall_dist);
-		ray->draw_start = -(ray->line_h) / 2 + game_data->map.r[1] / 2;
-
-		if (ray->draw_start < 0)
-			ray->draw_start = 0;
-
-		ray->draw_end = ray->line_h / 2 + game_data->map.r[1] / 2;
-
-		if (ray->draw_end >= game_data->map.r[1])
-			ray->draw_end = game_data->map.r[1] - 1;
-
+		calculate_draw_start_end(game_data);
 		while (ray->draw_start <= ray->draw_end)
 		{
 			my_mlx_pixel_put(&game_data->img_data, i, ray->draw_start, 0x0000FF);

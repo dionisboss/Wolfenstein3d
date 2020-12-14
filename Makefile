@@ -49,7 +49,8 @@ PLAYER_EVENTS =		$(PLAYER_EVENTS_DIR)init_player.c \
 
 RAYCASTING_RENDER_DIR =	$(GAME_ENGINE_DIR)raycasting_render/
 RAYCASTING_RENDER =		$(RAYCASTING_RENDER_DIR)raycasting_render.c \
-						$(RAYCASTING_RENDER_DIR)init_ray.c
+						$(RAYCASTING_RENDER_DIR)init_ray.c \
+						$(RAYCASTING_RENDER_DIR)calculate_draw_start_end.c
 
 #------------------------------------------------------------
 

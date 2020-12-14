@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/11 19:25:17 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/14 12:47:11 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -245,6 +245,7 @@ int						turn_player(t_game_data *game_data);
 */
 
 int						init_ray(t_game_data *game_data, size_t i);
+void					calculate_draw_start_end(t_game_data *game_data);
 
 /*
 ** ----------------------------------------------------------------------------
