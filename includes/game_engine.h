@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/14 12:47:11 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/14 14:23:03 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,19 @@ typedef struct			s_img_data
 }						t_img_data;
 
 /*
+** For s_game_data.
+** Texture-data.
+*/
+
+typedef struct			s_tex_data
+{
+	char				*relative_path;
+	t_img_data			img_data;
+	int					width;
+	int					height;
+}						t_tex_data;
+
+/*
 ** Keycodes.
 */
 
@@ -162,6 +175,7 @@ typedef struct			s_game_data
 {
 	t_mlx_data			mlx_data;
 	t_img_data			img_data;
+	t_tex_data			tex_data;
 	t_player			player;
 	t_keys_f			keys;
 	t_map				map;

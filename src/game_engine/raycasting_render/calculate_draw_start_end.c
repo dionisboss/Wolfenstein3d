@@ -6,10 +6,11 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 19:42:27 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/14 13:16:27 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/14 14:11:03 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <math.h>
 #include "game_engine.h"
 
 static void		throw_a_beam(t_ray *ray, char **maze)

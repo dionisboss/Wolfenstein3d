@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:48:26 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/10 14:26:24 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/14 15:25:55 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,13 @@ int			init_game_space(t_game_data *game_data)
 	init_player(&game_data->player, &game_data->ray.plane, game_data->map.map);
 	init_window(&game_data->mlx_data, &game_data->map);
 	init_img(&game_data->img_data, &game_data->mlx_data, &game_data->map);
+
+	t_tex_data	*tex_data = &game_data->tex_data;
+
+	tex_data->relative_path = "textures/longLiveAsap.xpm";
+	tex_data->img_data.img = mlx_xpm_file_to_image(game_data->mlx_data.mlx, tex_data->relative_path, &tex_data->width, &tex_data->height);
+	tex_data->img_data.addr = mlx_get_data_addr(tex_data->img_data.img, &tex_data->img_data.bits_per_pixel, &tex_data->img_data.line_lenght, &tex_data->img_data.endian);
+
+
 	return (0);
 }
