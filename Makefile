@@ -2,9 +2,11 @@ NAME = cub3d
 SRCDIR = src/
 
 SRC =	$(SRCDIR)main.c \
+		$(GAME_INITIATION) \
 		$(GAME_ENGINE) \
 		$(PLAYER_EVENTS) \
-		$(RAYCASTING_RENDER)
+		$(RAYCASTING_RENDER) \
+		$(DRAWING)
 
 #####################     LIBS     ##########################
 
@@ -27,12 +29,18 @@ LIBFT =		$(LIBFTDIR)libft.a
 ###################     game_engine     #####################
 
 GAME_ENGINE_DIR = $(SRCDIR)game_engine/
-GAME_ENGINE =	$(GAME_ENGINE_DIR)init_game_space.c \
-				$(GAME_ENGINE_DIR)keyboard_handler.c \
+GAME_ENGINE =	$(GAME_ENGINE_DIR)keyboard_handler.c \
 				$(GAME_ENGINE_DIR)game_control.c \
-				$(GAME_ENGINE_DIR)drawing_img.c
 
-#------------------     player_events   #--------------------
+#------------------   game_initiation   #--------------------
+
+GAME_INITIATION_DIR =	$(GAME_ENGINE_DIR)game_initiation/
+GAME_INITIATION =		$(GAME_INITIATION_DIR)init_game_space.c \
+						$(GAME_INITIATION_DIR)init_textures.c \
+						$(GAME_INITIATION_DIR)init_textures_utils.c
+
+#------------------------------------------------------------
+#------------------    player_events    #--------------------
 
 PLAYER_EVENTS_DIR =	$(GAME_ENGINE_DIR)player_events/
 PLAYER_EVENTS =		$(PLAYER_EVENTS_DIR)init_player.c \
@@ -51,6 +59,14 @@ RAYCASTING_RENDER_DIR =	$(GAME_ENGINE_DIR)raycasting_render/
 RAYCASTING_RENDER =		$(RAYCASTING_RENDER_DIR)raycasting_render.c \
 						$(RAYCASTING_RENDER_DIR)init_ray.c \
 						$(RAYCASTING_RENDER_DIR)calculate_draw_start_end.c
+
+#------------------------------------------------------------
+
+#------------------       drawing       #--------------------
+
+DRAWING_DIR =	$(GAME_ENGINE_DIR)drawing/
+DRAWING =		$(DRAWING_DIR)drawing_img.c \
+				$(DRAWING_DIR)drawing_textures.c
 
 #------------------------------------------------------------
 

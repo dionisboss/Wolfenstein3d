@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 18:14:28 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/11 18:28:14 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/14 19:12:14 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ int	turn_player(t_game_data *game_data)
 	plane = &game_data->ray.plane;
 	old_dir_x = dir->x;
 	old_plane_x = plane->x;
+	if (game_data->keys.q == 1 && game_data->keys.e == 1)
+		return (0);
 	if (game_data->keys.q == 1)
 	{
 		dir->x = dir->x * cos(-ROT_SPEED) - dir->y * sin(-ROT_SPEED);

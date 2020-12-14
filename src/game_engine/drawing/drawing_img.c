@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 12:39:41 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/14 14:38:56 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/14 20:59:16 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,16 @@ void	draw_sky(t_game_data *game_data)
 {
 	size_t	x;
 	size_t	y;
+	size_t	color;
 
 	y = 0;
+	color = game_data->map.c;
 	while (y < game_data->map.r[1] / 2)
 	{
 		x = 0;
 		while (x < game_data->map.r[0])
 		{
-			my_mlx_pixel_put(&game_data->img_data, x, y, 0xFFFFFF);
+			my_mlx_pixel_put(&game_data->img_data, x, y, color);
 			x++;
 		}
 		y++;
@@ -43,14 +45,16 @@ void	draw_land(t_game_data *game_data)
 {
 	size_t	x;
 	size_t	y;
+	size_t	color;
 
 	y = game_data->map.r[1] / 2;
+	color = game_data->map.f;
 	while (y < game_data->map.r[1])
 	{
 		x = 0;
 		while (x < game_data->map.r[0])
 		{
-			my_mlx_pixel_put(&game_data->img_data, x, y, 0xFF0000);
+			my_mlx_pixel_put(&game_data->img_data, x, y, color);
 			x++;
 		}
 		y++;
