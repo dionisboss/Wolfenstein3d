@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 13:33:27 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/01 13:33:28 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/15 07:54:48 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ static int	check_walls_or_space(char **maze, size_t i, size_t j)
 {
 	size_t	len_bottom_line;
 
-	if (is_edge(maze, i, j) == TRUE)
+	if (maze[i + 1] == NULL)
 	{
 		if (is_not_wall_or_space(maze[i][j + 1]) == TRUE)
 			return (FALSE);
