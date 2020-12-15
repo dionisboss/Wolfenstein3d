@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 12:18:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/09 12:34:56 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/15 11:13:03 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ void	finish_game(t_game_data *game_data)
 {
 	mlx_destroy_window(game_data->mlx_data.mlx, game_data->mlx_data.win);
 	game_data->map.clear(&game_data->map);
+	free_sprites(&game_data->sprites.sprites);
 	exit(0);
 }

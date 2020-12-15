@@ -36,8 +36,10 @@ GAME_ENGINE =	$(GAME_ENGINE_DIR)keyboard_handler.c \
 
 GAME_INITIATION_DIR =	$(GAME_ENGINE_DIR)game_initiation/
 GAME_INITIATION =		$(GAME_INITIATION_DIR)init_game_space.c \
-						$(GAME_INITIATION_DIR)init_textures.c \
-						$(GAME_INITIATION_DIR)init_textures_utils.c
+						$(GAME_INITIATION_DIR)init_wall_textures.c \
+						$(GAME_INITIATION_DIR)init_wall_textures_utils.c \
+						$(GAME_INITIATION_DIR)init_sprites.c \
+						$(GAME_INITIATION_DIR)init_arr_of_sprites.c
 
 #------------------------------------------------------------
 #------------------    player_events    #--------------------

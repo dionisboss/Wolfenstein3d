@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/14 20:16:57 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/15 10:52:39 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,6 +127,29 @@ typedef struct			s_textures
 }						t_textures;
 
 /*
+** For s_sprites.
+** Sprite position.
+*/
+
+typedef struct			s_sprite
+{
+	double				x;
+	double				y;
+}						t_sprite;
+
+/*
+** For s_game_data.
+** Sprites-data.
+*/
+
+typedef struct			s_sprites
+{
+	t_sprite			**sprites;
+	t_tex_data			tex_data;
+}						t_sprites;
+
+
+/*
 ** Keycodes.
 */
 
@@ -193,6 +216,7 @@ typedef struct			s_game_data
 	t_mlx_data			mlx_data;
 	t_img_data			img_data;
 	t_textures			tex_data;
+	t_sprites			sprites;
 	t_player			player;
 	t_keys_f			keys;
 	t_map				map;
@@ -211,11 +235,15 @@ typedef struct			s_game_data
 
 int						init_game_space(t_game_data *game_data);
 int						init_player(t_player *player, t_plane *plane, char **maze);
-void					init_textures(t_game_data *game_data);
+void					init_wall_textures(t_game_data *game_data);
+void					check_dot_xpm(char *s);
 void					init_img_north_texture(void *mlx, t_textures *tex_data);
 void					init_img_south_texture(void *mlx, t_textures *tex_data);
 void					init_img_west_texture(void *mlx, t_textures *tex_data);
 void					init_img_east_texture(void *mlx, t_textures *tex_data);
+void					init_sprites(t_game_data *game_data);
+void					init_arr_sprites(t_game_data *game_data);
+int						free_sprites(t_sprite ***sprites);
 int						is_player(char c);
 
 /*
