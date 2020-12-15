@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/15 10:52:39 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/15 18:51:00 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -145,6 +145,7 @@ typedef struct			s_sprite
 typedef struct			s_sprites
 {
 	t_sprite			**sprites;
+	size_t				num_sprites;
 	t_tex_data			tex_data;
 }						t_sprites;
 

@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 19:35:32 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/15 07:40:52 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/15 18:32:37 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ static void		init_vars(t_game_data *game_data, t_tex_draw_vars *vars)
 		vars->wall_x = player->pos.y + ray->perp_wall_dist * ray->dir.y;
 	else
 		vars->wall_x = player->pos.x + ray->perp_wall_dist * ray->dir.x;
-	vars->wall_x -= floor((vars->wall_x));
+	vars->wall_x = 1 - (vars->wall_x - floor((vars->wall_x)));
 	vars->tex_x = (int)(vars->wall_x * (double)(vars->tex->width));
 	if (ray->side == 0 && ray->dir.x > 0)
 		vars->tex_x = vars->tex->width - vars->tex_x - 1;
@@ -74,8 +74,6 @@ void			draw_textures(t_game_data *game_data, size_t i)
 	{
 		vars.tex_y = (int)vars.tex_pos & (64 - 1);
 		vars.tex_pos += vars.step;
-
-
 		vars.color = ((int*)vars.tex->img_data.addr)[64 * vars.tex_y + vars.tex_x];
 		my_mlx_pixel_put(&game_data->img_data, i, y, vars.color);
 		y++;

@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 08:17:36 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/15 11:12:09 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/15 14:58:08 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,14 @@ void		init_sprites(t_game_data *game_data)
 	print_arr_sprites(sprites->sprites); // УБРАТЬ
 	check_dot_xpm(map->s);
 	s = &sprites->tex_data;;
+	s_img = &s->img_data;
 	s->relative_path = map->s;
 	s_img->img = mlx_xpm_file_to_image(game_data->mlx_data.mlx,
 			s->relative_path, &s->width, &s->height);
+
+	s_img->addr = mlx_get_data_addr(s_img->img,
+			&s_img->bits_per_pixel, &s_img->line_lenght, &s_img->endian);
+
 	if (s_img->img == NULL)
 	{
 		write(1, "ERROR: mlx cant open sprite texture\n", 36);

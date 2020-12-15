@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 10:28:09 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/15 10:49:06 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/15 18:26:37 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,8 +90,8 @@ static void		write_array(t_sprite **sprites, char **maze)
 					free_sprites(&sprites);
 					exit(-1);
 				}
-				sprites[num_sprite]->y = (double)i;
-				sprites[num_sprite]->x = (double)j;
+				sprites[num_sprite]->y = (double)i + 0.5;
+				sprites[num_sprite]->x = (double)j + 0.5;
 				num_sprite++;
 			}
 			j++;
@@ -116,4 +116,5 @@ void			init_arr_sprites(t_game_data *game_data)
 	sprites[num_sprites] = NULL;
 	write_array(sprites, maze);
 	game_data->sprites.sprites = sprites;
+	game_data->sprites.num_sprites = num_sprites;
 }
