@@ -61,7 +61,14 @@ RAYCASTING_RENDER_DIR =	$(GAME_ENGINE_DIR)raycasting_render/
 RAYCASTING_RENDER =		$(RAYCASTING_RENDER_DIR)raycasting_render.c \
 						$(RAYCASTING_RENDER_DIR)init_ray.c \
 						$(RAYCASTING_RENDER_DIR)calculate_draw_start_end.c \
-						$(RAYCASTING_RENDER_DIR)sprites_rendering.c
+						$(SPRITES_RENDERING)
+
+#//// sprites_rendering
+
+SPRITES_RENDERING_DIR =	$(RAYCASTING_RENDER_DIR)sprites_rendering/
+SPRITES_RENDERING =		$(SPRITES_RENDERING_DIR)sprites_rendering.c
+
+#//////////////////////
 
 #------------------------------------------------------------
 

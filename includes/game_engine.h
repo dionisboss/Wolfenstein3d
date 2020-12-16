@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/16 15:19:49 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/16 16:55:14 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,6 +144,8 @@ typedef struct			s_sprite
 
 typedef struct			s_spr_render
 {
+	int					*sprite_order;
+	double				*sprite_distance;
 	double				sprite_x;
 	double				sprite_y;
 	double				inv_det;

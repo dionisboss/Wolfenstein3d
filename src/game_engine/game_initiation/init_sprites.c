@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 08:17:36 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/15 14:58:08 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/16 18:54:29 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void		init_sprites(t_game_data *game_data)
 	maze = game_data->map.map;
 	init_arr_sprites(game_data);
 	sprites = &game_data->sprites;
-	print_arr_sprites(sprites->sprites); // УБРАТЬ
+	//print_arr_sprites(sprites->sprites); // УБРАТЬ
 	check_dot_xpm(map->s);
 	s = &sprites->tex_data;;
 	s_img = &s->img_data;
