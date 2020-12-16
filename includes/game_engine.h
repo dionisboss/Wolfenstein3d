@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/15 18:51:00 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/16 15:19:49 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -138,6 +138,34 @@ typedef struct			s_sprite
 }						t_sprite;
 
 /*
+** For s_sprites.
+** Sprites-rendering-drawing-data.
+*/
+
+typedef struct			s_spr_render
+{
+	double				sprite_x;
+	double				sprite_y;
+	double				inv_det;
+	double				transform_x;
+	double				transform_y;
+	int					sprite_screen_x;
+	int					sprite_height;
+	int					sprite_width;
+	int					draw_start_y;
+	int					draw_end_y;
+	int					draw_start_x;
+	int					draw_end_x;
+	int					stripe;
+	int					tex_x;
+	int					tex_y;
+	int					img_y;
+	int					y;
+	int					d;
+	uint32_t			color;
+}						t_spr_render;
+
+/*
 ** For s_game_data.
 ** Sprites-data.
 */
@@ -146,6 +174,7 @@ typedef struct			s_sprites
 {
 	t_sprite			**sprites;
 	size_t				num_sprites;
+	t_spr_render		render;
 	t_tex_data			tex_data;
 }						t_sprites;
 
@@ -312,6 +341,7 @@ int						turn_player(t_game_data *game_data);
 
 int						init_ray(t_game_data *game_data, size_t i);
 void					calculate_draw_start_end(t_game_data *game_data);
+void					render_sprites(t_game_data *game_data, double *z_buff);
 
 /*
 ** ----------------------------------------------------------------------------

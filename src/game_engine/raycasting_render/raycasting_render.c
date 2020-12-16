@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:49:20 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/15 18:55:21 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/16 12:20:26 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,13 @@ static void	print_int_arr(int *arr, size_t len)
 	}
 }
 
+/*
 void	sort_sprites(int *sprite_order, double *sprite_distance, size_t len)
 {
-	/*
 	printf("before sort\nsprite_order: ");
 	print_int_arr(sprite_order, len);
 	printf("sprite_distance: ");
 	print_double_arr(sprite_distance, len);
-	*/
 
 	if (len == 0)
 		return ;
@@ -74,19 +73,19 @@ void	sort_sprites(int *sprite_order, double *sprite_distance, size_t len)
 		i++;
 	}
 
-	/*
 	printf("after sort\nsprite_order: ");
 	print_int_arr(sprite_order, len);
 	printf("sprite_distance: ");
 	print_double_arr(sprite_distance, len);
-	*/
 
 	//sleep(30);
 }
+*/
 
 int		raycasting_render(t_game_data *game_data)
 {
 	t_ray				*ray;
+	double				z_buff[game_data->map.r[0]];
 	static size_t		x;
 
 	draw_sky(game_data);
@@ -97,26 +96,25 @@ int		raycasting_render(t_game_data *game_data)
 	player_move(game_data);
 
 	x = 0;
-	double		ZBuffer[game_data->map.r[0]];
 	while (x < game_data->map.r[0])
 	{
 		init_ray(game_data, x);
 		calculate_draw_start_end(game_data);
 		draw_textures(game_data, x);
-		ZBuffer[x] = ray->perp_wall_dist;
+		z_buff[x] = ray->perp_wall_dist;
 		x++;
 	}
+	render_sprites(game_data, z_buff);
 
 
+	/*
 	int			numSprites = game_data->sprites.num_sprites;
 	static char	numSpritesFlag = 0;
-	/*
 	if (numSpritesFlag == 0)
 	{
 		printf("numSprites = %d\n", numSprites);
 		numSpritesFlag = 1;
 	}
-	*/
 
 	int			spriteOrder[numSprites];
 	double		spriteDistance[numSprites];
@@ -127,14 +125,12 @@ int		raycasting_render(t_game_data *game_data)
 	double		posY = game_data->player.pos.y;
 
 	static char	texXY = 0;
-	/*
 	if (texXY < 2)
 	{
 		for (int z = 0; z < numSprites; z++)
 			printf("sprite[%d]: x = %f, y = %f\n", z, sprite[z]->x, sprite[z]->y);
 		texXY++;
 	}
-	*/
 
 	for(int i = 0; i < numSprites; i++)
     {
@@ -226,13 +222,11 @@ int		raycasting_render(t_game_data *game_data)
       if(drawStartX < 0)
 		  drawStartX = 0;
       int drawEndX = spriteWidth / 2 + spriteScreenX;
-	  /*
       if(drawEndX >= w)
 	  {
 		  printf("!!!\n");
 		  drawEndX = w - 1;
 	  }
-	  */
 
       //loop through every vertical stripe of the sprite on screen
       for(int stripe = drawStartX; stripe < drawEndX; stripe++)
@@ -242,8 +236,8 @@ int		raycasting_render(t_game_data *game_data)
         //1) it's in front of camera plane so you don't see things behind you
         //2) it's on the screen (left)
         //3) it's on the screen (right)
-        //4) ZBuffer, with perpendicular distance
-        if(transformY > 0 && stripe > 0 && stripe < w && transformY < ZBuffer[stripe])
+        //4) z_buff, with perpendicular distance
+        if(transformY > 0 && stripe > 0 && stripe < w && transformY < z_buff[stripe])
 		{
 			for(int y = drawStartY; y < drawEndY; y++) //for every pixel of the current stripe
 			{
@@ -257,6 +251,7 @@ int		raycasting_render(t_game_data *game_data)
 		}
       }
     }
+	*/
 
 
 
