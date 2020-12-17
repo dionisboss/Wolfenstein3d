@@ -89,6 +89,7 @@ OBJ = $(SRC:.c=.o)
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
+SEGINFOFLAG = -fsanitize=address
 INCLD = includes/
 
 .c.o:

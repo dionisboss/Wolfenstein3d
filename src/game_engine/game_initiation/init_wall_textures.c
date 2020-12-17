@@ -6,19 +6,20 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 15:47:54 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 19:58:13 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 20:28:42 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdio.h>
 #include "game_engine.h"
 #include "libft.h"
 
 void		check_dot_xpm(char *s)
 {
-	size_t	i;
+	int64_t	i;
 
-	i = ft_strlen(s) - 1;
+	i = (int64_t)ft_strlen(s);
 	while (i >= 0)
 	{
 		if (s[i] == '.')

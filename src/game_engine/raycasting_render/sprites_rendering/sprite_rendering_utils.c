@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/17 12:52:54 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 19:58:26 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 20:32:07 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ void	init_order(t_game *game)
 	t_double_vector		*pos;
 	t_double_vector		**sprite;
 	size_t				i;
-	static int			order[2048];
-	static double		distance[2048];
+	static int			order[4096];
+	static double		distance[4096];
 
 	pos = &game->player.pos;
 	sprite = game->sprites.sprites;
