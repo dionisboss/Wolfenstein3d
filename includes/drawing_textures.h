@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 19:42:04 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/14 20:21:50 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:34:06 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 typedef struct		s_tex_draw_vars
 {
-	t_tex_data		*tex;
+	t_texture		*tex;
 	int				tex_num;
 	double			wall_x;
 	int				tex_x;

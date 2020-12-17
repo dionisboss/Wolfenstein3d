@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 18:12:24 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 19:07:41 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,13 +89,13 @@ typedef struct			s_img
 ** Texture-data.
 */
 
-typedef struct			s_tex_data
+typedef struct			s_texture
 {
 	char				*relative_path;
-	t_img			img;
+	t_img				img;
 	int					width;
 	int					height;
-}						t_tex_data;
+}						t_texture;
 
 /*
 ** For s_game_data.
@@ -108,24 +108,11 @@ typedef struct			s_tex_data
 
 typedef struct			s_textures
 {
-	t_tex_data			no;
-	t_tex_data			so;
-	t_tex_data			we;
-	t_tex_data			ea;
+	t_texture			no;
+	t_texture			so;
+	t_texture			we;
+	t_texture			ea;
 }						t_textures;
-
-/*
-** For s_sprites.
-** Sprite position.
-*/
-
-/*
-typedef struct			s_sprite
-{
-	double				x;
-	double				y;
-}						t_double_vector;
-*/
 
 /*
 ** For s_sprites.
@@ -167,9 +154,8 @@ typedef struct			s_sprites
 	t_double_vector		**sprites;
 	size_t				num_sprites;
 	t_spr_render		render;
-	t_tex_data			tex_data;
+	t_texture			texture;
 }						t_double_vectors;
-
 
 /*
 ** Keycodes.
@@ -202,7 +188,6 @@ typedef struct			s_key_f
 	char				e;
 }						t_keys_f;
 
-
 /*
 ** For s_player.
 ** Player position.
@@ -227,12 +212,12 @@ typedef struct			s_player
 ** Game-data.
 */
 
-typedef struct			s_game_data
+typedef struct			s_game
 {
-	t_mlx			mlx;
-	t_img			img;
-	t_textures			tex_data;
-	t_double_vectors			sprites;
+	t_mlx				mlx;
+	t_img				img;
+	t_textures			texture;
+	t_double_vectors	sprites;
 	t_player			player;
 	t_keys_f			keys;
 	t_map				map;
@@ -250,13 +235,16 @@ typedef struct			s_game_data
 */
 
 int						init_game_space(t_game *game_data);
-int						init_player(t_player *player, t_double_vector *plane, char **maze);
+
+int						init_player(t_player *player,
+		t_double_vector *plane, char **maze);
+
 void					init_wall_textures(t_game *game_data);
 void					check_dot_xpm(char *s);
-void					init_img_north_texture(void *mlx, t_textures *tex_data);
-void					init_img_south_texture(void *mlx, t_textures *tex_data);
-void					init_img_west_texture(void *mlx, t_textures *tex_data);
-void					init_img_east_texture(void *mlx, t_textures *tex_data);
+void					init_img_north_texture(void *mlx, t_textures *texture);
+void					init_img_south_texture(void *mlx, t_textures *texture);
+void					init_img_west_texture(void *mlx, t_textures *texture);
+void					init_img_east_texture(void *mlx, t_textures *texture);
 void					init_double_vectors(t_game *game_data);
 void					init_arr_sprites(t_game *game_data);
 int						free_sprites(t_double_vector ***sprites);
@@ -336,7 +324,8 @@ void					calculate_draw_start_end(t_game *game_data);
 
 void					render_sprites(t_game *game_data, double *z_buff);
 void					init_order(t_game *game);
-void					sort_double_vectors(int *order, double *distance, size_t len);
+void					sort_double_vectors(int *order,
+		double *distance, size_t len);
 void					init_double_vector(t_game *game, size_t i);
 void					calculate_drawstart_end(t_game *game);
 

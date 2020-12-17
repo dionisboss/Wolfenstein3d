@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 18:09:47 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 18:34:33 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:40:13 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	init_img_south_texture(void *mlx, t_textures *texture)
 
 void	init_img_west_texture(void *mlx, t_textures *texture)
 {
-	t_texture		*we;
+	t_texture	*we;
 	t_img		*we_img;
 
 	we = &texture->we;
@@ -70,7 +70,7 @@ void	init_img_west_texture(void *mlx, t_textures *texture)
 
 void	init_img_east_texture(void *mlx, t_textures *texture)
 {
-	t_texture		*ea;
+	t_texture	*ea;
 	t_img		*ea_img;
 
 	ea = &texture->ea;

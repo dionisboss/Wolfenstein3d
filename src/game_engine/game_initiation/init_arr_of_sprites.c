@@ -6,14 +6,14 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 10:28:09 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 18:22:23 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:49:02 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "game_engine.h"
 
-int			free_sprites(t_double_vector ***sprites)
+int						free_sprites(t_double_vector ***sprites)
 {
 	size_t	i;
 
@@ -37,7 +37,7 @@ int			free_sprites(t_double_vector ***sprites)
 ** Counting number of sprites.
 */
 
-static size_t		count_double_vectors(char **maze)
+static size_t			count_sprites(char **maze)
 {
 	size_t	i;
 	size_t	j;
@@ -68,7 +68,20 @@ static size_t		count_double_vectors(char **maze)
 ** Init array of sprites.
 */
 
-static void		write_array(t_double_vector **sprites, char **maze)
+static void				init_element(t_double_vector **sprites,
+		double i, double j, size_t num_sprite)
+{
+	sprites[num_sprite] = (t_double_vector*)malloc(sizeof(t_double_vector));
+	if (sprites[num_sprite] == NULL)
+	{
+		free_sprites(&sprites);
+		exit(-1);
+	}
+	sprites[num_sprite]->y = (double)i + 0.5;
+	sprites[num_sprite]->x = (double)j + 0.5;
+}
+
+static void				write_array(t_double_vector **sprites, char **maze)
 {
 	size_t	i;
 	size_t	j;
@@ -84,14 +97,7 @@ static void		write_array(t_double_vector **sprites, char **maze)
 		{
 			if (maze[i][j] == '2')
 			{
-				sprites[num_sprite] = (t_double_vector*)malloc(sizeof(t_double_vector));
-				if (sprites[num_sprite] == NULL)
-				{
-					free_sprites(&sprites);
-					exit(-1);
-				}
-				sprites[num_sprite]->y = (double)i + 0.5;
-				sprites[num_sprite]->x = (double)j + 0.5;
+				init_element(sprites, i, j, num_sprite);
 				num_sprite++;
 			}
 			j++;
@@ -99,17 +105,18 @@ static void		write_array(t_double_vector **sprites, char **maze)
 	}
 }
 
-void			init_arr_sprites(t_game *game)
+void					init_arr_sprites(t_game *game)
 {
-	t_map		*map;
-	char		**maze;
+	t_map			*map;
+	char			**maze;
 	t_double_vector	**sprites;
-	size_t		num_sprites;
+	size_t			num_sprites;
 
 	map = &game->map;
 	maze = game->map.map;
-	num_sprites = count_double_vectors(map->map);
-	sprites = (t_double_vector**)malloc(sizeof(t_double_vector*) * (num_sprites + 1));
+	num_sprites = count_sprites(map->map);
+	sprites = (t_double_vector**)malloc(sizeof(t_double_vector*) *
+			(num_sprites + 1));
 	if (sprites == NULL)
 		exit(-1);
 	sprites[num_sprites] = NULL;

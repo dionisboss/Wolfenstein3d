@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 11:27:42 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 18:34:33 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:58:53 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static void	init_color(t_game *game)
 {
-	t_spr_render	*render;
-	t_double_vectors		*sprites;
+	t_spr_render		*render;
+	t_double_vectors	*sprites;
 
 	render = &game->sprites.render;
 	sprites = &game->sprites;
@@ -39,8 +39,8 @@ static int	need_drawing(t_game *game, double *z_buff)
 
 static void	render_stripe(t_game *game, double *z_buff)
 {
-	t_spr_render	*render;
-	t_double_vectors		*sprites;
+	t_spr_render		*render;
+	t_double_vectors	*sprites;
 
 	render = &game->sprites.render;
 	sprites = &game->sprites;
@@ -68,8 +68,8 @@ static void	render_stripe(t_game *game, double *z_buff)
 void		render_sprites(t_game *game, double *z_buff)
 {
 	t_double_vectors		*sprites;
-	t_spr_render	*render;
-	size_t			i;
+	t_spr_render			*render;
+	size_t					i;
 
 	sprites = &game->sprites;
 	render = &sprites->render;

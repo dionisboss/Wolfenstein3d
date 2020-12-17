@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 16:08:09 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 17:52:41 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 19:05:00 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 #include "mlx.h"
 #include "libft.h"
 #include "new_map.h"
-#include "cub3D.h"
 
 #include "game_engine.h"
 

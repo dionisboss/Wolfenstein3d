@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 11:55:27 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 17:46:05 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:38:13 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	handle_pressed_key(int keycode, t_game *game)
 	return (0);
 }
 
-int		handle_unpressed_key(int keycode, t_game *game)
+int	handle_unpressed_key(int keycode, t_game *game)
 {
 	if (keycode == KEY_W)
 		game->keys.w = 0;

@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/17 12:52:54 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 17:40:37 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:56:22 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +42,11 @@ void	sort_double_vectors(int *order, double *distance, size_t len)
 
 void	init_order(t_game *game)
 {
-	t_double_vector			*pos;
-	t_double_vector				**sprite;
-	size_t					i;
-	static int				order[2048];
-	static double			distance[2048];
+	t_double_vector		*pos;
+	t_double_vector		**sprite;
+	size_t				i;
+	static int			order[2048];
+	static double		distance[2048];
 
 	pos = &game->player.pos;
 	sprite = game->sprites.sprites;
@@ -67,7 +67,7 @@ void	init_double_vector(t_game *game, size_t i)
 	t_player		*player;
 	t_ray			*ray;
 	t_spr_render	*render;
-	t_double_vector		**sprite;
+	t_double_vector	**sprite;
 	int				*sprite_order;
 
 	player = &game->player;

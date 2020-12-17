@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 19:35:32 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 18:34:31 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:39:21 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static t_texture	*init_tex(t_game *game)
 	return (NULL);
 }
 
-static void		init_vars(t_game *game, t_tex_draw_vars *vars)
+static void			init_vars(t_game *game, t_tex_draw_vars *vars)
 {
 	t_ray				*ray;
 	t_player			*player;
@@ -54,11 +54,12 @@ static void		init_vars(t_game *game, t_tex_draw_vars *vars)
 	if (ray->side == 1 && ray->dir.y < 0)
 		vars->tex_x = vars->tex->width - vars->tex_x - 1;
 	vars->step = 1.0 * vars->tex->height / ray->line_h;
-	vars->tex_pos = (ray->draw_start - game->map.r[1] / 2 + ray->line_h / 2) * vars->step;
+	vars->tex_pos = (ray->draw_start - game->map.r[1] / 2 + ray->line_h / 2) *
+		vars->step;
 	vars->tex_num = game->map.map[ray->map.y][ray->map.x] - 1;
 }
 
-void			draw_textures(t_game *game, size_t i)
+void				draw_textures(t_game *game, size_t i)
 {
 	t_tex_draw_vars		vars;
 	t_ray				*ray;
