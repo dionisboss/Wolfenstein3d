@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 11:27:42 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 18:12:28 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:34:33 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ static void	init_color(t_game *game)
 	sprites = &game->sprites;
 	render->d = (render->y) * 256 - game->map.r[1] * 128 +
 		render->sprite_height * 128;
-	render->tex_y = ((render->d * sprites->tex_data.height) /
+	render->tex_y = ((render->d * sprites->texture.height) /
 			render->sprite_height) / 256;
-	render->color = ((int*)game->sprites.tex_data.img.addr)
-		[sprites->tex_data.width * render->tex_y + render->tex_x];
+	render->color = ((int*)game->sprites.texture.img.addr)
+		[sprites->texture.width * render->tex_y + render->tex_x];
 }
 
 static int	need_drawing(t_game *game, double *z_buff)
@@ -48,7 +48,7 @@ static void	render_stripe(t_game *game, double *z_buff)
 	{
 		render->tex_x = (int)(256 * (render->stripe -
 					(-render->sprite_width / 2 + render->sprite_screen_x)) *
-				sprites->tex_data.width / render->sprite_width) / 256;
+				sprites->texture.width / render->sprite_width) / 256;
 		if (need_drawing(game, z_buff))
 		{
 			render->y = render->draw_start_y;

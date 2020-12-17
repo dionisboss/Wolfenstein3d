@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 18:09:47 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 18:21:11 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:34:33 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 #include "mlx.h"
 #include "game_engine.h"
 
-void	init_img_north_texture(void *mlx, t_textures *tex_data)
+void	init_img_north_texture(void *mlx, t_textures *texture)
 {
-	t_tex_data		*no;
+	t_texture		*no;
 	t_img			*no_img;
 
-	no = &tex_data->no;
+	no = &texture->no;
 	no_img = &no->img;
 	no_img->img = mlx_xpm_file_to_image(mlx,
 			no->relative_path, &no->width, &no->height);
@@ -32,12 +32,12 @@ void	init_img_north_texture(void *mlx, t_textures *tex_data)
 			&no_img->bits_per_pixel, &no_img->line_lenght, &no_img->endian);
 }
 
-void	init_img_south_texture(void *mlx, t_textures *tex_data)
+void	init_img_south_texture(void *mlx, t_textures *texture)
 {
-	t_tex_data		*so;
+	t_texture		*so;
 	t_img			*so_img;
 
-	so = &tex_data->so;
+	so = &texture->so;
 	so_img = &so->img;
 	so_img->img = mlx_xpm_file_to_image(mlx,
 			so->relative_path, &so->width, &so->height);
@@ -50,12 +50,12 @@ void	init_img_south_texture(void *mlx, t_textures *tex_data)
 			&so_img->bits_per_pixel, &so_img->line_lenght, &so_img->endian);
 }
 
-void	init_img_west_texture(void *mlx, t_textures *tex_data)
+void	init_img_west_texture(void *mlx, t_textures *texture)
 {
-	t_tex_data		*we;
+	t_texture		*we;
 	t_img		*we_img;
 
-	we = &tex_data->we;
+	we = &texture->we;
 	we_img = &we->img;
 	we_img->img = mlx_xpm_file_to_image(mlx,
 			we->relative_path, &we->width, &we->height);
@@ -68,12 +68,12 @@ void	init_img_west_texture(void *mlx, t_textures *tex_data)
 			&we_img->bits_per_pixel, &we_img->line_lenght, &we_img->endian);
 }
 
-void	init_img_east_texture(void *mlx, t_textures *tex_data)
+void	init_img_east_texture(void *mlx, t_textures *texture)
 {
-	t_tex_data		*ea;
+	t_texture		*ea;
 	t_img		*ea_img;
 
-	ea = &tex_data->ea;
+	ea = &texture->ea;
 	ea_img = &ea->img;
 	ea_img->img = mlx_xpm_file_to_image(mlx,
 			ea->relative_path, &ea->width, &ea->height);

@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/17 18:17:47 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 18:20:01 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:34:32 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,14 @@ void		init_double_vectors(t_game *game)
 {
 	t_map				*map;
 	t_double_vectors	*sprites;
-	t_tex_data			*s;
+	t_texture			*s;
 	t_img				*s_img;
 
 	map = &game->map;
 	init_arr_sprites(game);
 	sprites = &game->sprites;
 	check_dot_xpm(map->s);
-	s = &sprites->tex_data;
+	s = &sprites->texture;
 	s_img = &s->img;
 	s->relative_path = map->s;
 	s_img->img = mlx_xpm_file_to_image(game->mlx.mlx,

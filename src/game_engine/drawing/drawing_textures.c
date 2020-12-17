@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 19:35:32 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 18:12:25 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:34:31 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "game_engine.h"
 #include "drawing_textures.h"
 
-static t_tex_data	*init_tex(t_game *game)
+static t_texture	*init_tex(t_game *game)
 {
 	t_ray	*ray;
 
@@ -22,16 +22,16 @@ static t_tex_data	*init_tex(t_game *game)
 	if (ray->side == 1)
 	{
 		if (ray->step.y > 0)
-			return (&game->tex_data.no);
+			return (&game->texture.no);
 		if (ray->step.y < 0)
-			return (&game->tex_data.so);
+			return (&game->texture.so);
 	}
 	if (ray->side == 0)
 	{
 		if (ray->step.x > 0)
-			return (&game->tex_data.we);
+			return (&game->texture.we);
 		if (ray->step.x < 0)
-			return (&game->tex_data.ea);
+			return (&game->texture.ea);
 	}
 	return (NULL);
 }

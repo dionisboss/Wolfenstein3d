@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 15:47:54 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 18:20:26 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:34:33 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,28 +32,28 @@ void		check_dot_xpm(char *s)
 	exit(-1);
 }
 
-void		init_relative_path(t_textures *tex_data, t_map *map)
+void		init_relative_path(t_textures *texture, t_map *map)
 {
-	tex_data->no.relative_path = map->no;
-	tex_data->so.relative_path = map->so;
-	tex_data->we.relative_path = map->we;
-	tex_data->ea.relative_path = map->ea;
-	check_dot_xpm(tex_data->no.relative_path);
-	check_dot_xpm(tex_data->so.relative_path);
-	check_dot_xpm(tex_data->we.relative_path);
-	check_dot_xpm(tex_data->ea.relative_path);
+	texture->no.relative_path = map->no;
+	texture->so.relative_path = map->so;
+	texture->we.relative_path = map->we;
+	texture->ea.relative_path = map->ea;
+	check_dot_xpm(texture->no.relative_path);
+	check_dot_xpm(texture->so.relative_path);
+	check_dot_xpm(texture->we.relative_path);
+	check_dot_xpm(texture->ea.relative_path);
 }
 
 void		init_wall_textures(t_game *game)
 {
-	t_textures	*tex_data;
+	t_textures	*texture;
 	t_map		*map;
 
-	tex_data = &game->tex_data;
+	texture = &game->texture;
 	map = &game->map;
-	init_relative_path(&game->tex_data, &game->map);
-	init_img_north_texture(game->mlx.mlx, &game->tex_data);
-	init_img_south_texture(game->mlx.mlx, &game->tex_data);
-	init_img_west_texture(game->mlx.mlx, &game->tex_data);
-	init_img_east_texture(game->mlx.mlx, &game->tex_data);
+	init_relative_path(&game->texture, &game->map);
+	init_img_north_texture(game->mlx.mlx, &game->texture);
+	init_img_south_texture(game->mlx.mlx, &game->texture);
+	init_img_west_texture(game->mlx.mlx, &game->texture);
+	init_img_east_texture(game->mlx.mlx, &game->texture);
 }
