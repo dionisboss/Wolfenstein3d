@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 10:28:09 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 17:38:15 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:22:23 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,10 +74,10 @@ static void		write_array(t_double_vector **sprites, char **maze)
 	size_t	j;
 	size_t	num_sprite;
 
-	i = 0;
+	i = -1;
 	j = 0;
-	num_sprite = 0;;
-	while (maze[i] != NULL)
+	num_sprite = 0;
+	while (maze[++i] != NULL)
 	{
 		j = 0;
 		while (maze[i][j] != '\0')
@@ -96,25 +96,24 @@ static void		write_array(t_double_vector **sprites, char **maze)
 			}
 			j++;
 		}
-		i++;
 	}
 }
 
-void			init_arr_sprites(t_game *game_data)
+void			init_arr_sprites(t_game *game)
 {
 	t_map		*map;
 	char		**maze;
 	t_double_vector	**sprites;
 	size_t		num_sprites;
 
-	map = &game_data->map;
-	maze = game_data->map.map;
+	map = &game->map;
+	maze = game->map.map;
 	num_sprites = count_double_vectors(map->map);
 	sprites = (t_double_vector**)malloc(sizeof(t_double_vector*) * (num_sprites + 1));
 	if (sprites == NULL)
 		exit(-1);
 	sprites[num_sprites] = NULL;
 	write_array(sprites, maze);
-	game_data->sprites.sprites = sprites;
-	game_data->sprites.num_sprites = num_sprites;
+	game->sprites.sprites = sprites;
+	game->sprites.num_sprites = num_sprites;
 }

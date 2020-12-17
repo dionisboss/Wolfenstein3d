@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/27 21:06:59 by gdrive            #+#    #+#             */
-/*   Updated: 2020/11/27 21:07:00 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:59:44 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ void	init_zero_map(t_map *map)
 	map->map = NULL;
 	map->parse_file = &parse_map_config;
 	map->clear = &free_map;
-	map->print = &print_map;
 	map->scan_error = &scan_map_error;
 	return ;
 }

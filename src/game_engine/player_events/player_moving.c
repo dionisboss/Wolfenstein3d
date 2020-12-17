@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 14:51:30 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:46:08 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,25 +18,25 @@ static int	is_zero(t_keys_f *keys)
 			keys->q == 0 && keys->e == 0);
 }
 
-void		player_move(t_game *game_data)
+void		player_move(t_game *game)
 {
 	t_player	*player;
 	char		**maze;
 
-	if (is_zero(&game_data->keys) == TRUE)
+	if (is_zero(&game->keys) == TRUE)
 		return ;
-	player = &game_data->player;
-	maze = game_data->map.map;
-	if (game_data->keys.w == 1 || game_data->keys.s == 1)
+	player = &game->player;
+	maze = game->map.map;
+	if (game->keys.w == 1 || game->keys.s == 1)
 	{
-		move_forward_backward(game_data);
+		move_forward_backward(game);
 	}
-	if (game_data->keys.a == 1 || game_data->keys.d == 1)
+	if (game->keys.a == 1 || game->keys.d == 1)
 	{
-		move_sideways(game_data);
+		move_sideways(game);
 	}
-	if (game_data->keys.q == 1 || game_data->keys.e == 1)
+	if (game->keys.q == 1 || game->keys.e == 1)
 	{
-		turn_player(game_data);
+		turn_player(game);
 	}
 }

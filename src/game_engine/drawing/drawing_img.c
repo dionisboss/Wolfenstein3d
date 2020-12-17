@@ -6,14 +6,14 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 12:39:41 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 16:51:38 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:12:25 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdint.h>
 #include "game_engine.h"
 
-void	my_mlx_pixel_put(t_img_data *data, int x, int y, int color)
+void	my_mlx_pixel_put(t_img *data, int x, int y, int color)
 {
 	char	*dst;
 
@@ -21,40 +21,40 @@ void	my_mlx_pixel_put(t_img_data *data, int x, int y, int color)
 	*(unsigned int*)dst = color;
 }
 
-void	draw_sky(t_game *game_data)
+void	draw_sky(t_game *game)
 {
 	size_t	x;
 	size_t	y;
 	size_t	color;
 
 	y = 0;
-	color = game_data->map.c;
-	while (y < game_data->map.r[1] / 2)
+	color = game->map.c;
+	while (y < game->map.r[1] / 2)
 	{
 		x = 0;
-		while (x < game_data->map.r[0])
+		while (x < game->map.r[0])
 		{
-			my_mlx_pixel_put(&game_data->img_data, x, y, color);
+			my_mlx_pixel_put(&game->img, x, y, color);
 			x++;
 		}
 		y++;
 	}
 }
 
-void	draw_land(t_game *game_data)
+void	draw_land(t_game *game)
 {
 	size_t	x;
 	size_t	y;
 	size_t	color;
 
-	y = game_data->map.r[1] / 2;
-	color = game_data->map.f;
-	while (y < game_data->map.r[1])
+	y = game->map.r[1] / 2;
+	color = game->map.f;
+	while (y < game->map.r[1])
 	{
 		x = 0;
-		while (x < game_data->map.r[0])
+		while (x < game->map.r[0])
 		{
-			my_mlx_pixel_put(&game_data->img_data, x, y, color);
+			my_mlx_pixel_put(&game->img, x, y, color);
 			x++;
 		}
 		y++;

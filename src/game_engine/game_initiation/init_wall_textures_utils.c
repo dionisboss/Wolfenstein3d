@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 18:09:47 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/14 18:29:50 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:21:11 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,15 @@
 void	init_img_north_texture(void *mlx, t_textures *tex_data)
 {
 	t_tex_data		*no;
-	t_img_data		*no_img;
+	t_img			*no_img;
 
 	no = &tex_data->no;
-	no_img = &no->img_data;
+	no_img = &no->img;
 	no_img->img = mlx_xpm_file_to_image(mlx,
 			no->relative_path, &no->width, &no->height);
 	if (no_img->img == NULL)
 	{
-		write(1, "ERROR: mlx cant open norh texture\n", 34);
+		write(2, "ERROR: mlx cant open norh texture\n", 34);
 		exit(-1);
 	}
 	no_img->addr = mlx_get_data_addr(no_img->img,
@@ -35,10 +35,10 @@ void	init_img_north_texture(void *mlx, t_textures *tex_data)
 void	init_img_south_texture(void *mlx, t_textures *tex_data)
 {
 	t_tex_data		*so;
-	t_img_data		*so_img;
+	t_img			*so_img;
 
 	so = &tex_data->so;
-	so_img = &so->img_data;
+	so_img = &so->img;
 	so_img->img = mlx_xpm_file_to_image(mlx,
 			so->relative_path, &so->width, &so->height);
 	if (so_img->img == NULL)
@@ -53,10 +53,10 @@ void	init_img_south_texture(void *mlx, t_textures *tex_data)
 void	init_img_west_texture(void *mlx, t_textures *tex_data)
 {
 	t_tex_data		*we;
-	t_img_data		*we_img;
+	t_img		*we_img;
 
 	we = &tex_data->we;
-	we_img = &we->img_data;
+	we_img = &we->img;
 	we_img->img = mlx_xpm_file_to_image(mlx,
 			we->relative_path, &we->width, &we->height);
 	if (we_img->img == NULL)
@@ -71,10 +71,10 @@ void	init_img_west_texture(void *mlx, t_textures *tex_data)
 void	init_img_east_texture(void *mlx, t_textures *tex_data)
 {
 	t_tex_data		*ea;
-	t_img_data		*ea_img;
+	t_img		*ea_img;
 
 	ea = &tex_data->ea;
-	ea_img = &ea->img_data;
+	ea_img = &ea->img;
 	ea_img->img = mlx_xpm_file_to_image(mlx,
 			ea->relative_path, &ea->width, &ea->height);
 	if (ea_img->img == NULL)

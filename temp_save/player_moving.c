@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 14:51:30 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 17:19:30 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:46:13 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,11 +59,11 @@ static int	previous_x_is_not_wall(char **maze, t_player *player)
 ** For strafe.
 */
 
-static int	a_strafe_next_y_is_not_wall(char **maze, t_game *game_data)
+static int	a_strafe_next_y_is_not_wall(char **maze, t_game *game)
 {
 
-	t_double_vector		*plane = &game_data->ray.plane;
-	t_player	*player = &game_data->player;
+	t_double_vector		*plane = &game->ray.plane;
+	t_player	*player = &game->player;
 
 	return (maze[(int)(player->pos.y + plane->y * MOVE_SPEED)]
 			[(int)player->pos.x] == '0' ||
@@ -72,11 +72,11 @@ static int	a_strafe_next_y_is_not_wall(char **maze, t_game *game_data)
 			));
 }
 
-static int	a_strafe_next_x_is_not_wall(char **maze, t_game *game_data)
+static int	a_strafe_next_x_is_not_wall(char **maze, t_game *game)
 {
 
-	t_double_vector		*plane = &game_data->ray.plane;
-	t_player	*player = &game_data->player;
+	t_double_vector		*plane = &game->ray.plane;
+	t_player	*player = &game->player;
 
 	return (maze[(int)player->pos.y]
 			[(int)(player->pos.x + plane->x * MOVE_SPEED)] == '0' ||
@@ -84,11 +84,11 @@ static int	a_strafe_next_x_is_not_wall(char **maze, t_game *game_data)
 			[(int)(player->pos.x + plane->x * MOVE_SPEED)]));
 }
 
-static int	d_strafe_next_y_is_not_wall(char **maze, t_game *game_data)
+static int	d_strafe_next_y_is_not_wall(char **maze, t_game *game)
 {
 
-	t_double_vector		*plane = &game_data->ray.plane;
-	t_player	*player = &game_data->player;
+	t_double_vector		*plane = &game->ray.plane;
+	t_player	*player = &game->player;
 
 	return (maze[(int)(player->pos.y - plane->y * MOVE_SPEED)]
 			[(int)player->pos.x] == '0' ||
@@ -97,11 +97,11 @@ static int	d_strafe_next_y_is_not_wall(char **maze, t_game *game_data)
 			));
 }
 
-static int	d_strafe_next_x_is_not_wall(char **maze, t_game *game_data)
+static int	d_strafe_next_x_is_not_wall(char **maze, t_game *game)
 {
 
-	t_double_vector		*plane = &game_data->ray.plane;
-	t_player	*player = &game_data->player;
+	t_double_vector		*plane = &game->ray.plane;
+	t_player	*player = &game->player;
 
 	return (maze[(int)player->pos.y]
 			[(int)(player->pos.x - plane->x * MOVE_SPEED)] == '0' ||
@@ -109,18 +109,18 @@ static int	d_strafe_next_x_is_not_wall(char **maze, t_game *game_data)
 			[(int)(player->pos.x - plane->x * MOVE_SPEED)]));
 }
 
-void		player_move(t_game *game_data)
+void		player_move(t_game *game)
 {
 	t_player	*player;
 	char		**maze;
 
-	if (is_zero(&game_data->keys) == TRUE)
+	if (is_zero(&game->keys) == TRUE)
 		return ;
 
-	player = &game_data->player;
-	maze = game_data->map.map;
+	player = &game->player;
+	maze = game->map.map;
 
-	if (game_data->keys.w == 1)
+	if (game->keys.w == 1)
 	{
 		if (next_y_is_not_wall(maze, player))
 		{
@@ -131,7 +131,7 @@ void		player_move(t_game *game_data)
 			player->pos.x += player->dir.x * MOVE_SPEED;
 		}
 	}
-	if (game_data->keys.s == 1)
+	if (game->keys.s == 1)
 	{
 		if (previous_y_is_not_wall(maze, player))
 		{
@@ -142,44 +142,44 @@ void		player_move(t_game *game_data)
 			player->pos.x -= player->dir.x * MOVE_SPEED;
 		}
 	}
-	if (game_data->keys.a == 1)
+	if (game->keys.a == 1)
 	{
-		if (a_strafe_next_y_is_not_wall(maze, game_data))
+		if (a_strafe_next_y_is_not_wall(maze, game))
 		{
-			player->pos.y += game_data->ray.plane.y * MOVE_SPEED;
+			player->pos.y += game->ray.plane.y * MOVE_SPEED;
 		}
-		if (a_strafe_next_x_is_not_wall(maze, game_data))
+		if (a_strafe_next_x_is_not_wall(maze, game))
 		{
-			player->pos.x += game_data->ray.plane.x * MOVE_SPEED;
+			player->pos.x += game->ray.plane.x * MOVE_SPEED;
 		}
 	}
-	if (game_data->keys.d == 1)
+	if (game->keys.d == 1)
 	{
-		if (d_strafe_next_y_is_not_wall(maze, game_data))
+		if (d_strafe_next_y_is_not_wall(maze, game))
 		{
-			player->pos.y -= game_data->ray.plane.y * MOVE_SPEED;
+			player->pos.y -= game->ray.plane.y * MOVE_SPEED;
 		}
-		if (d_strafe_next_x_is_not_wall(maze, game_data))
+		if (d_strafe_next_x_is_not_wall(maze, game))
 		{
-			player->pos.x -= game_data->ray.plane.x * MOVE_SPEED;
+			player->pos.x -= game->ray.plane.x * MOVE_SPEED;
 		}
 	}
-	if (game_data->keys.q == 1)
+	if (game->keys.q == 1)
 	{
 		double	old_dir_x = player->dir.x;
 		player->dir.x = player->dir.x * cos(-ROT_SPEED) - player->dir.y * sin(-ROT_SPEED);
 		player->dir.y = old_dir_x * sin(-ROT_SPEED) + player->dir.y * cos(-ROT_SPEED);
-		double old_plane_x = game_data->ray.plane.x;
-		game_data->ray.plane.x = game_data->ray.plane.x * cos(-ROT_SPEED) - game_data->ray.plane.y * sin(-ROT_SPEED);
-		game_data->ray.plane.y = old_plane_x * sin(-ROT_SPEED) + game_data->ray.plane.y * cos(-ROT_SPEED);
+		double old_plane_x = game->ray.plane.x;
+		game->ray.plane.x = game->ray.plane.x * cos(-ROT_SPEED) - game->ray.plane.y * sin(-ROT_SPEED);
+		game->ray.plane.y = old_plane_x * sin(-ROT_SPEED) + game->ray.plane.y * cos(-ROT_SPEED);
 	}
-	if (game_data->keys.e == 1)
+	if (game->keys.e == 1)
     {
       double old_dir_x = player->dir.x;
       player->dir.x = player->dir.x * cos(ROT_SPEED) - player->dir.y * sin(ROT_SPEED);
       player->dir.y = old_dir_x * sin(ROT_SPEED) + player->dir.y * cos(ROT_SPEED);
-      double old_plane_x = game_data->ray.plane.x;
-      game_data->ray.plane.x = game_data->ray.plane.x * cos(ROT_SPEED) - game_data->ray.plane.y * sin(ROT_SPEED);
-      game_data->ray.plane.y = old_plane_x * sin(ROT_SPEED) + game_data->ray.plane.y * cos(ROT_SPEED);
+      double old_plane_x = game->ray.plane.x;
+      game->ray.plane.x = game->ray.plane.x * cos(ROT_SPEED) - game->ray.plane.y * sin(ROT_SPEED);
+      game->ray.plane.y = old_plane_x * sin(ROT_SPEED) + game->ray.plane.y * cos(ROT_SPEED);
     }
 }

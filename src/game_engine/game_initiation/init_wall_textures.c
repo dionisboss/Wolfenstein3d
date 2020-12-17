@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 15:47:54 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 16:51:39 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:20:26 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void		check_dot_xpm(char *s)
 		}
 		i--;
 	}
-	write(1, "ERROR: invalid textures\n", 24);
+	write(2, "ERROR: invalid textures\n", 24);
 	exit(-1);
 }
 
@@ -44,16 +44,16 @@ void		init_relative_path(t_textures *tex_data, t_map *map)
 	check_dot_xpm(tex_data->ea.relative_path);
 }
 
-void		init_wall_textures(t_game *game_data)
+void		init_wall_textures(t_game *game)
 {
 	t_textures	*tex_data;
 	t_map		*map;
 
-	tex_data = &game_data->tex_data;
-	map = &game_data->map;
-	init_relative_path(&game_data->tex_data, &game_data->map);
-	init_img_north_texture(game_data->mlx_data.mlx, &game_data->tex_data);
-	init_img_south_texture(game_data->mlx_data.mlx, &game_data->tex_data);
-	init_img_west_texture(game_data->mlx_data.mlx, &game_data->tex_data);
-	init_img_east_texture(game_data->mlx_data.mlx, &game_data->tex_data);
+	tex_data = &game->tex_data;
+	map = &game->map;
+	init_relative_path(&game->tex_data, &game->map);
+	init_img_north_texture(game->mlx.mlx, &game->tex_data);
+	init_img_south_texture(game->mlx.mlx, &game->tex_data);
+	init_img_west_texture(game->mlx.mlx, &game->tex_data);
+	init_img_east_texture(game->mlx.mlx, &game->tex_data);
 }

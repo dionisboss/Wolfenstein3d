@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 19:42:27 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:46:08 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,13 @@ static void		throw_a_beam(t_ray *ray, char **maze)
 	}
 }
 
-static void		calculate_perp_wall_dist(t_game *game_data)
+static void		calculate_perp_wall_dist(t_game *game)
 {
 	t_ray		*ray;
 	t_player	*player;
 
-	ray = &game_data->ray;
-	player = &game_data->player;
+	ray = &game->ray;
+	player = &game->player;
 	if (ray->side == 0)
 		ray->perp_wall_dist = (ray->map.x - player->pos.x +
 				(1 - ray->step.x) / 2) / ray->dir.x;
@@ -49,18 +49,18 @@ static void		calculate_perp_wall_dist(t_game *game_data)
 				(1 - ray->step.y) / 2) / ray->dir.y;
 }
 
-void			calculate_draw_start_end(t_game *game_data)
+void			calculate_draw_start_end(t_game *game)
 {
 	t_ray	*ray;
 
-	ray = &game_data->ray;
-	throw_a_beam(ray, game_data->map.map);
-	calculate_perp_wall_dist(game_data);
-	ray->line_h = (int)(game_data->map.r[1] / ray->perp_wall_dist);
-	ray->draw_start = -(ray->line_h) / 2 + game_data->map.r[1] / 2;
+	ray = &game->ray;
+	throw_a_beam(ray, game->map.map);
+	calculate_perp_wall_dist(game);
+	ray->line_h = (int)(game->map.r[1] / ray->perp_wall_dist);
+	ray->draw_start = -(ray->line_h) / 2 + game->map.r[1] / 2;
 	if (ray->draw_start < 0)
 		ray->draw_start = 0;
-	ray->draw_end = ray->line_h / 2 + game_data->map.r[1] / 2;
-	if (ray->draw_end >= game_data->map.r[1])
-		ray->draw_end = game_data->map.r[1] - 1;
+	ray->draw_end = ray->line_h / 2 + game->map.r[1] / 2;
+	if (ray->draw_end >= game->map.r[1])
+		ray->draw_end = game->map.r[1] - 1;
 }

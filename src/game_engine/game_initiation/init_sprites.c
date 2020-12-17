@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init_double_vectors.c                                     :+:      :+:    :+:   */
+/*   init_sprites.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/15 08:17:36 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 17:38:16 by gdrive           ###   ########.fr       */
+/*   Created: 2020/12/17 18:17:47 by gdrive            #+#    #+#             */
+/*   Updated: 2020/12/17 18:20:01 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,43 +17,27 @@
 #include "game_engine.h"
 #include "libft.h"
 
-void		print_arr_sprites(t_double_vector **sprites)
+void		init_double_vectors(t_game *game)
 {
-	size_t	k1 = 0;
-
-	while (sprites[k1] != NULL)
-	{
-		printf("sprites[%zu]: ", k1);
-		printf("x = %f y = %f\n", sprites[k1]->x, sprites[k1]->y);
-		k1++;
-	}
-}
-void		init_double_vectors(t_game *game_data)
-{
-	t_map		*map;
-	char		**maze;
+	t_map				*map;
 	t_double_vectors	*sprites;
-	t_tex_data	*s;
-	t_img_data	*s_img;
+	t_tex_data			*s;
+	t_img				*s_img;
 
-	map = &game_data->map;
-	maze = game_data->map.map;
-	init_arr_sprites(game_data);
-	sprites = &game_data->sprites;
-	//print_arr_sprites(sprites->sprites); // УБРАТЬ
+	map = &game->map;
+	init_arr_sprites(game);
+	sprites = &game->sprites;
 	check_dot_xpm(map->s);
-	s = &sprites->tex_data;;
-	s_img = &s->img_data;
+	s = &sprites->tex_data;
+	s_img = &s->img;
 	s->relative_path = map->s;
-	s_img->img = mlx_xpm_file_to_image(game_data->mlx_data.mlx,
+	s_img->img = mlx_xpm_file_to_image(game->mlx.mlx,
 			s->relative_path, &s->width, &s->height);
-
 	s_img->addr = mlx_get_data_addr(s_img->img,
 			&s_img->bits_per_pixel, &s_img->line_lenght, &s_img->endian);
-
 	if (s_img->img == NULL)
 	{
-		write(1, "ERROR: mlx cant open sprite texture\n", 36);
+		write(2, "ERROR: mlx cant open sprite texture\n", 36);
 		exit(-1);
 	}
 }

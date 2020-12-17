@@ -4,7 +4,6 @@ NAME = new_map.a
 
 SRCDIR = src/
 SRC =	$(SRCDIR)new_map.c \
-		$(FORTEST) \
 		$(INITORCLEAN) \
 		$(FILEWORK) \
 		$(GNL) \
@@ -12,10 +11,6 @@ SRC =	$(SRCDIR)new_map.c \
 		$(PARSEIDENTIFIER) \
 		$(PARSEMAP) \
 		$(CHECKCONFIGERROR)
-
-#for_test
-FORTESTDIR = $(SRCDIR)for_tests/
-FORTEST = $(FORTESTDIR)print_map.c
 
 #init_or_clean
 INITORCLEANDIR = $(SRCDIR)init_or_clean/

@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 18:40:39 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 17:40:36 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:46:08 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,20 +41,20 @@ static int	init_ray_steps(t_ray *ray, t_player *player)
 	return (0);
 }
 
-int			init_ray(t_game *game_data, size_t i)
+int			init_ray(t_game *game, size_t i)
 {
 	t_ray			*ray;
 	t_player		*player;
 	t_map			*map;
 
-	ray = &game_data->ray;
-	player = &game_data->player;
-	map = &game_data->map;
+	ray = &game->ray;
+	player = &game->player;
+	map = &game->map;
 	ray->camera_x = 2 * (map->r[0] - i) / (double)(map->r[0]) - 1;
 	ray->dir.x = player->dir.x + ray->plane.x * ray->camera_x;
 	ray->dir.y = player->dir.y + ray->plane.y * ray->camera_x;
-	ray->map.x = (int)game_data->player.pos.x;
-	ray->map.y = (int)game_data->player.pos.y;
+	ray->map.x = (int)game->player.pos.x;
+	ray->map.y = (int)game->player.pos.y;
 	ray->side_d.delta_x = fabs(1 / ray->dir.x);
 	ray->side_d.delta_y = fabs(1 / ray->dir.y);
 	init_ray_steps(ray, player);

@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 17:41:20 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 18:12:24 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,25 +64,25 @@ typedef struct			s_ray
 ** MLX-data.
 */
 
-typedef struct			s_mlx_data
+typedef struct			s_mlx
 {
 	void				*mlx;
 	void				*win;
-}						t_mlx_data;
+}						t_mlx;
 
 /*
 ** For s_game_data.
 ** IMG-data.
 */
 
-typedef struct			s_img_data
+typedef struct			s_img
 {
 	void				*img;
 	void				*addr;
 	int					bits_per_pixel;
 	int					line_lenght;
 	int					endian;
-}						t_img_data;
+}						t_img;
 
 /*
 ** For s_game_data.
@@ -92,7 +92,7 @@ typedef struct			s_img_data
 typedef struct			s_tex_data
 {
 	char				*relative_path;
-	t_img_data			img_data;
+	t_img			img;
 	int					width;
 	int					height;
 }						t_tex_data;
@@ -229,8 +229,8 @@ typedef struct			s_player
 
 typedef struct			s_game_data
 {
-	t_mlx_data			mlx_data;
-	t_img_data			img_data;
+	t_mlx			mlx;
+	t_img			img;
 	t_textures			tex_data;
 	t_double_vectors			sprites;
 	t_player			player;
@@ -279,7 +279,7 @@ int						raycasting_render(t_game *game_data);
 ** Drawing img.
 */
 
-void					my_mlx_pixel_put(t_img_data *data, int x, int y, int color);
+void					my_mlx_pixel_put(t_img *data, int x, int y, int color);
 void					draw_sky(t_game *game_data);
 void					draw_land(t_game *game_data);
 void					draw_textures(t_game *game_data, size_t i);
@@ -311,7 +311,7 @@ int						a_strafe_next_x_is_not_wall(t_game *game_data);
 int						d_strafe_next_y_is_not_wall(t_game *game_data);
 int						d_strafe_next_x_is_not_wall(t_game *game_data);
 
-int						turn_player(t_game *game_data);
+void					turn_player(t_game *game_data);
 
 /*
 ** ----------------------------------------------------------------------------
