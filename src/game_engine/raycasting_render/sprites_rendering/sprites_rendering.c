@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 11:27:42 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:38:17 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void	init_color(t_game *game)
 {
 	t_spr_render	*render;
-	t_sprites		*sprites;
+	t_double_vectors		*sprites;
 
 	render = &game->sprites.render;
 	sprites = &game->sprites;
@@ -40,7 +40,7 @@ static int	need_drawing(t_game *game, double *z_buff)
 static void	render_stripe(t_game *game_data, double *z_buff)
 {
 	t_spr_render	*render;
-	t_sprites		*sprites;
+	t_double_vectors		*sprites;
 
 	render = &game_data->sprites.render;
 	sprites = &game_data->sprites;
@@ -67,19 +67,19 @@ static void	render_stripe(t_game *game_data, double *z_buff)
 
 void		render_sprites(t_game *game_data, double *z_buff)
 {
-	t_sprites		*sprites;
+	t_double_vectors		*sprites;
 	t_spr_render	*render;
 	size_t			i;
 
 	sprites = &game_data->sprites;
 	render = &sprites->render;
 	init_order(game_data);
-	sort_sprites(render->sprite_order,
+	sort_double_vectors(render->sprite_order,
 			render->sprite_distance, sprites->num_sprites);
 	i = 0;
 	while (i < game_data->sprites.num_sprites)
 	{
-		init_sprite(game_data, i);
+		init_double_vector(game_data, i);
 		calculate_drawstart_end(game_data);
 		render->stripe = render->draw_start_x;
 		render_stripe(game_data, z_buff);

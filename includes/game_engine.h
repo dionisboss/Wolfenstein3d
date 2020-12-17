@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 16:53:13 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:38:19 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,23 +18,17 @@
 ** For s_ray_data.
 */
 
-typedef struct			s_plane
+typedef struct			s_double_vector
 {
 	double				x;
 	double				y;
-}						t_plane;
+}						t_double_vector;
 
-typedef struct			s_direction
-{
-	double				x;
-	double				y;
-}						t_direction;
-
-typedef struct			s_map_pos
+typedef struct			s_int_vector
 {
 	int					x;
 	int					y;
-}						t_map_pos;
+}						t_int_vector;
 
 typedef struct			s_side_dist
 {
@@ -44,12 +38,6 @@ typedef struct			s_side_dist
 	double				delta_y;
 }						t_side_dist;
 
-typedef struct			s_step
-{
-	int					x;
-	int					y;
-}						t_step;
-
 /*
 ** For s_game_data.
 ** Ray-data.
@@ -57,13 +45,13 @@ typedef struct			s_step
 
 typedef struct			s_ray
 {
-	t_plane				plane;
+	t_double_vector		plane;
 	double				camera_x;
-	t_direction			dir;
-	t_map_pos			map;
+	t_double_vector		dir;
+	t_int_vector		map;
 	t_side_dist			side_d;
 	double				perp_wall_dist;
-	t_step				step;
+	t_int_vector		step;
 	int					hit;
 	int					side;
 	int					line_h;
@@ -131,11 +119,13 @@ typedef struct			s_textures
 ** Sprite position.
 */
 
+/*
 typedef struct			s_sprite
 {
 	double				x;
 	double				y;
-}						t_sprite;
+}						t_double_vector;
+*/
 
 /*
 ** For s_sprites.
@@ -174,11 +164,11 @@ typedef struct			s_spr_render
 
 typedef struct			s_sprites
 {
-	t_sprite			**sprites;
+	t_double_vector		**sprites;
 	size_t				num_sprites;
 	t_spr_render		render;
 	t_tex_data			tex_data;
-}						t_sprites;
+}						t_double_vectors;
 
 
 /*
@@ -235,7 +225,7 @@ typedef struct			s_player_pos
 typedef struct			s_player
 {
 	t_player_pos		pos;
-	t_direction			dir;
+	t_double_vector		dir;
 	char				start_view;
 }						t_player;
 
@@ -248,7 +238,7 @@ typedef struct			s_game_data
 	t_mlx_data			mlx_data;
 	t_img_data			img_data;
 	t_textures			tex_data;
-	t_sprites			sprites;
+	t_double_vectors			sprites;
 	t_player			player;
 	t_keys_f			keys;
 	t_map				map;
@@ -266,16 +256,16 @@ typedef struct			s_game_data
 */
 
 int						init_game_space(t_game *game_data);
-int						init_player(t_player *player, t_plane *plane, char **maze);
+int						init_player(t_player *player, t_double_vector *plane, char **maze);
 void					init_wall_textures(t_game *game_data);
 void					check_dot_xpm(char *s);
 void					init_img_north_texture(void *mlx, t_textures *tex_data);
 void					init_img_south_texture(void *mlx, t_textures *tex_data);
 void					init_img_west_texture(void *mlx, t_textures *tex_data);
 void					init_img_east_texture(void *mlx, t_textures *tex_data);
-void					init_sprites(t_game *game_data);
+void					init_double_vectors(t_game *game_data);
 void					init_arr_sprites(t_game *game_data);
-int						free_sprites(t_sprite ***sprites);
+int						free_sprites(t_double_vector ***sprites);
 int						is_player(char c);
 
 /*
@@ -352,8 +342,8 @@ void					calculate_draw_start_end(t_game *game_data);
 
 void					render_sprites(t_game *game_data, double *z_buff);
 void					init_order(t_game *game);
-void					sort_sprites(int *order, double *distance, size_t len);
-void					init_sprite(t_game *game, size_t i);
+void					sort_double_vectors(int *order, double *distance, size_t len);
+void					init_double_vector(t_game *game, size_t i);
 void					calculate_drawstart_end(t_game *game);
 
 /*

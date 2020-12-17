@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init_sprites.c                                     :+:      :+:    :+:   */
+/*   init_double_vectors.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 08:17:36 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 16:51:39 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:38:16 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include "game_engine.h"
 #include "libft.h"
 
-void		print_arr_sprites(t_sprite **sprites)
+void		print_arr_sprites(t_double_vector **sprites)
 {
 	size_t	k1 = 0;
 
@@ -28,11 +28,11 @@ void		print_arr_sprites(t_sprite **sprites)
 		k1++;
 	}
 }
-void		init_sprites(t_game *game_data)
+void		init_double_vectors(t_game *game_data)
 {
 	t_map		*map;
 	char		**maze;
-	t_sprites	*sprites;
+	t_double_vectors	*sprites;
 	t_tex_data	*s;
 	t_img_data	*s_img;
 

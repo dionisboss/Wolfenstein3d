@@ -6,13 +6,13 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/17 12:52:54 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:38:16 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "game_engine.h"
 
-void	sort_sprites(int *order, double *distance, size_t len)
+void	sort_double_vectors(int *order, double *distance, size_t len)
 {
 	size_t	i;
 	size_t	j;
@@ -43,7 +43,7 @@ void	sort_sprites(int *order, double *distance, size_t len)
 void	init_order(t_game *game)
 {
 	t_player_pos			*pos;
-	t_sprite				**sprite;
+	t_double_vector				**sprite;
 	size_t					i;
 	static int				order[2048];
 	static double			distance[2048];
@@ -62,12 +62,12 @@ void	init_order(t_game *game)
 	game->sprites.render.sprite_distance = distance;
 }
 
-void	init_sprite(t_game *game, size_t i)
+void	init_double_vector(t_game *game, size_t i)
 {
 	t_player		*player;
 	t_ray			*ray;
 	t_spr_render	*render;
-	t_sprite		**sprite;
+	t_double_vector		**sprite;
 	int				*sprite_order;
 
 	player = &game->player;

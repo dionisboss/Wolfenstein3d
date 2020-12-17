@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 18:03:32 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:19:22 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	a_strafe_next_y_is_not_wall(t_game *game_data)
 {
-	t_plane		*plane;
+	t_double_vector		*plane;
 	t_player	*player;
 	char		**maze;
 
@@ -29,7 +29,7 @@ int	a_strafe_next_y_is_not_wall(t_game *game_data)
 
 int	a_strafe_next_x_is_not_wall(t_game *game_data)
 {
-	t_plane		*plane;
+	t_double_vector		*plane;
 	t_player	*player;
 	char		**maze;
 
@@ -44,7 +44,7 @@ int	a_strafe_next_x_is_not_wall(t_game *game_data)
 
 int	d_strafe_next_y_is_not_wall(t_game *game_data)
 {
-	t_plane		*plane;
+	t_double_vector		*plane;
 	t_player	*player;
 	char		**maze;
 
@@ -59,7 +59,7 @@ int	d_strafe_next_y_is_not_wall(t_game *game_data)
 
 int	d_strafe_next_x_is_not_wall(t_game *game_data)
 {
-	t_plane		*plane;
+	t_double_vector		*plane;
 	t_player	*player;
 	char		**maze;
 

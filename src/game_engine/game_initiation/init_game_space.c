@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:48:26 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 16:51:39 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:38:16 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,6 @@ int			init_game_space(t_game *game_data)
 	init_window(&game_data->mlx_data, &game_data->map);
 	init_img(&game_data->img_data, &game_data->mlx_data, &game_data->map);
 	init_wall_textures(game_data);
-	init_sprites(game_data);
+	init_double_vectors(game_data);
 	return (0);
 }

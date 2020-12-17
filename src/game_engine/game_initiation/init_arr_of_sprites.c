@@ -6,14 +6,14 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 10:28:09 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 16:51:39 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:38:15 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "game_engine.h"
 
-int			free_sprites(t_sprite ***sprites)
+int			free_sprites(t_double_vector ***sprites)
 {
 	size_t	i;
 
@@ -37,7 +37,7 @@ int			free_sprites(t_sprite ***sprites)
 ** Counting number of sprites.
 */
 
-static size_t		count_sprites(char **maze)
+static size_t		count_double_vectors(char **maze)
 {
 	size_t	i;
 	size_t	j;
@@ -68,7 +68,7 @@ static size_t		count_sprites(char **maze)
 ** Init array of sprites.
 */
 
-static void		write_array(t_sprite **sprites, char **maze)
+static void		write_array(t_double_vector **sprites, char **maze)
 {
 	size_t	i;
 	size_t	j;
@@ -84,7 +84,7 @@ static void		write_array(t_sprite **sprites, char **maze)
 		{
 			if (maze[i][j] == '2')
 			{
-				sprites[num_sprite] = (t_sprite*)malloc(sizeof(t_sprite));
+				sprites[num_sprite] = (t_double_vector*)malloc(sizeof(t_double_vector));
 				if (sprites[num_sprite] == NULL)
 				{
 					free_sprites(&sprites);
@@ -104,13 +104,13 @@ void			init_arr_sprites(t_game *game_data)
 {
 	t_map		*map;
 	char		**maze;
-	t_sprite	**sprites;
+	t_double_vector	**sprites;
 	size_t		num_sprites;
 
 	map = &game_data->map;
 	maze = game_data->map.map;
-	num_sprites = count_sprites(map->map);
-	sprites = (t_sprite**)malloc(sizeof(t_sprite*) * (num_sprites + 1));
+	num_sprites = count_double_vectors(map->map);
+	sprites = (t_double_vector**)malloc(sizeof(t_double_vector*) * (num_sprites + 1));
 	if (sprites == NULL)
 		exit(-1);
 	sprites[num_sprites] = NULL;

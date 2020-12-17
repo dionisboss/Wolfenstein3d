@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 13:39:02 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/11 15:04:02 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:19:21 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static int	take_position(t_player *player, char **maze)
 	return (FALSE);
 }
 
-static int	take_w_e_direction(t_player *player, t_plane *plane)
+static int	take_w_e_direction(t_player *player, t_double_vector *plane)
 {
 	if (player->start_view == 'W')
 	{
@@ -61,7 +61,7 @@ static int	take_w_e_direction(t_player *player, t_plane *plane)
 	return (0);
 }
 
-static int	take_direction(t_player *player, t_plane *plane)
+static int	take_direction(t_player *player, t_double_vector *plane)
 {
 	if (player->start_view == 'N')
 	{
@@ -82,7 +82,7 @@ static int	take_direction(t_player *player, t_plane *plane)
 	return (0);
 }
 
-int			init_player(t_player *player, t_plane *plane, char **maze)
+int			init_player(t_player *player, t_double_vector *plane, char **maze)
 {
 	take_position(player, maze);
 	take_direction(player, plane);
