@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 19:07:41 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 19:56:12 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -255,7 +255,7 @@ int						is_player(char c);
 */
 
 int						start_game(t_game *game_data);
-void					finish_game(t_game *game_data);
+int						finish_game(t_game *game_data);
 
 /*
 ** Render

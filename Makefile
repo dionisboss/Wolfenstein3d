@@ -11,8 +11,8 @@ SRC =	$(SRCDIR)main.c \
 #####################     LIBS     ##########################
 
 LIBS =	$(LIBNEWMAP) \
-		$(LIBMLX) \
-		$(LIBFT)
+		$(LIBFT) \
+		$(LIBMLX)
 
 LIBNEWMAPDIR = $(SRCDIR)parse_map/
 LIBNEWMAP = $(LIBNEWMAPDIR)new_map.a \
