@@ -66,7 +66,8 @@ RAYCASTING_RENDER =		$(RAYCASTING_RENDER_DIR)raycasting_render.c \
 #//// sprites_rendering
 
 SPRITES_RENDERING_DIR =	$(RAYCASTING_RENDER_DIR)sprites_rendering/
-SPRITES_RENDERING =		$(SPRITES_RENDERING_DIR)sprites_rendering.c
+SPRITES_RENDERING =		$(SPRITES_RENDERING_DIR)sprites_rendering.c \
+						$(SPRITES_RENDERING_DIR)sprite_rendering_utils.c
 
 #//////////////////////
 

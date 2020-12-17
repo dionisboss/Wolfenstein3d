@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/16 16:55:14 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 13:01:49 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -343,7 +343,22 @@ int						turn_player(t_game_data *game_data);
 
 int						init_ray(t_game_data *game_data, size_t i);
 void					calculate_draw_start_end(t_game_data *game_data);
+
+/*
+** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**                              Sprites rendering.~
+** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
 void					render_sprites(t_game_data *game_data, double *z_buff);
+void					init_order(t_game_data *game);
+void					sort_sprites(int *order, double *distance, size_t len);
+void					init_sprite(t_game_data *game, size_t i);
+void					calculate_drawstart_end(t_game_data *game);
+
+/*
+** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
 
 /*
 ** ----------------------------------------------------------------------------
