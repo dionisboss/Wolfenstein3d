@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 14:51:30 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/10 20:41:49 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:59 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ static int	previous_x_is_not_wall(char **maze, t_player *player)
 ** For strafe.
 */
 
-static int	a_strafe_next_y_is_not_wall(char **maze, t_game_data *game_data)
+static int	a_strafe_next_y_is_not_wall(char **maze, t_game *game_data)
 {
 
 	t_plane		*plane = &game_data->ray.plane;
@@ -72,7 +72,7 @@ static int	a_strafe_next_y_is_not_wall(char **maze, t_game_data *game_data)
 			));
 }
 
-static int	a_strafe_next_x_is_not_wall(char **maze, t_game_data *game_data)
+static int	a_strafe_next_x_is_not_wall(char **maze, t_game *game_data)
 {
 
 	t_plane		*plane = &game_data->ray.plane;
@@ -84,7 +84,7 @@ static int	a_strafe_next_x_is_not_wall(char **maze, t_game_data *game_data)
 			[(int)(player->pos.x + plane->x * MOVE_SPEED)]));
 }
 
-static int	d_strafe_next_y_is_not_wall(char **maze, t_game_data *game_data)
+static int	d_strafe_next_y_is_not_wall(char **maze, t_game *game_data)
 {
 
 	t_plane		*plane = &game_data->ray.plane;
@@ -97,7 +97,7 @@ static int	d_strafe_next_y_is_not_wall(char **maze, t_game_data *game_data)
 			));
 }
 
-static int	d_strafe_next_x_is_not_wall(char **maze, t_game_data *game_data)
+static int	d_strafe_next_x_is_not_wall(char **maze, t_game *game_data)
 {
 
 	t_plane		*plane = &game_data->ray.plane;
@@ -109,7 +109,7 @@ static int	d_strafe_next_x_is_not_wall(char **maze, t_game_data *game_data)
 			[(int)(player->pos.x - plane->x * MOVE_SPEED)]));
 }
 
-void		player_move(t_game_data *game_data)
+void		player_move(t_game *game_data)
 {
 	t_player	*player;
 	char		**maze;

@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 12:39:41 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/14 20:59:16 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:38 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	my_mlx_pixel_put(t_img_data *data, int x, int y, int color)
 	*(unsigned int*)dst = color;
 }
 
-void	draw_sky(t_game_data *game_data)
+void	draw_sky(t_game *game_data)
 {
 	size_t	x;
 	size_t	y;
@@ -41,7 +41,7 @@ void	draw_sky(t_game_data *game_data)
 	}
 }
 
-void	draw_land(t_game_data *game_data)
+void	draw_land(t_game *game_data)
 {
 	size_t	x;
 	size_t	y;

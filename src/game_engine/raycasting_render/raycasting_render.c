@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:49:20 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/16 16:31:05 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "mlx.h"
 #include <stdio.h>
 
-int		raycasting_render(t_game_data *game_data)
+int		raycasting_render(t_game *game_data)
 {
 	t_mlx_data			*mlx;
 	t_ray				*ray;

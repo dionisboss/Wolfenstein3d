@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 13:01:49 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:53:13 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -253,7 +253,7 @@ typedef struct			s_game_data
 	t_keys_f			keys;
 	t_map				map;
 	t_ray				ray;
-}						t_game_data;
+}						t_game;
 
 /*
 ** ============================================================================
@@ -265,16 +265,16 @@ typedef struct			s_game_data
 ** Init game workspace.
 */
 
-int						init_game_space(t_game_data *game_data);
+int						init_game_space(t_game *game_data);
 int						init_player(t_player *player, t_plane *plane, char **maze);
-void					init_wall_textures(t_game_data *game_data);
+void					init_wall_textures(t_game *game_data);
 void					check_dot_xpm(char *s);
 void					init_img_north_texture(void *mlx, t_textures *tex_data);
 void					init_img_south_texture(void *mlx, t_textures *tex_data);
 void					init_img_west_texture(void *mlx, t_textures *tex_data);
 void					init_img_east_texture(void *mlx, t_textures *tex_data);
-void					init_sprites(t_game_data *game_data);
-void					init_arr_sprites(t_game_data *game_data);
+void					init_sprites(t_game *game_data);
+void					init_arr_sprites(t_game *game_data);
 int						free_sprites(t_sprite ***sprites);
 int						is_player(char c);
 
@@ -282,30 +282,30 @@ int						is_player(char c);
 ** Game control.
 */
 
-int						start_game(t_game_data *game_data);
-void					finish_game(t_game_data *game_data);
+int						start_game(t_game *game_data);
+void					finish_game(t_game *game_data);
 
 /*
 ** Render
 */
 
-int						raycasting_render(t_game_data *game_data);
+int						raycasting_render(t_game *game_data);
 
 /*
 ** Drawing img.
 */
 
 void					my_mlx_pixel_put(t_img_data *data, int x, int y, int color);
-void					draw_sky(t_game_data *game_data);
-void					draw_land(t_game_data *game_data);
-void					draw_textures(t_game_data *game_data, size_t i);
+void					draw_sky(t_game *game_data);
+void					draw_land(t_game *game_data);
+void					draw_textures(t_game *game_data, size_t i);
 
 /*
 ** Keyboard hanlder.
 */
 
-int						handle_pressed_key(int keycode, t_game_data *game_data);
-int						handle_unpressed_key(int keycode, t_game_data *game_data);
+int						handle_pressed_key(int keycode, t_game *game_data);
+int						handle_unpressed_key(int keycode, t_game *game_data);
 
 /*
 ** ----------------------------------------------------------------------------
@@ -313,21 +313,21 @@ int						handle_unpressed_key(int keycode, t_game_data *game_data);
 ** ----------------------------------------------------------------------------
 */
 
-void					player_move(t_game_data *game_data);
+void					player_move(t_game *game_data);
 
-int						move_forward_backward(t_game_data *game_data);
+int						move_forward_backward(t_game *game_data);
 int						next_y_is_not_wall(char **maze, t_player *player);
 int						next_x_is_not_wall(char **maze, t_player *player);
 int						previous_y_is_not_wall(char **maze, t_player *player);
 int						previous_x_is_not_wall(char **maze, t_player *player);
 
-int						move_sideways(t_game_data *game_data);
-int						a_strafe_next_y_is_not_wall(t_game_data *game_data);
-int						a_strafe_next_x_is_not_wall(t_game_data *game_data);
-int						d_strafe_next_y_is_not_wall(t_game_data *game_data);
-int						d_strafe_next_x_is_not_wall(t_game_data *game_data);
+int						move_sideways(t_game *game_data);
+int						a_strafe_next_y_is_not_wall(t_game *game_data);
+int						a_strafe_next_x_is_not_wall(t_game *game_data);
+int						d_strafe_next_y_is_not_wall(t_game *game_data);
+int						d_strafe_next_x_is_not_wall(t_game *game_data);
 
-int						turn_player(t_game_data *game_data);
+int						turn_player(t_game *game_data);
 
 /*
 ** ----------------------------------------------------------------------------
@@ -341,8 +341,8 @@ int						turn_player(t_game_data *game_data);
 ** ----------------------------------------------------------------------------
 */
 
-int						init_ray(t_game_data *game_data, size_t i);
-void					calculate_draw_start_end(t_game_data *game_data);
+int						init_ray(t_game *game_data, size_t i);
+void					calculate_draw_start_end(t_game *game_data);
 
 /*
 ** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -350,11 +350,11 @@ void					calculate_draw_start_end(t_game_data *game_data);
 ** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-void					render_sprites(t_game_data *game_data, double *z_buff);
-void					init_order(t_game_data *game);
+void					render_sprites(t_game *game_data, double *z_buff);
+void					init_order(t_game *game);
 void					sort_sprites(int *order, double *distance, size_t len);
-void					init_sprite(t_game_data *game, size_t i);
-void					calculate_drawstart_end(t_game_data *game);
+void					init_sprite(t_game *game, size_t i);
+void					calculate_drawstart_end(t_game *game);
 
 /*
 ** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

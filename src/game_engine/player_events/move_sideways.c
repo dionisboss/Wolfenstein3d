@@ -6,13 +6,13 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 15:23:05 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/14 19:10:52 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:41 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "game_engine.h"
 
-int	move_sideways(t_game_data *game_data)
+int	move_sideways(t_game *game_data)
 {
 	t_player	*player;
 	char		**maze;

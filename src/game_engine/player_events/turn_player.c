@@ -6,14 +6,14 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 18:14:28 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/14 19:12:14 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
 #include "game_engine.h"
 
-int	turn_player(t_game_data *game_data)
+int	turn_player(t_game *game_data)
 {
 	t_direction	*dir;
 	t_plane		*plane;

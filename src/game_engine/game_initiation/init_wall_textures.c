@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 15:47:54 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/15 10:52:21 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:39 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void		init_relative_path(t_textures *tex_data, t_map *map)
 	check_dot_xpm(tex_data->ea.relative_path);
 }
 
-void		init_wall_textures(t_game_data *game_data)
+void		init_wall_textures(t_game *game_data)
 {
 	t_textures	*tex_data;
 	t_map		*map;

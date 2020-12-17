@@ -6,13 +6,13 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 11:27:42 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 13:25:07 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "game_engine.h"
 
-static void	init_color(t_game_data *game)
+static void	init_color(t_game *game)
 {
 	t_spr_render	*render;
 	t_sprites		*sprites;
@@ -27,7 +27,7 @@ static void	init_color(t_game_data *game)
 		[sprites->tex_data.width * render->tex_y + render->tex_x];
 }
 
-static int	need_drawing(t_game_data *game, double *z_buff)
+static int	need_drawing(t_game *game, double *z_buff)
 {
 	t_spr_render	*render;
 
@@ -37,7 +37,7 @@ static int	need_drawing(t_game_data *game, double *z_buff)
 			render->transform_y < z_buff[render->stripe]);
 }
 
-static void	render_stripe(t_game_data *game_data, double *z_buff)
+static void	render_stripe(t_game *game_data, double *z_buff)
 {
 	t_spr_render	*render;
 	t_sprites		*sprites;
@@ -65,7 +65,7 @@ static void	render_stripe(t_game_data *game_data, double *z_buff)
 	}
 }
 
-void		render_sprites(t_game_data *game_data, double *z_buff)
+void		render_sprites(t_game *game_data, double *z_buff)
 {
 	t_sprites		*sprites;
 	t_spr_render	*render;

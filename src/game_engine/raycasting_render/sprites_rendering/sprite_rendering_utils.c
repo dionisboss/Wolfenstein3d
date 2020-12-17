@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/17 12:52:54 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 13:32:18 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	sort_sprites(int *order, double *distance, size_t len)
 	}
 }
 
-void	init_order(t_game_data *game)
+void	init_order(t_game *game)
 {
 	t_player_pos			*pos;
 	t_sprite				**sprite;
@@ -62,7 +62,7 @@ void	init_order(t_game_data *game)
 	game->sprites.render.sprite_distance = distance;
 }
 
-void	init_sprite(t_game_data *game, size_t i)
+void	init_sprite(t_game *game, size_t i)
 {
 	t_player		*player;
 	t_ray			*ray;
@@ -87,7 +87,7 @@ void	init_sprite(t_game_data *game, size_t i)
 			(1 + render->transform_x / render->transform_y));
 }
 
-void	calculate_drawstart_end(t_game_data *game)
+void	calculate_drawstart_end(t_game *game)
 {
 	t_spr_render	*render;
 

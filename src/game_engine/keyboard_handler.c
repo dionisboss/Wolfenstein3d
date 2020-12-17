@@ -6,13 +6,13 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 11:55:27 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/10 16:39:48 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:39 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "game_engine.h"
 
-int	handle_pressed_key(int keycode, t_game_data *game_data)
+int	handle_pressed_key(int keycode, t_game *game_data)
 {
 	if (keycode == ESC)
 		finish_game(game_data);
@@ -31,7 +31,7 @@ int	handle_pressed_key(int keycode, t_game_data *game_data)
 	return (0);
 }
 
-int		handle_unpressed_key(int keycode, t_game_data *game_data)
+int		handle_unpressed_key(int keycode, t_game *game_data)
 {
 	if (keycode == KEY_W)
 		game_data->keys.w = 0;

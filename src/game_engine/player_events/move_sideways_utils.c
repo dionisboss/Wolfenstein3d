@@ -6,13 +6,13 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 18:03:32 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/11 18:31:46 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "game_engine.h"
 
-int	a_strafe_next_y_is_not_wall(t_game_data *game_data)
+int	a_strafe_next_y_is_not_wall(t_game *game_data)
 {
 	t_plane		*plane;
 	t_player	*player;
@@ -27,7 +27,7 @@ int	a_strafe_next_y_is_not_wall(t_game_data *game_data)
 				[(int)player->pos.x]));
 }
 
-int	a_strafe_next_x_is_not_wall(t_game_data *game_data)
+int	a_strafe_next_x_is_not_wall(t_game *game_data)
 {
 	t_plane		*plane;
 	t_player	*player;
@@ -42,7 +42,7 @@ int	a_strafe_next_x_is_not_wall(t_game_data *game_data)
 			[(int)(player->pos.x + plane->x * MOVE_SPEED)]));
 }
 
-int	d_strafe_next_y_is_not_wall(t_game_data *game_data)
+int	d_strafe_next_y_is_not_wall(t_game *game_data)
 {
 	t_plane		*plane;
 	t_player	*player;
@@ -57,7 +57,7 @@ int	d_strafe_next_y_is_not_wall(t_game_data *game_data)
 				[(int)player->pos.x]));
 }
 
-int	d_strafe_next_x_is_not_wall(t_game_data *game_data)
+int	d_strafe_next_x_is_not_wall(t_game *game_data)
 {
 	t_plane		*plane;
 	t_player	*player;

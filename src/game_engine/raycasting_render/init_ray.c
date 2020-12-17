@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 18:40:39 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/15 18:30:20 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static int	init_ray_steps(t_ray *ray, t_player *player)
 	return (0);
 }
 
-int			init_ray(t_game_data *game_data, size_t i)
+int			init_ray(t_game *game_data, size_t i)
 {
 	t_ray			*ray;
 	t_player		*player;

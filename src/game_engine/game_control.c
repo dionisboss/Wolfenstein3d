@@ -6,14 +6,14 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 12:18:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/15 11:13:03 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:39 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mlx.h"
 #include "game_engine.h"
 
-int		start_game(t_game_data *game_data)
+int		start_game(t_game *game_data)
 {
 	init_game_space(game_data);
 	mlx_do_key_autorepeatoff(game_data->mlx_data.mlx);
@@ -24,7 +24,7 @@ int		start_game(t_game_data *game_data)
 	return (0);
 }
 
-void	finish_game(t_game_data *game_data)
+void	finish_game(t_game *game_data)
 {
 	mlx_destroy_window(game_data->mlx_data.mlx, game_data->mlx_data.win);
 	game_data->map.clear(&game_data->map);

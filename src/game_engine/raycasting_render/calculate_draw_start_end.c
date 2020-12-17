@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 19:42:27 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/14 14:11:03 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static void		throw_a_beam(t_ray *ray, char **maze)
 	}
 }
 
-static void		calculate_perp_wall_dist(t_game_data *game_data)
+static void		calculate_perp_wall_dist(t_game *game_data)
 {
 	t_ray		*ray;
 	t_player	*player;
@@ -49,7 +49,7 @@ static void		calculate_perp_wall_dist(t_game_data *game_data)
 				(1 - ray->step.y) / 2) / ray->dir.y;
 }
 
-void			calculate_draw_start_end(t_game_data *game_data)
+void			calculate_draw_start_end(t_game *game_data)
 {
 	t_ray	*ray;
 

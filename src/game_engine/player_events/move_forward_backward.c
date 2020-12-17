@@ -6,13 +6,13 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 15:06:37 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/11 18:26:49 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:40 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "game_engine.h"
 
-int		move_forward_backward(t_game_data *game_data)
+int		move_forward_backward(t_game *game_data)
 {
 	t_player	*player;
 	char		**maze;

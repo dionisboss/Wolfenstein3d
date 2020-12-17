@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:49:20 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/09 17:52:58 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:52:00 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "game_engine.h"
 #include "mlx.h"
 
-int		raycasting_render(t_game_data *game_data)
+int		raycasting_render(t_game *game_data)
 {
 	t_ray_dir			*ray;
 	static size_t		i;

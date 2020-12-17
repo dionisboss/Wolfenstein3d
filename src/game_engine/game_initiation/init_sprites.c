@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 08:17:36 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/16 18:54:29 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:39 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void		print_arr_sprites(t_sprite **sprites)
 		k1++;
 	}
 }
-void		init_sprites(t_game_data *game_data)
+void		init_sprites(t_game *game_data)
 {
 	t_map		*map;
 	char		**maze;

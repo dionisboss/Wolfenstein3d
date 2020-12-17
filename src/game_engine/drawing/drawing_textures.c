@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 19:35:32 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/15 18:32:37 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:39 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "game_engine.h"
 #include "drawing_textures.h"
 
-static t_tex_data	*init_tex(t_game_data *game_data)
+static t_tex_data	*init_tex(t_game *game_data)
 {
 	t_ray	*ray;
 
@@ -36,7 +36,7 @@ static t_tex_data	*init_tex(t_game_data *game_data)
 	return (NULL);
 }
 
-static void		init_vars(t_game_data *game_data, t_tex_draw_vars *vars)
+static void		init_vars(t_game *game_data, t_tex_draw_vars *vars)
 {
 	t_ray				*ray;
 	t_player			*player;
@@ -58,7 +58,7 @@ static void		init_vars(t_game_data *game_data, t_tex_draw_vars *vars)
 	vars->tex_num = game_data->map.map[ray->map.y][ray->map.x] - 1;
 }
 
-void			draw_textures(t_game_data *game_data, size_t i)
+void			draw_textures(t_game *game_data, size_t i)
 {
 	t_tex_draw_vars		vars;
 	t_ray				*ray;

@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 16:08:09 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/14 19:02:29 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:52 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int		main(int argc, char **argv)
 	** Создание карты.
 	*/
 
-	t_game_data		game_data;
+	t_game		game_data;
 
 	new_map(&game_data.map);
 	game_data.map.parse_file(argv[1], &game_data.map);

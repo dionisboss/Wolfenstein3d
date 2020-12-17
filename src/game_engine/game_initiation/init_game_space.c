@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:48:26 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/15 09:23:27 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:39 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static int	init_img(t_img_data *img_data, t_mlx_data *mlx_data, t_map *map)
 	return (0);
 }
 
-int			init_game_space(t_game_data *game_data)
+int			init_game_space(t_game *game_data)
 {
 	init_player(&game_data->player, &game_data->ray.plane, game_data->map.map);
 	init_window(&game_data->mlx_data, &game_data->map);

@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 14:51:30 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/11 18:26:04 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static int	is_zero(t_keys_f *keys)
 			keys->q == 0 && keys->e == 0);
 }
 
-void		player_move(t_game_data *game_data)
+void		player_move(t_game *game_data)
 {
 	t_player	*player;
 	char		**maze;
