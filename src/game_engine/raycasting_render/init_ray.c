@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 18:40:39 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 16:51:42 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:40:36 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 static int	init_ray_steps(t_ray *ray, t_player *player)
 {
-	t_player_pos *pos;
+	t_double_vector *pos;
 
 	pos = &player->pos;
 	if (ray->dir.x < 0)

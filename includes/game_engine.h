@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:50:35 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 17:38:19 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/17 17:41:20 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -211,12 +211,6 @@ typedef struct			s_key_f
 # define MOVE_SPEED 0.1
 # define ROT_SPEED 0.05
 
-typedef struct			s_player_pos
-{
-	double				x;
-	double				y;
-}						t_player_pos;
-
 /*
 ** For s_game_data.
 ** Information about player.
@@ -224,7 +218,7 @@ typedef struct			s_player_pos
 
 typedef struct			s_player
 {
-	t_player_pos		pos;
+	t_double_vector		pos;
 	t_double_vector		dir;
 	char				start_view;
 }						t_player;
