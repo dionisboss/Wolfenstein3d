@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/17 18:17:47 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 19:58:12 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/18 18:17:33 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,11 @@ void		init_double_vectors(t_game *game)
 	s->relative_path = map->s;
 	s_img->img = mlx_xpm_file_to_image(game->mlx.mlx,
 			s->relative_path, &s->width, &s->height);
-	s_img->addr = mlx_get_data_addr(s_img->img,
-			&s_img->bits_per_pixel, &s_img->line_lenght, &s_img->endian);
 	if (s_img->img == NULL)
 	{
 		write(2, "ERROR: mlx cant open sprite texture\n", 36);
 		exit(-1);
 	}
+	s_img->addr = mlx_get_data_addr(s_img->img,
+			&s_img->bits_per_pixel, &s_img->line_lenght, &s_img->endian);
 }

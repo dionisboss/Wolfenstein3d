@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/17 12:52:54 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 20:32:07 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/18 18:16:48 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	sort_double_vectors(int *order, double *distance, size_t len)
 	if (len == 0)
 		return ;
 	i = -1;
-	while (i++ < len - 1)
+	while (++i < len - 1)
 	{
 		j = i + 1;
 		while (j < len)
