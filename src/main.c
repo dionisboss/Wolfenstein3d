@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 16:08:09 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/21 20:10:23 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/21 22:11:14 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,27 +20,28 @@
 
 static int		check_args(int argc, char **argv)
 {
-	return (argc > 1);
+	return (argc >= 2 && argc <= 3);
+}
+
+static void		args_error_exit(void)
+{
+	write(2, "ERROR: invalid arguments!\n", 26);
+	exit(-1);
 }
 
 static int		check_save_flag(int argc, char **argv)
 {
 	int		diff;
 
-	if (argc < 3)
+	if (argc == 2)
 		return (false);
 	else
 		diff = ft_strcmp(argv[2], "--save");
 	if (diff == 0)
 		return (true);
 	else
-		return (false);
-}
-
-static void		args_error_exit(void)
-{
-	write(2, "ERROR: no arguments!\n", 21);
-	exit(-1);
+		args_error_exit();
+	return (false);
 }
 
 int				main(int argc, char **argv)
