@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 16:37:58 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 20:02:48 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/21 22:24:36 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ int					parse_resolution(t_arrstrs params, t_map *map)
 	if (!ft_is_digitsn(params.arr[1], 0) || !ft_is_digitsn(params.arr[2], 0))
 		return (ERROR);
 	if (ft_nbcmp(params.arr[1], "5120") >= 0)
-		map->r[0] = 2560;
+		map->r[0] = 2880;
 	if (ft_nbcmp(params.arr[2], "2880") >= 0)
-		map->r[1] = 1440;
+		map->r[1] = 1575;
 	if (map->r[0] == 0)
 		map->r[0] = ft_atoi(params.arr[1]);
 	if (map->r[1] == 0)
