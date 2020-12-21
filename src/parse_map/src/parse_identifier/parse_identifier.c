@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/27 18:51:44 by gdrive            #+#    #+#             */
-/*   Updated: 2020/11/27 18:51:45 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/21 22:44:57 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "parse_identifier.h"
 #include "libft.h"
 
-static int	parse_technical(t_arrstrs params, t_map *map)
+static int		parse_technical(t_arrstrs params, t_map *map)
 {
 	if (params.len == 3 && is_resolution(params.arr[0]))
 	{

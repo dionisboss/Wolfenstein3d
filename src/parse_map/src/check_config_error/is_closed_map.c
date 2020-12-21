@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 13:33:27 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/15 07:54:48 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/21 22:43:34 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ static int	check_walls_or_space(char **maze, size_t i, size_t j)
 	return (TRUE);
 }
 
-int		is_closed_map(char **maze)
+int			is_closed_map(char **maze)
 {
 	size_t		j;
 	size_t		i;

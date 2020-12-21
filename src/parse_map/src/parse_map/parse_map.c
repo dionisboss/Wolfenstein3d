@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/30 15:42:06 by gdrive            #+#    #+#             */
-/*   Updated: 2020/11/30 15:42:06 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/21 22:43:16 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	scan_for_other_c(t_str *line)
 	return (TRUE);
 }
 
-int		parse_map(t_str *line, t_map *map)
+int			parse_map(t_str *line, t_map *map)
 {
 	if (scan_for_other_c(line) == ERROR)
 		return (ERROR);

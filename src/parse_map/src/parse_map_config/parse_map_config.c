@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 14:10:40 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/01 14:10:41 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/21 22:44:39 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static int	cut_firsts_empty_lines(t_map *map)
 static int	parse_line(t_str *line, t_map *map)
 {
 	t_arrstrs	params;
-	int		status;
+	int			status;
 
 	if ((params.arr = ft_split((const char*)line->s, ' ')) == NULL)
 		return (ERROR);
@@ -107,7 +107,7 @@ static int	print_error(t_map *map)
 ** Else returns (int) 1.
 */
 
-int		parse_map_config(char *file, t_map *map)
+int			parse_map_config(char *file, t_map *map)
 {
 	int		fd;
 	int		status;
