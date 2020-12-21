@@ -6,7 +6,8 @@ SRC =	$(SRCDIR)main.c \
 		$(GAME_ENGINE) \
 		$(PLAYER_EVENTS) \
 		$(RAYCASTING_RENDER) \
-		$(DRAWING)
+		$(DRAWING) \
+		$(SCREENSHOT)
 
 #####################     LIBS     ##########################
 
@@ -83,6 +84,13 @@ DRAWING =		$(DRAWING_DIR)drawing_img.c \
 
 #############################################################
 
+###################      screenshot     #####################
+
+SCREENSHOT_DIR =	$(SRCDIR)screenshot/
+SCREENSHOT =		$(SCREENSHOT_DIR)do_screenshot.c
+
+#############################################################
+
 ######################     OBJ     ##########################
 
 OBJ = $(SRC:.c=.o)
@@ -93,24 +101,24 @@ SEGINFOFLAG = -fsanitize=address
 INCLD = includes/
 
 .c.o:
-	$(CC) -I$(INCLD) -c $< -o $(<:.c=.o)
+	$(CC) $(SEGINFOFLAG) -I$(INCLD) -c $< -o $(<:.c=.o)
 
 #############################################################
 
 $(NAME):	$(OBJ)
 	make -C src/minilibx_opengl_20191021/
 	make -C src/parse_map/
-	$(CC) $(MLXFLAGS) $(LIBS) $(OBJ) -o $(NAME)
+	$(CC) $(SEGINFOFLAG) $(MLXFLAGS) $(LIBS) $(OBJ) -o $(NAME)
 
 all:		$(NAME)
 
 clean:
-	make clean -C src/minilibx_opengl_20191021/
+	#make clean -C src/minilibx_opengl_20191021/
 	make clean -C src/parse_map/
 	rm -rf $(OBJ)
 
 fclean: clean
-	make clean -C src/minilibx_opengl_20191021/
+	#make clean -C src/minilibx_opengl_20191021/
 	make fclean -C src/parse_map/
 	rm -rf $(NAME)
 
