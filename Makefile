@@ -87,7 +87,8 @@ DRAWING =		$(DRAWING_DIR)drawing_img.c \
 ###################      screenshot     #####################
 
 SCREENSHOT_DIR =	$(SRCDIR)screenshot/
-SCREENSHOT =		$(SCREENSHOT_DIR)do_screenshot.c
+SCREENSHOT =		$(SCREENSHOT_DIR)do_screenshot.c \
+					$(SCREENSHOT_DIR)init_bitmap.c
 
 #############################################################
 
@@ -101,24 +102,24 @@ SEGINFOFLAG = -fsanitize=address
 INCLD = includes/
 
 .c.o:
-	$(CC) $(SEGINFOFLAG) -I$(INCLD) -c $< -o $(<:.c=.o)
+	$(CC) -I$(INCLD) -c $< -o $(<:.c=.o)
 
 #############################################################
 
 $(NAME):	$(OBJ)
 	make -C src/minilibx_opengl_20191021/
 	make -C src/parse_map/
-	$(CC) $(SEGINFOFLAG) $(MLXFLAGS) $(LIBS) $(OBJ) -o $(NAME)
+	$(CC) $(MLXFLAGS) $(LIBS) $(OBJ) -o $(NAME)
 
 all:		$(NAME)
 
 clean:
-	#make clean -C src/minilibx_opengl_20191021/
+	make clean -C src/minilibx_opengl_20191021/
 	make clean -C src/parse_map/
 	rm -rf $(OBJ)
 
 fclean: clean
-	#make clean -C src/minilibx_opengl_20191021/
+	make clean -C src/minilibx_opengl_20191021/
 	make fclean -C src/parse_map/
 	rm -rf $(NAME)
 

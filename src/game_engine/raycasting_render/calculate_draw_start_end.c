@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 19:42:27 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 19:58:23 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/21 17:31:43 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,5 @@ void			calculate_draw_start_end(t_game *game)
 		ray->draw_start = 0;
 	ray->draw_end = ray->line_h / 2 + game->map.r[1] / 2;
 	if (ray->draw_end >= game->map.r[1])
-		ray->draw_end = game->map.r[1] - 1;
+		ray->draw_end = game->map.r[1];
 }

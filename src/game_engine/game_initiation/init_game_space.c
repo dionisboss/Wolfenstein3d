@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:48:26 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/17 19:58:11 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/21 20:11:50 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,17 @@ static int	init_window(t_mlx *mlx, t_map *map)
 	return (0);
 }
 
+static int	init_keys(t_keys_f *keys)
+{
+	keys->w = 0;
+	keys->s = 0;
+	keys->a = 0;
+	keys->d = 0;
+	keys->q = 0;
+	keys->e = 0;
+	return (0);
+}
+
 static int	init_img(t_img *img, t_mlx *mlx, t_map *map)
 {
 	img->img = mlx_new_image(mlx->mlx, map->r[0], map->r[1]);
@@ -43,6 +54,7 @@ static int	init_img(t_img *img, t_mlx *mlx, t_map *map)
 int			init_game_space(t_game *game)
 {
 	init_player(&game->player, &game->ray.plane, game->map.map);
+	init_keys(&game->keys);
 	init_window(&game->mlx, &game->map);
 	init_img(&game->img, &game->mlx, &game->map);
 	init_wall_textures(game);

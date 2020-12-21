@@ -6,7 +6,7 @@
 /*   By: gdrive <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 16:08:09 by gdrive            #+#    #+#             */
-/*   Updated: 2020/12/21 13:49:23 by gdrive           ###   ########.fr       */
+/*   Updated: 2020/12/21 20:10:23 by gdrive           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int		check_args(int argc, char **argv)
 static int		check_save_flag(int argc, char **argv)
 {
 	int		diff;
-	
+
 	if (argc < 3)
 		return (false);
 	else
