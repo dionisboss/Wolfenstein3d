@@ -70,7 +70,7 @@ static int	check_walls_or_space(char **maze, size_t i, size_t j)
 	return (TRUE);
 }
 
-int			is_closed_map(char **maze)
+int		is_closed_map(char **maze)
 {
 	size_t		j;
 	size_t		i;

@@ -14,7 +14,7 @@
 #include "get_next_line.h"
 #include "libft.h"
 
-static int		scan_for_other_c(t_str *line)
+static int	scan_for_other_c(t_str *line)
 {
 	size_t			i;
 
@@ -30,7 +30,7 @@ static int		scan_for_other_c(t_str *line)
 	return (TRUE);
 }
 
-int				parse_map(t_str *line, t_map *map)
+int		parse_map(t_str *line, t_map *map)
 {
 	if (scan_for_other_c(line) == ERROR)
 		return (ERROR);
