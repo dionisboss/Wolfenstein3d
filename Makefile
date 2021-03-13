@@ -107,19 +107,19 @@ INCLD = includes/
 #############################################################
 
 $(NAME):	$(OBJ)
-	make -C src/minilibx_opengl_20191021/
+	#make -C src/minilibx_opengl_20191021/
 	make -C src/parse_map/
 	$(CC) $(MLXFLAGS) $(LIBS) $(OBJ) -o $(NAME)
 
 all:		$(NAME)
 
 clean:
-	make clean -C src/minilibx_opengl_20191021/
+	#make clean -C src/minilibx_opengl_20191021/
 	make clean -C src/parse_map/
 	rm -rf $(OBJ)
 
 fclean: clean
-	make clean -C src/minilibx_opengl_20191021/
+	#make clean -C src/minilibx_opengl_20191021/
 	make fclean -C src/parse_map/
 	rm -rf $(NAME)
 
