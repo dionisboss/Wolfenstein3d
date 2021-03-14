@@ -4,3 +4,6 @@ This project will repeat the world's first 3D game 'Wolfenstein 3d'. The creatio
 ![Alt text](/screenshots/screen_shot_1.png?raw=true "Optional Title")
 
 ![Alt text](/screenshots/screen_shot_2.png?raw=true "Optional Title")
+
+Working machine:
+![Alt text](/screenshots/system.png?raw=true "Optional Title")
